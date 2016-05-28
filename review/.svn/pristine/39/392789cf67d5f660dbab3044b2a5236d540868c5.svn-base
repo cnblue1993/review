@@ -1,0 +1,33 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+    <body>
+    <div id="main">
+			<table id="table2" border=1 cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+				<tr>
+					<th>编号</th>
+					<th>姓名</th>
+					<th>职称</th>
+					<th>专家类别</th>
+					<th>当前状态</th>
+					<th>编辑操作</th>
+				</tr>
+
+				<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr algin="center">
+					<td width="10%"><?php echo ($v["e_id"]); ?></td>
+					<td width="10%"><?php echo ($v["e_name"]); ?></td>
+					<td width="10%"><?php echo ($v["e_position"]); ?></td>
+					<td width="10%"><?php echo ($v["e_type"]); ?></td>
+					<td width="10%"><?php echo ($v["e_state"]); ?></td>
+					<td width="30%">
+						[<a href="<?php echo U(GROUP_NAME.'/Expert/printing',array('e_id'=>$v['e_id']));?>">打印</a>]&nbsp;
+						[<a href="<?php echo U(GROUP_NAME.'/Expert/unlock',array('e_id'=>$v['e_id']));?>">解锁</a>]&nbsp;
+						[<a href="<?php echo U(GROUP_NAME.'/Expert/cancelPower',array('e_id'=>$v['e_id']));?>">取消评审权</a>]
+					</td>
+				</tr><?php endforeach; endif; ?>
+			</table>
+	</div>
+	</body>
+</html>

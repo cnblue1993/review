@@ -1,0 +1,86 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+    <body>	
+    <div id="main">
+		<form action="{:U(GROUP_NAME.'/Expert/editor')}" method="post" >
+			<table id="table">
+				<tr>
+					<th colspan='2'>修改专家信息</th>
+				</tr>
+				<tr>
+					<td align='right'>编号</td>
+					<td align='left'>
+						<input type="text" name="e_id" readonly="true" value="{$infor['e_id']}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>姓名</td>
+					<td align='left'>
+						<input type="text" name="e_name" value="{$infor['e_name']}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>职称</td>
+					<td align='left'>
+						<input type="text" name="e_position" value="{$infor['e_position']}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>专家类别</td>
+					<td align='left'>
+						<!-- <input type="text" name="e_type" value="{$infor['e_type']}" /> -->
+					<select id="e_type" name="e_type" >
+   					<foreach name='list' item='v'>
+   						<if condition="$infor['e_type']==$v['mg_name']">
+   							<option value='{$v.mg_name}' selected='true'>{$v.mg_name}</option>
+   						<else/>
+   							<option value='{$v.mg_name}'>{$v.mg_name}</option>
+   					</if>
+					</foreach>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>入职时间</td>
+					<td align='left'>
+						<input type="text" name="e_entry_time" value="{$infor['e_entry_time']}"/>
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>研究方向</td>
+					<td align='left'>
+						<input type="text" name="e_research" value="{$infor['e_research']}"/>
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>工作单位</td>
+					<td align='left'>
+						<input type="text" name="e_department" value="{$infor['e_department']}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>联系电话</td>
+					<td align='left'>
+						<input type="text" name="e_tel"  value="{$infor['e_tel']}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>专家状态</td>
+					<td align='left'>
+						<input type="text" name="e_state" readonly="true" value="{$infor['e_state']}" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"> 
+						<input type="submit" class="submit" style="zoom:120%" value="执行"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</body>
+</html>

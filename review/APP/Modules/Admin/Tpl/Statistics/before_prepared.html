@@ -1,0 +1,16 @@
+<html>
+<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+<body>
+<div id="main" align="center">
+	<table align="center" style="margin-top:100px">
+		<tr><td align='center' colspan="2" style="font-size:30px">请选择分组类别</td></tr>
+		<tr><td><br></td></tr>
+		<tr>
+   			<foreach name='survey' item='s'>
+   				<td style="font-size:40px"><a href="{:U(GROUP_NAME.'/Statistics/prepared',array('s_id'=>$s['s_id']))}">[{$s['a_value']}]&nbsp;</a></td>
+			</foreach>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

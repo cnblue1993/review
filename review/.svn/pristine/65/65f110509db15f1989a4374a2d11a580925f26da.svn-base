@@ -1,0 +1,54 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<script type="text/javascript"> 
+function check_all(obj,cName) 
+{ 
+    var checkboxs = document.getElementsByName(cName); 
+    for(var i=0;i<checkboxs.length;i++){checkboxs[i].checked = obj.checked;} 
+} 
+</script> 
+	</head>
+    <body>
+<div id="main">	
+<table id="table2" border=1 cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+	<form method="post" action="<?php echo U(GROUP_NAME.'/Expert/dealSelectExpert');?>" >
+				<tr>
+					<th></th>
+					<th>编号</th>
+					<th>姓名</th>
+					<th>职称</th>
+					<th>类别</th>
+					<th>研究方向</th>
+					<th>入职时间</th>
+					<th>工作单位</th>
+					<th>联系电话</th>
+					<th>状态</th>
+				</tr>
+
+				<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
+					<td width="5%"><input style="width:20px;zoom:120%" type="checkbox" name="checkbox[]" value="<?php echo ($v["e_id"]); ?>"/><?php echo ($v["p_id"]); ?></td>
+					<td width="5%"><?php echo ($v["e_id"]); ?></td>
+					<td width="10%"><?php echo ($v["e_name"]); ?></td>
+					<td width="10%"><?php echo ($v["e_position"]); ?></td>
+					<td width="5%"><?php echo ($v["e_type"]); ?></td>
+					<td width="20%"><?php echo ($v["e_research"]); ?></td>
+					<td width="10%"><?php echo ($v["e_entry_time"]); ?></td>
+					<td width="10%"><?php echo ($v["e_department"]); ?></td>
+					<td width="10%"><?php echo ($v["e_tel"]); ?></td>
+					<td width="10%"><?php echo ($v["e_state"]); ?></td>
+				</tr><?php endforeach; endif; ?>
+	<table border=0 width="98%" margin="auto">
+		<tr>
+				<input type="hidden" name="rid" value='<?php echo ($rid); ?>'/>
+				<td align="center" width="5%"><input type="checkbox" name="all" style="width:20px;zoom:120%" onclick="check_all(this,'checkbox[]')" /></td><td>全部选择</td>
+               <td><input type="submit" style="zoom:120%;width:80px" value="确定选择"/>  
+				</td>
+			</tr>
+	</table>
+	</form>
+</table>
+</div>
+</body>
+</html>

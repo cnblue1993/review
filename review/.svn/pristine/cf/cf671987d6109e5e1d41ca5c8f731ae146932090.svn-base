@@ -1,0 +1,54 @@
+﻿@import url("public.css");
+html{overflow-y: hidden;}
+#top{
+	height: 300px;
+	padding-left: 300px;
+	border-bottom: solid 2px #666;
+	position: relative;
+	visibility: visible;
+	background-color: #00a2e9;
+}
+#top .menu{
+	margin-top: 5px;
+	font-size: 25px;
+	background-color: #350MC1;
+	background-image: url("./Images/index_02.gif");
+	background-position: left top;
+}
+#top .menu a{padding:6px 15px;background:#eee;font-size:15px;font-weight: bold;color:#43434F;
+	float:left;margin-right:10px; display:block; border:solid 1px #E3E3E3; border-radius: 3px;}
+#top .menu a:hover{background:#333;color:#fff; box-shadow:2px 3px 6px #ccc;}
+/***退出****/
+.exit{position: absolute;top:20px;right:20px;}
+.exit a{font-size:15px;color:#fff;padding:3px 10px;border:solid 1px #E3E3E3; border-radius: 3px;}
+.exit a:hover{background: #999;color:#000;}
+/**左侧**/
+#left{padding-top:10px;width:170px;float:left;margin-top:10px; 
+	overflow-y:auto;border-right: solid 1px #008fd7; 
+background:#00a2e9 10px 10px ; }
+#left dl{border-bottom:solid 1px #dcdcdc;padding-bottom: 15px;}
+#left dl dt{font-size:18px;border-left: 8px solid #DD4B39;padding-left:10px; color:#0ff;margin-top:10px;}
+#left dl dd{margin-top:3px;}
+#left dl dd a{font-size:16px;padding:4px 0px;padding-left:18px;color:#fff;display:block; }
+#left dl dd a:hover{background:#eee;color:#000}
+#right{float:left;overflow: hidden;}
+.title
+{
+	font-family: LiSu;
+	font-weight: bold;
+	font-size:40px; 
+	color:#fff;
+	background-color: #00a2e9;
+	width:70%;
+	margin-top:20px;
+}
+.main{
+	margin-left:10px;
+	margin-top:10px;
+	border:3 solid #00a2e9;
+	height:87%;
+	width: 98%;
+	text-align: center;
+	vertical-align: center;
+	font-size:40px;
+}

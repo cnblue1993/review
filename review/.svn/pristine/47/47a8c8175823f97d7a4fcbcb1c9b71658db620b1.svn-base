@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+<div id="main" >
+<form action="{:U(GROUP_NAME.'/Administrator/addAdmin')}" method="post" >
+	<table id="table3" border=0>
+	<tr><td><br></td></tr>
+	<tr>
+		<td width="30%" align="right">账户：</td><td><input name='name' style="width:200px"></td>
+	</tr>
+	<tr>
+		<td width="30%" align="right">密码：</td><td><input type="password" name='pwd' style="width:200px"></td>
+	</tr>
+	<tr>
+		<td colspan=2><br><input type="submit" class="submit" name='submit' value="提交"></td>
+	</tr>
+	</table>
+</form>
+</div>

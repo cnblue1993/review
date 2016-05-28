@@ -1,0 +1,278 @@
+<link rel="stylesheet" href="__PUBLIC__/Css/test.css" />
+<link rel="stylesheet" href="__PUBLIC__/Css/buttons.css" />
+
+<script language="javascript" src="__PUBLIC__/Js/jquery-1.4.2.min.js"></script> 
+<script> 
+function show(obj,id) { 
+var objDiv = $("#"+id+""); 
+$(objDiv).css("display","block"); 
+$(objDiv).css("left", event.clientX); 
+$(objDiv).css("top", event.clientY + 10); 
+} 
+function hide(obj,id) { 
+var objDiv = $("#"+id+""); 
+$(objDiv).css("display", "none"); 
+} 
+
+function logout(state)
+{
+	if(state!='评审完毕')
+	{
+		alert('您还未提交评审结果！');
+		return false;
+	}
+	else if(!confirm("真的要退出吗？")){
+		return false;	
+	}
+	else{
+		window.location.href="{:U(GROUP_NAME.'/Index/logout')}";
+		return true;
+	}
+
+}
+function gotohome(answer)
+{
+	var f=document.getElementById(answer);
+	f.submit();
+	window.location.href="{:U(GROUP_NAME.'/Response/saveResponse')}";
+	window.location.href="{:U(GROUP_NAME.'/Response/welcome')}";
+}
+function gotolastpage(answer)
+{
+	var f=document.getElementById(answer);
+	f.submit();
+	window.location.href="{:U(GROUP_NAME.'/Response/saveResponse')}";
+	window.location.href="{:U(GROUP_NAME.'/Response/last_page')}";
+}
+function gotodepartment(page,answer)
+{
+	var f=document.getElementById(answer);
+	f.submit();
+	window.location.href="{:U(GROUP_NAME.'/Response/saveResponse')}";
+	window.location.href="{:U(GROUP_NAME.'/Response/show')}?page_number="+page;
+}
+
+function show_question(page,answer)
+{
+	var f=document.getElementById(answer);
+	f.submit();
+	window.location.href="{:U(GROUP_NAME.'/Response/saveResponse')}";
+	window.location.href="{:U(GROUP_NAME.'/Response/show_question')}?page="+page;
+}
+function showresult(state,page)
+{
+	if(state!='评审完毕')
+	{
+		alert('还有专家未评审完毕，请耐心等待！');
+		return false;
+	}
+	else{
+		window.location.href="{:U(GROUP_NAME.'/Response/show_result')}?page="+page;
+		return true;
+	}	
+}	
+//弹出隐藏层
+function ShowDiv(show_div,bg_div){
+document.getElementById(show_div).style.display='block';
+document.getElementById(bg_div).style.display='block' ;
+var bgdiv = document.getElementById(bg_div);
+bgdiv.style.width = document.body.scrollWidth;
+// bgdiv.style.height = $(document).height();
+$("#"+bg_div).height($(document).height());
+};
+//关闭弹出层
+function CloseDiv(show_div,bg_div)
+{
+document.getElementById(show_div).style.display='none';
+document.getElementById(bg_div).style.display='none';
+};
+
+</script> 
+
+<style>
+.black_overlay{
+display: none;
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:1001;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.white_content {
+display: none;
+position: absolute;
+top: 10%;
+left: 10%;
+width: 80%;
+height: 80%;
+border: 16px solid lightblue;
+background-color: white;
+z-index:1002;
+overflow: auto;
+}
+.white_content_small {
+display: none;
+position: absolute;
+top: 20%;
+left: 30%;
+width: 40%;
+height: 50%;
+border: 16px solid lightblue;
+background-color: white;
+z-index:1002;
+overflow: auto;
+}
+</style>
+
+<table width="100%" margin="auto" target="main">
+<form method="post" action="{:U(GROUP_NAME.'/Response/saveResponse')}" id="form1">
+
+	<table width="100%" id="top" border=0>
+	<tr >
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:100%" value="查看评审情况"  onClick="javascript:return show_question({$page_number},'form1');">
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:100%" value="查看评审结果"  onClick="javascript:return showresult('{$s_state}',{$page_number});">
+		<td id="big">{$_SESSION['e_name']}</td><td>教授</td>
+		<td id="big">{$qg_name}</td>
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:100%" onClick="javascript: gotohome('form1');" value="首页">
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:100%" onClick="javascript: gotolastpage('form1');" value="末页">
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:100%" onClick="javascript:return logout('{$e_state}');" value="退出">
+		</td>
+	</tr>
+	</table>
+
+<!--项目和答案-->
+	<table id="main" align='center' border=3>
+	<tr id="title">
+		<td align='center'>编号</td>
+		<td align='center'>项目名称</td>
+		<td align='center'>申报级别</td>
+		<td align='center'>外籍专家</td>
+		<td align='center'>经费(万)</td>
+		<td align='center'>级别</td>
+	</tr>
+
+	<php>$i=1;$count=0;</php>
+
+	<foreach name='questionlist' item='vo'>
+
+	<php>$count++;
+	$funds=$vo['p_funds']/10000.00;
+	</php>
+
+		<tr >
+			<td align='center'>{$i}</td>
+<!--			<td align='left'><a href="__PUBLIC__/html/{$vo.p_id}.html">{$vo.p_name}</a></td>-->
+			<td align='left'><a onclick="ShowDiv('t{$vo.p_id}','fade')" />{$vo.p_name}</a></td>
+
+			<td align='center'>{$vo.p_rank}</td>
+
+			<td align='center' width="100px"><a onMouseOver="javascript:show(this,'p{$vo.p_id}');" onMouseOut="hide(this,'p{$vo.p_id}')">……</a> </td>
+
+			<td align='center'>{$funds}</td>
+			<td align='left' width="380px">
+			<foreach name='ans' item='a'>
+				<if condition="$vo['q_id'] == $a['q_id']">
+			    	<php>
+			    		$condition=array('q_id'=>$vo['q_id'],'voter_id'=>$_SESSION['e_id']);
+			    		$res=M('response')->where($condition)->select();
+			    	</php>
+				    	<if condition="$res&&$res[0]['answer']==$a['a_text']">
+					    	<label><input type="radio" name="{$a.q_id}" value="{$a.a_text}" checked="true" style="zoom:200%" {$disable}>{$a.a_text}</label>
+					    <elseif condition="!$res&&$vo['p_rank']=='一般'&&$a['a_text']=='一般'"/>
+					    	<label><input type="radio" name="{$a.q_id}" value="{$a.a_text}" checked="true" style="zoom:200%" {$disable}>{$a.a_text}</label>
+					    <else/>
+					    	<label><input type="radio" name="{$a.q_id}" value="{$a.a_text}" style="zoom:200%" {$disable}>{$a.a_text}</label>
+				    	</if>
+			    	</if>    	
+			</foreach>	
+			</td>
+		</tr>
+	<php>$i++;
+	</php>
+
+	</foreach>
+	</table>
+	<br>
+
+
+	<!--显示外籍专家信息-->
+	<foreach name='questionlist' item='vo'>
+	<div id="p{$vo.p_id}" style="position:absolute;display:none;border:1px solid silver;background:white;"> 
+	<table border=1 id="foreign">
+	<tr id="title">
+		<td>姓名</td>
+		<td>国籍</td>
+		<td>学历</td>
+		<td>在华天数</td>
+	</tr>
+	<foreach name='foreign' item='f'>
+	<if condition="$vo['p_id'] == $f['p_id']">
+	<tr>
+			<td>{$f.fe_name}</td>
+			<td>{$f.fe_nation}</td>
+			<td>{$f.fe_education}</td>
+			<td>{$f.fe_workday}</td>
+	</tr>
+	</if>
+	</foreach>
+	</table>
+	</div>
+	</foreach>
+
+	<!--合页-->
+	<foreach name='questionlist' item='vo'>
+	<div id="fade" class="black_overlay">
+	</div>
+	<div id="t{$vo.p_id}" class="white_content" style="overflow-x:hidden;overflow-y:hidden;">
+	<div style="text-align: right; cursor: default; height: 40px;" >
+	<span style="font-size: 16px; color:#f00" onclick="CloseDiv('t{$vo.p_id}','fade')">[关闭]</span>
+	</div>
+	<iframe width="100%" height="500px" style="overflow-x:scroll;overflow-y:scroll;" src="__PUBLIC__/html/{$vo.p_id}.html"></iframe>
+</div>
+	
+	</foreach>
+
+	<!--意见-->
+	<table id="advice" >
+	<tr><td>备注：</td></tr>
+	<tr><td>
+	<textarea type="text" class="text" name="advice" {$disable}/>{$idea}</textarea>
+	</td></tr>
+	</table>
+
+
+	<table width="100%" border=0>
+	<tr><td><br></td></tr>
+	<tr>
+		<td align="center">当前为第{$page_number+1}页，共计{$qg_count}页。</td>
+		<td align='center' width="100px"><input type="submit" name="sub" value="上一页" style="zoom:120%;width:70px;align:center"></td>
+		<td align='center' width="100px"><input type="submit" name="save" value="保存" style="zoom:120%;width:70px;align:center" ></td>
+		<td align='center' width="100px"><input type="submit" name="add" value="下一页" style="zoom:120%;width:70px;align:center" ></td>
+	</tr>
+	</table>
+
+	<input  type="hidden" name="count" value="{$count}">
+	<input type="hidden" name="page_No" Value="{$page_number}">
+
+	<!--选择学院-->
+	<table width="100%">
+	<tr><td ><br></td>
+	<td align="center" width="300px">
+	<select name='qg'onchange="javascript:return gotodepartment(this.value,'form1');" style="width:210px;zoom:120%">
+	<option selected value=null>-----选择学院-----</option>	
+	<foreach name="department" item="name" key="page_number">
+	<option value="{$page_number}">
+	{$name}
+	</option>
+	</foreach>	
+	</select></td>
+	</tr>
+	</table>
+	</form>
+
+</table>

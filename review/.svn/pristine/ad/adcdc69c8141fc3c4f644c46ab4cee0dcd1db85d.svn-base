@@ -1,0 +1,30 @@
+<?php if (!defined('THINK_PATH')) exit();?><html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+    <body>
+    <div id="main">
+		<table id="table" border=1 cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+				<tr>
+					<th>评审工作序号</th>
+					<th>评审工作分类</th>
+					  <th>统    计</th>
+				</tr>
+				<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
+					<td><?php echo ($v['s_id']); ?></td>
+					<td><?php echo ($v['a_value']); ?></td>
+					<td>
+						[<a href="<?php echo U(GROUP_NAME.'/Statistics/expert_response2',array('rid'=>$v['r_id'],'sid'=>$v['s_id']));?>">专家确认结果</a>]
+						[<a href="<?php echo U(GROUP_NAME.'/Statistics/prepared2',array('major_group'=>$v['a_value'],'rid'=>$v['r_id'],'sid'=>$v['s_id']));?>">评审结果打印</a>]
+					</td>
+				</tr><?php endforeach; endif; ?>
+				<tr>
+					<td colspan=3 align="center">
+						[<a href="<?php echo U(GROUP_NAME.'/Statistics/modify_review',array('rid'=>$v['r_id']));?>">分组汇总统计</a>]
+					</td>
+				</tr>
+		</table>
+	</div>
+	</body>
+</html>

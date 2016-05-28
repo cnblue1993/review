@@ -1,0 +1,67 @@
+<html>
+<head>
+<link rel="stylesheet" href="_PUBLIC_/Css/print.css" />
+<object id="WebBrowser" classid="ClSID:8856F961-340A-11D0-A96B-00C04Fd705A2" width="0" height="0">
+</object>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>{$review_year}年外专项目评审结果</title>
+</head>
+<body>
+<form id="form1">
+<p id="title">{$review_year}年外专项目评审结果（{$major_group}组）</p>
+<table id="content" border=0>
+<php>$i=1;</php>
+<foreach>
+<tr>
+    <td >&nbsp;&nbsp;&nbsp;&nbsp;{$review_year}年外专项目{$major_group}组评审结果公布如下:</td>
+</tr>
+    <foreach name='list' item='v'>
+    <tr><td >
+    {$i}.{$v.department}:原申报项目({$v.count})项，其中重点项目({$v.rankimport})项，一般项目({$v.ranknormal})项；
+    经评审后，重点项目({$v.important})项，总票数({$v.importcount})票，一般项目({$v.normal})项，总票数({$v.normalcount})票。
+    <php>$i++;</php> 
+    </td></tr>
+   </foreach>
+<tr><td>专家意见汇总：</td></tr>
+<foreach name='qg_name' item='qg'>
+<php>$j=1;</php>
+    <tr><td >{$qg.qg_name}<br></td></tr>
+    <tr><td>
+     <foreach name='advice' item='a'>
+         <if condition="$qg['qg_name'] == $a['qg_name']">
+            意见{$j++}：{$a['advice']}<br>
+        </if>
+    </foreach>
+    </td></tr>
+</foreach>
+<if condition="$advice==null">
+<tr><td >&nbsp;&nbsp;&nbsp;&nbsp;无<br></td></tr>
+</if>
+</table>
+<br>
+<table id="content" width="98%">
+    <tr>
+        <td align="left" >
+            专家组长意见：
+        </td>
+    </tr>
+    <tr><td ><br></td></tr>
+    <tr><td ><br></td></tr>
+<tr><td align="right" >签名:&nbsp;___________________<br></td></tr> 
+<tr><td align="right" colspan=2>年&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;日</td></tr>  
+<table>
+</form>
+<!-- <a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(7,1)">打印预览&nbsp;</a>
+
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(6,1)">打印&nbsp;</a> -->
+
+</body>
+<style media=print> 
+.Noprint{display:none;}<!--用本样式在打印时隐藏非打印项目--> 
+.PageNext{page-break-after: always;}<!--控制分页--> 
+</style> 
+<center class="Noprint" >
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(6,6)">直接打印&nbsp;</a>
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(8,1)">页面设置</a>
+</center>
+</html>

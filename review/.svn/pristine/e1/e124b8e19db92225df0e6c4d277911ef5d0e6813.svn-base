@@ -1,0 +1,53 @@
+<html >
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+    <body>	
+    <div id="main">
+<foreach name='list' item='infor'>
+		<form action="{:U(GROUP_NAME.'/Review/deal_modify')}" method="post" >
+			<table id="table" border=0>
+				<tr>
+					<th colspan='2'>修改评审分组任务</th>
+				</tr>
+				<tr>
+					<td align='left'>
+						<input type="hidden" name="s_id" readonly="true" value="{$infor['s_id']}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right' >评审分组名称</td>
+					<td align='left'>
+						<input type="text"  name="s_name" value="{$infor.s_name}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>开始时间</td>
+					<td align='left'>
+						<input type="text" name="s_start" value="{$infor['s_start']}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>结束时间</td>
+					<td align='left'>
+						<input type="text" name="s_end" value="{$infor['s_end']}"/>
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>现在所处状态</td>
+					<td align='left'>
+						<input type="text" name="s_state" readonly="true" value="{$infor['s_state']}" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"> 
+						<input class="submit" type="submit" style="zoom:120%" value="提交"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+</foreach>
+	</div>
+	</body>
+</html>

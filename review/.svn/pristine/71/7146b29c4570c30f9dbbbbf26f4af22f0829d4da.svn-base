@@ -1,0 +1,67 @@
+<?php
+	class AdministratorAction extends CommonAction{
+		public function index()
+		{
+			$admin=M('admin')->where("a_name!='admin'")->select();
+			//$admin=M('admin')->select();
+			$this->assign('admin',$admin);
+			$this->display();
+		}
+		public function showadd()
+		{
+			$this->display();
+		}
+		public function addAdmin()
+		{
+			if($_POST['submit'])
+			{
+				$data=array(
+					'a_name'=>$_POST['name'],
+					'a_pwd'=>I('pwd','','md5')
+				);
+				//dump($data['a_pwd']);
+				$result=M('admin')->add($data);
+				if($result)
+					$this->success('添加管理员成功！',U(GROUP_NAME.'/Administrator/index'));
+				else
+					$this->error('添加管理员失败！');
+			}
+		}
+			
+		public function showmodify()
+		{
+			$name=M('admin')->where('a_id='.$_GET['id'])->getField('a_name');
+			$this->assign('name',$name);
+			$this->assign('a_id',$_GET['id']);
+			$this->display();
+		}
+		public function modifyAdmin()
+		{
+			if($_POST['newpwd']!=$_POST['checkpwd'])
+				$this->error('2次输入的密码不一致，请重新输入！');
+			if($_POST['submit'])
+			{
+				if($_POST['name']!='')
+					$data['a_name']=$_POST['name'];
+				if($_POST['newpwd']!='')
+					$data['a_pwd']=I('newpwd','','md5');
+				M('admin')->where('a_id='.$_POST['a_id'])->setfield($data);
+
+				if($data)
+					$this->success('修改管理员成功！',U(GROUP_NAME.'/Administrator/index'));
+				else
+					$this->error('修改管理员失败！');
+			}
+		}
+
+		public function deleteAdmin()
+		{
+			M('admin')->delete($_GET['a_id']);
+			$result=M('admin')->where('a_id='.$_GET['a_id'])->select();
+			if($result)
+				$this->error('删除管理员失败！',U(GROUP_NAME.'/Administrator/index'));
+			else
+				$this->success('删除管理员成功！',U(GROUP_NAME.'/Administrator/index'));
+		}
+	}
+?>

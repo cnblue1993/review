@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+<script> 
+function backup()
+{
+	window.location.href="{:U(GROUP_NAME.'/DataBase/backup')}";
+}
+
+function restore()
+{
+	window.location.href="{:U(GROUP_NAME.'/DataBase/restore')}";
+}
+</script> 
+
+<div id="main">
+<h4>数据库管理</h4>
+<table id="table" border=0>
+<tr><td>数据库备份：</td><td align="left"><input type="button" class="submit" name="backup" value="备份" onClick="javascript: backup();"/></td></tr>
+<tr><td>数据库还原：</td><td align="left"><input id="sqlFile" name="sqlFile" type="file" width="300px"/>  
+&nbsp;<input id="submit" class="submit" name="restore" type="button" value="还原" onClick="javascript: restore();"/> </td></tr>
+</table>
+</div>
+

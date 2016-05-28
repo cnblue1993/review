@@ -1,0 +1,30 @@
+<?php if (!defined('THINK_PATH')) exit();?><html >
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+    <body>
+    <div id="main">
+    <form action="<?php echo U(GROUP_NAME.'/Cate/addxk');?>" method="post" >	
+    	<table id="table3" border=1 cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+				<tr>
+					<th >分组编号</th>
+					<th >分类名称</th>
+				</tr>
+
+				<?php if(is_array($data)): foreach($data as $key=>$v): ?><tr>
+					<td ><?php echo ($v["mg_id"]); ?></td>
+					<td ><?php echo ($v["mg_name"]); ?></td>
+				</tr><?php endforeach; endif; ?>
+				<tr>
+					<td width="100px">请输入分类名称：</td>
+					<td  align="center"><input type="text" name="mg_name" style="width:200px"/></td>
+				<tr>
+					<td colspan=2 align="center"><br><input type="submit"  style="zoom:120%;width:80px" value="添加学科"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</body>
+</html>

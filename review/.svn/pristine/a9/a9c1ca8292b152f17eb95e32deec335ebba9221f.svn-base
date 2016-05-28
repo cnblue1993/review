@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+    <body>
+		<table class="table" border=1>
+				<tr>
+					<th>评审工作序号</th>
+					<th>评审工作分类</th>
+					  <th>统    计</th>
+				</tr>
+				<foreach name='list' item='v'>
+				<tr>
+					<td>{$v['s_id']}</td>
+					<td>{$v['a_value']}</td>
+					<td>
+						[<a href="{:U(GROUP_NAME.'/Statistics/expert_response',array('rid'=>$v['r_id'],'sid'=>$v['s_id']))}">专家确认结果</a>]
+						[<a href="{:U(GROUP_NAME.'/Statistics/showResult',array('major_group'=>$v['a_value'],'rid'=>$v['r_id'],'sid'=>$v['s_id']))}">评审结果打印</a>]
+					</td>
+				</tr>
+				</foreach>
+				<tr>
+					<td colspan=3 align="center">
+						[<a href="{:U(GROUP_NAME.'/Statistics/showTotal',array('rid'=>$v['r_id']))}">分组汇总统计</a>]
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>

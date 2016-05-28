@@ -1,0 +1,10 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+<head>
+	<meta http-equiv="Content-Type" CONTENT="text/html;charset=utf-8">
+	<TITLE>西南民族大学</TITLE>
+</head>
+	<p>
+		操作提示：红色字部分为每次评审活动中，后台管理员必须完成的工作。黑色字体标注的功能为辅助型功能，根据实际需求，选择是否操作！
+	</p>
+	<img src="_PUBLIC_/Image/help.jpg"  border=0 width="600px" height="400px">
+</html>

@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="__PUBLIC__/Css/welcome.css" />
+<link rel="stylesheet" href="__PUBLIC__/Css/buttons.css" />
+<form action="{:U(GROUP_NAME.'/Response/welcome')}" method="post" >
+<table width="100%" margin="auto">
+	<table width="100%" margin="auto">
+		<tr><td align="center"><p id="title">{$title}</p></td></tr>
+	</table>
+	<table id="main" border=3>
+	<tr><td align="center">评审系统使用说明</td></tr>
+	<tr><td align="left"><pre>{$instruction}</pre></td></tr>
+	</table>
+	<br>
+	<br>
+	<br>
+	<table width='100%' border=0>
+	<tr>
+	<td align="right" width="40%"><h2>欢迎</h2></td><td width="20%"><p id="name" >{$_SESSION['e_name']}<p></td><td align="left" width="40%"><h2>专家</h2></td>
+	</tr>
+	<tr><td></td><tr>
+	<tr><td></td><tr>
+	</table>
+
+	<br>
+	<p align="center">
+	<input name='start'  type="submit" value="{$value}" class="button button-glow button-rounded button-raised button-primary"/>
+	</form>
+
+	<br>
+	<br>
+	</p>
+	<p align="center">本次评审共有{$qg_count}个学院参评，共计{$project_count}个项目！
+
+	<select name='qg' onchange="window.location=this.value;">
+	<option selected value=null>-----选择学院-----</option>	
+	<foreach name="qg_name" item="name" key="page_number">
+	<option value="{:U(GROUP_NAME.'/Response/show?page_number='.$page_number)}">
+	{$name}
+	</option>
+	</foreach>	
+	</select>
+	</p>
+</table>
+<!--
+<table id="main" border=1 >
+<tr>
+<foreach name="qg_name" item="name" key="page_number">
+<td align="center" class="home"><a class="home" href="{:U(GROUP_NAME.'/Response/show?page_number='.$page_number)}">{$name}</a></td>
+</foreach>
+</tr>
+</table>
+-->

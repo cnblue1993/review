@@ -1,0 +1,57 @@
+<html >
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+    <body>	
+    <div id="main">
+		<form action="{:U(GROUP_NAME.'/Review/editor')}" method="post" >
+			<table  id="table">
+				<tr>
+					<th colspan='2'>修改评审活动</th>
+				</tr>
+				<tr>
+					<td align='left'>
+						<input type="hidden" name="r_id" readonly="true" value="{$infor['r_id']}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right' >评审名称</td>
+					<td align='left'>
+						<input type="text" style="width:300px" name="r_name" value="{$infor['r_name']}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>评审年份</td>
+					<td align='left'>
+						<input type="text" style="width:300px" name="r_year" value="{$infor['r_year']}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>评审开始时间</td>
+					<td align='left'>
+						<input type="text" style="width:300px" name="r_start" value="{$infor['r_start']}" />
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>评审结束时间</td>
+					<td align='left'>
+						<input type="text" style="width:300px" name="r_end" value="{$infor['r_end']}"/>
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>评审所处状态</td>
+					<td align='left'>
+						<input type="text" style="width:300px" name="r_state" readonly="true" value="{$infor['r_state']}" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"> 
+						<input type="submit" value="执行" class="submit" style="zoom:120%"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</body>
+</html>

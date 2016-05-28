@@ -1,0 +1,82 @@
+STYLE typetextcss BODY {
+	COLOR: #000; FONT-FAMILY: 宋体; FONT-SIZE: 12px
+}
+TD {
+	COLOR: #000; FONT-FAMILY: 宋体; FONT-SIZE: 12px
+}
+A:link {
+	COLOR: #003399;
+	TEXT-DECORATION: none;
+
+}
+A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline}
+.No14 {
+	FONT: bold 14px 宋体
+}
+.red {
+	color: #FF0000;
+}
+.data_table {
+	border-collapse: collapse;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 0px solid #000000;
+	border-left: 0px solid #000000;
+}
+.data_table td {
+	border: 1px solid #000000;
+}
+.piece {
+	border: 1px solid #000000;
+	font-size: 9pt;
+	background-color: #FFFFFF;
+	padding: 1px;
+}
+.no12 {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.black {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.shadow {
+  display: block;
+
+  position: relative;
+  background-color: #999999;
+  margin: -3px 3px 3px -3px;
+  }
+
+.h150 {
+	line-height: 150%;
+	text-decoration: none;
+}
+.nopad {
+	margin: 0px;
+	padding: 0px;
+}
+.gray {
+	background-color: #D4D0C8;
+}
+.pieceinput {
+
+	border: 1px solid #000000;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	padding: 1px;
+}
+ul {
+	padding-left: 10px;
+	list-style-type: none;
+	margin: 0px;
+}
+.pad5 {
+	padding: 5px;
+}

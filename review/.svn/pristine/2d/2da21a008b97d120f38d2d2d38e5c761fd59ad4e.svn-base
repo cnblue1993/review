@@ -1,0 +1,64 @@
+<html >
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<script language=javascript>
+function juge(form)
+{
+	if(form.r_name.value=="")
+	{
+		alter("请输入评审活动名称");
+		theForm.r_name.focus();
+		return(false);
+	}
+}
+</script>
+	</head>
+    <body>
+    <div id="main">
+		<form action="{:U(GROUP_NAME.'/Review/add')}" method="post" onsubmit="return juge(this)">
+<php>
+$time=date("Y",strtotime("+1 years"));
+$time2=date("Y-m-d H:i:s");
+$time3=date("Y-m-d H:i:s",strtotime("+7 days"));
+</php>
+			<table id="table" border=0>
+				<tr>
+					<th colspan='2' align='center' >添加评审活动</th>
+				</tr>
+				<tr>
+					<td align='right'>评审名称</td>
+					<td align='left'>
+						<input type="text" name="r_name" value="{$time}年西南民族大学外专项目评审活动"/>
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>项目年份</td>
+					<td align='left'>
+						<input type="text" name="r_year" value="{$time}"/>
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>评审开始时间</td>
+					<td align='left'>
+						<input type="text" name="r_start" value="{$time2}"/>
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>评审结束时间</td>
+					<td align='left'>
+						<input type="text" name="r_end"  value="{$time3}"/>
+					</td>
+				</tr>
+	
+				<tr>
+					<td colspan="2" align="center"> 
+						<input type="hidden" name="r_state" value='新建'/>
+						<input class="submit" type="submit" value="执行" style="zoom:120%"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</body>
+</html>

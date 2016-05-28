@@ -1,0 +1,211 @@
+<?php
+	
+	Class ResponseAction extends Action{
+		//保存专家投票结果
+		public function saveResponse()
+		{
+			//dump($_POST);die;
+			$page_number=$_POST['page_No'];
+			$R=M('response');
+			$advice=M('advice');
+			$postcount=count($_POST);
+			$orderDiff = 0;	
+			$e_state=M('expert')->where('e_id='.$_SESSION['e_id'])->getField('e_state');
+			$qg=M('question_group')->where('s_id='.$_SESSION['s_id'])->order('qg_order')->getField('qg_id',true);
+			$qg_id=$qg[$page_number];
+			foreach ($_POST as $k=>$value) {//对表单进行处理
+				if($k=='add'){//$page_number的变化值，实现下一页、提交
+					$orderDiff =  1 ;
+				}
+				elseif($k=='sub'){//$page_number的变化值,实现上一页
+					if($page_number>0)
+						$orderDiff =  - 1 ;
+					else
+						$this->redirect(GROUP_NAME.'/Response/welcome');
+				}
+				elseif($k=='count'||$k=='page_No'){
+					continue;
+				}
+				elseif($k=='advice')//添加、修改意见
+				{
+					$condition=array('qg_id'=>$qg_id,'e_id'=>$_SESSION['e_id']);
+					$a=$advice->where($condition)->getField('advice');
+					if($e_state!='评审完毕')//评审结束状态不能修改意见
+					{
+						if($a){
+							$advice->where($condition)->setField('advice',$value);
+						}
+						elseif (!$value) {
+							continue;
+						}
+						else{
+							$data=array(
+							'qg_id'=>$qg_id,
+							'e_id'=>$_SESSION['e_id'],
+							'advice'=>$value
+							);
+							$advice->add($data);
+						}
+					}
+				}
+				else{
+					$condition=array('q_id'=>$k,'voter_id'=>$_SESSION['e_id']);
+					$r=$R->where($condition)->field('answer')->select();
+					//$e_state=M('expert')->where('e_id='.$_SESSION['e_id'])->getField('e_state');
+					if($e_state!='评审完毕')//评审结束状态不能修改数据
+					{
+						if($r){//该题已提交，更新答案
+							$R->where($condition)->setField('answer',$value);
+						}	
+						else{//该题未提交，添加答案
+							$data=array(
+							'q_id'=>$k,
+							'voter_id'=>$_SESSION['e_id'],
+							'answer'=>$value,
+							's_id'=>$_SESSION['s_id'],
+							'qg_id'=>$qg_id,
+							'r_id'=>$_SESSION['r_id'],
+							'r_state'=>1
+							);
+							$R->add($data);
+						}	
+					}	
+				}
+			}
+			if($e_state!='评审完毕')
+			{
+				if($_POST['count']!=($postcount-4)&&$_POST['add'])//防止为未投票直接进入下一页
+				{
+					$this->error('还有未评审项目！');
+				}	
+			}
+			$page_number =$page_number + $orderDiff ;
+			$this->show($page_number);
+		}
+
+		//显示问卷表
+		public function show($page_number)
+		{
+			$e_state=M('expert')->where('e_id='.$_SESSION['e_id'])->getField('e_state');
+			if($e_state=='评审完毕')
+				$disable="disabled";
+			else
+				$disable="";
+			$this->assign('e_state',$e_state);
+			$this->assign("disable",$disable);
+			$qg_id=M('question_group')->where('s_id='.$_SESSION['s_id'])->order('qg_order')->getField('qg_id',true);
+			$qg_name=M('question_group')->where('s_id='.$_SESSION['s_id'])->order('qg_order')->getField('qg_name',true);
+			$qg_count=count($qg_id);
+			$this->assign('department',$qg_name);
+			$this->assign('qg_name',$qg_name[$page_number]);
+			$this->assign('qg_id',$qg_id[$page_number]);
+			$this->assign('qg_count',$qg_count);
+			$questionlist=M('question')
+				->join('tb_project on tb_question.source_id=tb_project.p_id')
+				->where('qg_id='.$qg_id[$page_number])
+				->order('q_order')
+				->field('q_id,p_name,p_principal,p_funds,p_rank,p_number')
+				->select();
+			$this->assign('questionlist',$questionlist);
+			$ans=M('answer')->where('qg_id='.$qg_id[$page_number])->select();
+			$this->assign('ans',$ans);
+			$advice_condition=array('qg_id'=>$qg_id[$page_number],'e_id'=>$_SESSION['e_id']);
+			$idea=M('advice')->where($advice_condition)->getField('advice');
+			$this->assign('idea',$idea);
+			$foreign_expert=M('foreign_expert')->select();
+			//dump($foreign_expert);die;
+			$this->assign('foreign',$foreign_expert);
+			if($qg_count>$page_number)
+			{
+				$this->assign('page_number',$page_number);
+				$this->display('show($page_number)');
+			}	
+			else
+			{
+				$this->redirect(GROUP_NAME.'/Response/last_page');
+			}	
+		}
+
+		//欢迎界面
+		public function welcome()
+		{
+			$condition=array('info_type'=>'前台title');
+			$title=M('site_info')->where($condition)->getField('info_content');
+			$condition1=array('info_type'=>'前台使用说明');
+			$instruction=M('site_info')->where($condition1)->getField('info_content');
+			$this->assign('title',$title);
+			$this->assign('instruction',$instruction);
+			$e_state=M('expert')->where('e_id='.$_SESSION['e_id'])->getField('e_state');
+			if($e_state=="评审完毕")
+                	$value="查看评审";
+                else{
+                	$value="开始评审";
+                }
+            $qg_name=M('question_group')->where('s_id='.$_SESSION['s_id'])->order('qg_order')->getField('qg_name',true);
+            $qg_count=count($qg_name);
+            $this->assign('value',$value);
+            $this->assign('qg_count',$qg_count);
+            $this->assign('qg_name',$qg_name);
+			$project_count=M(question)->where('s_id='.$_SESSION['s_id'])->count();
+			$this->assign('project_count',$project_count);
+			$this->display();
+			if($_POST)//修改专家状态
+			{
+				$e_state=M('expert')->where('e_id='.$_SESSION['e_id'])->getField('e_state');
+                if($e_state!='评审完毕')
+                {
+                	$e_state=M('expert')->where('e_id='.$_SESSION['e_id'])->setField('e_state','评审中');
+                }
+                $page_number=0;
+				$this->redirect(GROUP_NAME.'/Response/show?page_number='.$page_number);
+			}
+				
+		}
+
+		//结束界面
+		public function last_page()
+		{
+			$condition=array('info_type'=>'前台title');
+			$title=M('site_info')->where($condition)->getField('info_content');
+			$this->assign('title',$title);
+
+			$page_number =  M('question_group')->where('s_id='.$_SESSION['s_id'])->count()-1;
+			$this->assign('page_number',$page_number);
+
+			$e_state=M('expert')->where('e_id='.$_SESSION['e_id'])->getField('e_state');
+			$this->assign('e_state',$e_state);
+
+			$checkcondition=array('voter_id'=>$_SESSION['e_id'],'s_id'=>$_SESSION['s_id']);
+			$response_count=M("response")->where($checkcondition)->count();
+			$question_count=M("question")->where('s_id='.$_SESSION['s_id'])->count();
+			$this->assign('response_count',$response_count);
+			$this->assign('question_count',$question_count);
+
+			$this->display();
+		}
+		public function finish()
+		{
+			$outtime = date("Y-m-d H:i:s");
+			$logout_time=M('expert')->where('e_id='.$_SESSION['e_id'])->setField('logout_time',$outtime);
+			$e_state=M('expert')->where('e_id='.$_SESSION['e_id'])->setField('e_state','评审完毕');//修改专家状态
+			$condition=array('s_id'=>$_SESSION['s_id'],'e_state'=>'评审完毕' );
+			$finish_sum=M('expert')->where($condition)->count();
+			$voter_sum=M('survey')->where('s_id='.$_SESSION['s_id'])->getField('voter_sum');
+			if($finish_sum==$voter_sum) {//根据评审结束专家数与参与评审专家数修改调查表状态
+				$s_state=M('survey')->where('s_id='.$_SESSION['s_id'])->setField('s_state','评审完毕');
+			}
+			$state=M('survey')->where('r_id='.$_SESSION['r_id'])->getField('s_state',true);
+			$review_state=1;
+			foreach($state as $k=>$value)//修改评审活动状态
+			{
+				if($value!='评审完毕')
+					$review_state=$review_state&0;
+			}
+			if($review_state)
+			{
+				$r_state=M('review')->where('r_id='.$_SESSION['r_id'])->setField('r_state','评审完毕');
+			}
+			$this->redirect(GROUP_NAME.'/Response/show?page_number=0');
+		}
+	}
+?>

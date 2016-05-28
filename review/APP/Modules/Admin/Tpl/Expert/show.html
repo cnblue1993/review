@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+<script language="JavaScript" type="text/JavaScript">
+
+function deleteMjor(reviewID)
+{
+	//alert(reviewID);
+	if(!confirm("真的要删除吗？")){
+			return false;	
+	}		
+	window.location.href="{:U(GROUP_NAME.'/Expert/delete')}?e_id="+reviewID;	
+	return true;
+}
+
+</script>
+    <body>
+    <div id="main">
+			<table id="table2" border=1 cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+				<tr>
+					<th>编号</th>
+					<th>姓名</th>
+					<th>职称</th>
+					<th>专家类别</th>
+					<th>研究方向</th>
+					<th>入职时间</th>
+					<th>工作单位</th>
+					<th>联系电话</th>
+					<th>状态</th>
+					<th>编辑操作</th>
+				</tr>
+
+				<foreach name='data' item='v'>
+				<tr algin="center">
+					<td width="5%">{$v.e_id}</td>
+					<td width="10%">{$v.e_name}</td>
+					<td width="10%">{$v.e_position}</td>
+					<td width="5%">{$v.e_type}</td>
+					<td width="15%">{$v.e_research}</td>
+					<td width="10%">{$v.e_entry_time}</td>
+					<td width="10%">{$v.e_department}</td>
+					<td width="10%">{$v.e_tel}</td>
+					<td width="10%">{$v.e_state}</td>
+					<td width="15%">
+						[<a href="{:U(GROUP_NAME.'/Expert/showe',array('id'=>$v['e_id']))}">修改</a>]
+						<!-- [<a href="{:U(GROUP_NAME.'/Expert/delete',array('id'=>$v['e_id']))}">删除</a>] -->
+						[<a href="#" onClick="javascript:return deleteMjor({$v['e_id']});">删除</a>]
+					</td>
+				</tr>
+				</foreach>
+			</table>
+	</div>
+	</body>
+</html>

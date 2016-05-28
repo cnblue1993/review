@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<script language="JavaScript" type="text/JavaScript">
+	
+	setTimeout('test1({$reviewID},{$reviewID2})',3000);
+
+	function test1(i,j){
+		i=i+1;
+		j=j+1;
+		window.location.href="{:U(GROUP_NAME.'/Login/test')}?i="+i+"&j="+j;
+		
+	}
+	
+</script>
+<p>
+	this is a test:{$reviewID}
+	this is a test:{$reviewID2}
+</p>
+</body>
+</html>

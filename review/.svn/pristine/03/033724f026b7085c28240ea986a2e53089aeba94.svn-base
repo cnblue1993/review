@@ -1,0 +1,5 @@
+BODY TABLE{
+	border-spacing:10px;
+	width:60%;
+	font-size: 25px;
+}

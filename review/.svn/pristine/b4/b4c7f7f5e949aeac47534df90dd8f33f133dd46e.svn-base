@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/print.css" />
+<object id="WebBrowser" classid="ClSID:8856F961-340A-11D0-A96B-00C04Fd705A2" width="0" height="0">
+</object>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>评审表号：{$i+1}</title>
+</head>
+
+
+<script language="JavaScript" type="text/JavaScript">
+  
+    setTimeout('test1({$i},{$sid},{$rid},{$j})',3000);
+    function test1(i,sid,rid,j){
+        document.all.WebBrowser.Execwb(6,2);
+        if(i<j-1){
+            i=i+1;
+            window.location.href="{:U(GROUP_NAME.'/Statistics/expert_response2')}?i="+i+"&sid="+sid+"&rid="+rid;
+        }  
+    }
+    
+</script>
+<body>
+<form id="form1">
+<p id="title">{$review_year}年外专项目专家评审结果表</p>
+<table id="name">
+<tr><td>&nbsp;专家：{$response[$i][0]['e_name']}</td></tr>
+</table>
+<table id="main" align="center" width="98%" border=1 cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+	<tr>
+        <th align="center">序号</th>
+        <th align="center">编号</th>
+		<th align="left" width="200px">所属学院</th>
+		<th align="left">项目名称</th>
+		<th align="center" width="80px">等级</th>
+	</tr>
+<php>$department='';$k=1;</php>
+<foreach name='response[$i]' item='r'>
+
+	<tr>
+    <if condition="$r['p_department'] neq $department">
+    <php>
+        $department=$r['p_department'];
+        $j=1;
+    </php>
+    </if>
+        <td align="center">{$k++}</td>
+        <td align="center">{$j++}</td>
+		<td>{$r.p_department}</td>
+		<td>{$r.p_name}</td>
+		<td align="center">{$r.answer}</td>
+	</tr>
+</foreach>
+</table>
+</form>
+<br>
+<table id="content">
+    <tr>
+        <td align="left" style="font-weight:bold">
+            专家意见：
+        </td>
+        <td>
+        </td>
+    </tr>
+    <foreach name='advice[$i]' item='v'>
+    <tr>
+        <td align="left" colspan=2>
+           {$v['qg_name']} :{$v['advice']}
+        </td>
+    </tr>
+    </foreach>
+    <if condition="$advice[$i]==null">
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;无<br></td></tr>
+    </if>
+</table> 
+<br>
+<table id="content" width="98%" style="font-weight:bold">
+<tr><td align="right" >签名:&nbsp;___________________<br></td></tr> 
+<tr><td align="right" colspan=2>年&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;日</td></tr>  
+</table>
+<br>
+<body>
+<style media=print> 
+.Noprint{display:none;}<!--用本样式在打印时隐藏非打印项目--> 
+.PageNext{page-break-after: always;}<!--控制分页--> 
+</style> 
+<center class="Noprint" >
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(6,6)">直接打印&nbsp;</a>
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(8,1)">页面设置</a>
+</center>
+</html>
+
+</html>

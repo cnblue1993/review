@@ -1,0 +1,1382 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type  content="text/html; charset=gb2312" ><title>附件2</title><!--[if gte mso 9]><xml><w:WordDocument><w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel><w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery><w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery><w:DocumentKind>DocumentNotSpecified</w:DocumentKind><w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing><w:PunctuationKerning></w:PunctuationKerning><w:View>Web</w:View><w:Compatibility><w:DontGrowAutofit/><w:BalanceSingleByteDoubleByteWidth/><w:DoNotExpandShiftReturn/><w:UseFELayout/></w:Compatibility><w:Zoom>0</w:Zoom></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml><w:LatentStyles DefLockedState="false"  DefUnhideWhenUsed="true"  DefSemiHidden="true"  DefQFormat="false"  DefPriority="99"  LatentStyleCount="260" >
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Normal" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footer" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="caption" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of figures" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope return" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="line number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="page number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of authorities" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="macro" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toa heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Title" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Closing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Default Paragraph Font" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Message Header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Subtitle" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Salutation" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Date" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Note Heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Block Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Hyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="FollowedHyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Strong" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Emphasis" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Document Map" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Plain Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="E-mail Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal (Web)" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Acronym" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Cite" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Code" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Definition" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Keyboard" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Preformatted" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Sample" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Typewriter" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Variable" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Normal Table" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation subject" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Simple 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Simple 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Simple 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Classic 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Colorful 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Colorful 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Colorful 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Columns 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table List 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table 3D effects 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table 3D effects 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table 3D effects 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Contemporary" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Elegant" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Professional" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Subtle 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Subtle 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Web 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Web 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Web 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Balloon Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Table Theme" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Light Grid Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Shading 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium List 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Medium Grid 3 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Dark List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Colorful Grid Accent 6" ></w:LsdException>
+</w:LatentStyles></xml><![endif]--><style>
+@font-face{
+font-family:"Times New Roman";
+}
+
+@font-face{
+font-family:"宋体";
+}
+
+@font-face{
+font-family:"Wingdings";
+}
+
+@font-face{
+font-family:"Calibri";
+}
+
+@font-face{
+font-family:"黑体";
+}
+
+@font-face{
+font-family:"仿宋_GB2312";
+}
+
+@list l0:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:39.0000pt;
+mso-level-number-position:left;
+margin-left:39.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l1:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:81.0000pt;
+mso-level-number-position:left;
+margin-left:81.0000pt; text-indent:-18.0000pt; font-family:Wingdings; }
+
+@list l2:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:18.0000pt;
+mso-level-number-position:left;
+margin-left:18.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l3:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:18.0000pt;
+mso-level-number-position:left;
+margin-left:18.0000pt; text-indent:-18.0000pt; font-family:Wingdings; }
+
+@list l4:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:60.0000pt;
+mso-level-number-position:left;
+margin-left:60.0000pt; text-indent:-18.0000pt; font-family:Wingdings; }
+
+@list l5:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:60.0000pt;
+mso-level-number-position:left;
+margin-left:60.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l6:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:39.0000pt;
+mso-level-number-position:left;
+margin-left:39.0000pt; text-indent:-18.0000pt; font-family:Wingdings; }
+
+@list l7:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:102.0000pt;
+mso-level-number-position:left;
+margin-left:102.0000pt; text-indent:-18.0000pt; font-family:Wingdings; }
+
+@list l8:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:81.0000pt;
+mso-level-number-position:left;
+margin-left:81.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l9:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:102.0000pt;
+mso-level-number-position:left;
+margin-left:102.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l10:level1{
+mso-level-start-at:4;
+mso-level-number-format:decimal;
+mso-level-suffix:none;
+mso-level-text:"（%1）";
+mso-level-tab-stop:0.0000pt;
+mso-level-number-position:left;
+margin-left:0.0000pt; text-indent:0.0000pt; margin-left:0.0000pt;
+text-indent:0.0000pt;
+font-family:'Times New Roman'; }
+
+@list l10:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l10:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l10:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l10:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l10:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l10:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l10:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l10:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l11:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:39.0000pt;
+mso-level-number-position:left;
+margin-left:39.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l11:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l11:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l11:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l11:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l11:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l11:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l11:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l11:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l12:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:102.0000pt;
+mso-level-number-position:left;
+margin-left:102.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l12:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l12:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l12:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l12:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l12:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l12:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l12:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l12:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l13:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:81.0000pt;
+mso-level-number-position:left;
+margin-left:81.0000pt; text-indent:-18.0000pt; font-family:Wingdings; }
+
+@list l13:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l13:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l13:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l13:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l13:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l13:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l13:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l13:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l14:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:18.0000pt;
+mso-level-number-position:left;
+margin-left:18.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l14:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l14:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l14:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l14:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l14:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l14:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l14:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l14:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l15:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:18.0000pt;
+mso-level-number-position:left;
+margin-left:18.0000pt; text-indent:-18.0000pt; font-family:Wingdings; }
+
+@list l15:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l15:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l15:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l15:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l15:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l15:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l15:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l15:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l16:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:60.0000pt;
+mso-level-number-position:left;
+margin-left:60.0000pt; text-indent:-18.0000pt; font-family:Wingdings; }
+
+@list l16:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l16:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l16:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l16:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l16:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l16:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l16:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l16:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l17:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:60.0000pt;
+mso-level-number-position:left;
+margin-left:60.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l17:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l17:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l17:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l17:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l17:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l17:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l17:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l17:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l18:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:39.0000pt;
+mso-level-number-position:left;
+margin-left:39.0000pt; text-indent:-18.0000pt; font-family:Wingdings; }
+
+@list l18:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l18:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l18:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l18:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l18:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l18:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l18:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l18:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l19:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:\F06C;
+mso-level-tab-stop:102.0000pt;
+mso-level-number-position:left;
+margin-left:102.0000pt; text-indent:-18.0000pt; font-family:Wingdings; }
+
+@list l19:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l19:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l19:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l19:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l19:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l19:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l19:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l19:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l20:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:81.0000pt;
+mso-level-number-position:left;
+margin-left:81.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l20:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l20:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l20:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l20:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l20:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l20:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l20:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+@list l20:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt; text-indent:-18.0000pt; font-family:'Times New Roman'; }
+
+p.MsoNormal{
+mso-style-name:正文;
+mso-style-noshow:yes;
+mso-style-parent:"";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+mso-pagination:none;
+text-align:justify;
+text-justify:inter-ideograph;
+font-family:Calibri;
+mso-fareast-font-family:宋体;
+font-size:10.5000pt;
+mso-font-kerning:1.0000pt;
+}
+
+h1{
+mso-style-name:"标题 1";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+mso-pagination:widow-orphan;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:24.0000pt;
+mso-font-kerning:22.0000pt;
+}
+
+h2{
+mso-style-name:"标题 2";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+mso-pagination:widow-orphan;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:18.0000pt;
+}
+
+h3{
+mso-style-name:"标题 3";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+mso-pagination:widow-orphan;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:13.5000pt;
+}
+
+h4{
+mso-style-name:"标题 4";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+mso-pagination:widow-orphan;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:12.0000pt;
+}
+
+h5{
+mso-style-name:"标题 5";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+mso-pagination:widow-orphan;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:10.0000pt;
+}
+
+h6{
+mso-style-name:"标题 6";
+mso-style-next:正文;
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+mso-pagination:widow-orphan;
+text-align:left;
+font-family:宋体;
+font-weight:bold;
+font-size:7.5000pt;
+}
+
+span.10{
+font-family:Wingdings;
+}
+
+span.15{
+font-family:'Times New Roman';
+}
+
+span.16{
+font-family:'Times New Roman';
+}
+
+span.17{
+font-family:Calibri;
+font-size:9.0000pt;
+mso-font-kerning:1.0000pt;
+}
+
+p.MsoHeader{
+mso-style-name:页眉;
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+border-bottom:0.7500pt solid windowtext;
+mso-border-bottom-alt:0.7500pt solid windowtext;
+padding:0pt 0pt 1pt 0pt ;
+layout-grid-mode:char;
+mso-pagination:none;
+text-align:center;
+font-family:Calibri;
+mso-fareast-font-family:宋体;
+font-size:9.0000pt;
+mso-font-kerning:1.0000pt;
+}
+
+p.MsoFooter{
+mso-style-name:页脚;
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+layout-grid-mode:char;
+mso-pagination:none;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:宋体;
+font-size:9.0000pt;
+mso-font-kerning:1.0000pt;
+}
+
+p.pre{
+mso-style-name:"HTML 预设格式";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:0.0000pt;
+margin-left:0.0000pt;
+mso-pagination:widow-orphan;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+p.p{
+mso-style-name:"普通\(网站\)";
+margin-top:5.0000pt;
+margin-right:0.0000pt;
+margin-bottom:5.0000pt;
+margin-left:0.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+mso-pagination:widow-orphan;
+text-align:left;
+font-family:宋体;
+font-size:12.0000pt;
+}
+
+span.msoIns{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:underline;
+text-underline:single;
+color:blue;
+}
+
+span.msoDel{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:line-through;
+color:red;
+}
+
+table.MsoNormalTable{
+mso-style-name:普通表格;
+mso-style-parent:"";
+mso-style-noshow:yes;
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-padding-alt:0.0000pt 5.4000pt 0.0000pt 5.4000pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-family:'Times New Roman';
+font-size:10.0000pt;
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;
+}
+@page{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}@page Section0{
+margin-top:104.9000pt;
+margin-bottom:72.0000pt;
+margin-left:79.4000pt;
+margin-right:89.8500pt;
+size:595.3000pt 841.9000pt;
+layout-grid:15.6000pt;
+}
+div.Section0{page:Section0;}</style></head><body style="tab-interval:21pt; text-justify-trim:punctuation; " ><!--StartFragment--><div class="Section0"  style="layout-grid:15.6000pt; " ><p class=MsoNormal  style="text-align:center; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:黑体; mso-hansi-font-family:Calibri; font-size:16.0000pt; mso-font-kerning:1.0000pt; " >附件2</span><span style="mso-spacerun:'yes'; font-family:黑体; mso-hansi-font-family:Calibri; font-size:16.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="text-align:center; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:Calibri; font-size:14.0000pt; mso-font-kerning:1.0000pt; " >西南民族大学外专引智项目合页申请表</span><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:Calibri; font-size:14.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:center; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:Calibri; mso-bidi-font-family:宋体; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >单位名称：西南民族大学青藏高原研究院</span><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:Calibri; mso-bidi-font-family:宋体; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><table class=MsoNormalTable  align=center  style="border-collapse:collapse; width:430.1000pt; margin-left:6.7500pt; mso-table-layout-alt:fixed; mso-padding-alt:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; " ><tr style="height:22.1500pt; " ><td width=166  valign=top  colspan=2  style="width:124.6500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:0.5000pt solid rgb(0,0,0); mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >项目名称</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=407  valign=top  colspan=5  style="width:305.4500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:0.5000pt solid rgb(0,0,0); mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >青藏高原特有草种抗逆性研究</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td></tr><tr style="height:15.3000pt; " ><td width=166  valign=top  colspan=2  style="width:124.6500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >申请级别</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=123  valign=top  colspan=2  style="width:92.3500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >一般&nbsp;<font face="Times New Roman" >/</font></span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >&nbsp;重点</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=120  valign=top  colspan=2  style="width:90.0000pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:0.5000pt solid rgb(0,0,0); mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:center; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >科目类别</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=164  valign=top  style="width:123.1000pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:0.5000pt solid rgb(0,0,0); mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >&nbsp;&nbsp;文科&nbsp;<font face="Times New Roman" >/&nbsp;</font></span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >理工科</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td></tr><tr style="height:29.7500pt; " ><td width=166  valign=top  colspan=2  style="width:124.6500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >外国专家学术背景</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=407  valign=top  colspan=5  style="width:305.4500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><a name="OLE_LINK28" >Dr.&nbsp;Baoluo&nbsp;Ma</a></span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Education:</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >B.S.A.&#9;</span><span style="mso-spacerun:'yes'; font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Henan&nbsp;Agricultural&nbsp;University</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&nbsp;&nbsp;19</span><span style="mso-spacerun:'yes'; font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >77</span><span style="font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Ph.D&nbsp;&#9;</span><span style="mso-spacerun:'yes'; font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >McGill&nbsp;University</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&nbsp;&nbsp;&nbsp;1986</span><span style="font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Postdoctoral&nbsp;&nbsp;</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Guelph</span><span style="mso-spacerun:'yes'; font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&nbsp;University&nbsp;1992</span><span style="font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Employment:</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " >1996-present,&nbsp;</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Principal&nbsp;Research&nbsp;Scientist,</span><span style="mso-spacerun:'yes'; font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&nbsp;Eastern&nbsp;Cereal&nbsp;and&nbsp;Oilseed&nbsp;Research&nbsp;Centre,&nbsp;Agriculture&nbsp;and&nbsp;Agri-Food&nbsp;Canada.</span><span style="font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >Dr.</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#160;</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >Cynthia&nbsp;Grant</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Education:</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >B.S.A.&#9;University&nbsp;of&nbsp;Manitoba&nbsp;&nbsp;&nbsp;1980</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >M.Sc.&#9;University&nbsp;of&nbsp;Manitoba&nbsp;&#9;1982</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Ph.D&nbsp;&#9;University&nbsp;of&nbsp;Manitoba&nbsp;&nbsp;&nbsp;1986</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Employment:</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >198283&#9;Information&nbsp;Officer,&nbsp;Research&nbsp;Station,&nbsp;Brandon,&nbsp;Manitoba</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >198386&#9;Biologist,&nbsp;Ph.D.&nbsp;Training,&nbsp;Univ.&nbsp;of&nbsp;Manitoba&#9;&#9;&#9;&#9;&#9;</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >1986present</span><span style="font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#160;</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Research&nbsp;Scientist,&nbsp;Research&nbsp;Station,&nbsp;Brandon,&nbsp;Manitoba</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >1995-1999</span><span style="font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#160;</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Program&nbsp;Leader,&nbsp;Land&nbsp;Management&nbsp;Program</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >1991-present&#9;Adjunct&nbsp;Professor,&nbsp;University&nbsp;of&nbsp;Manitoba,&nbsp;Soil&nbsp;Science&nbsp;Dept.</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:70.8500pt; text-indent:-72.0000pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >2002-present&#9;Leader&nbsp;of&nbsp;Canadian&nbsp;Trace&nbsp;Element&nbsp;Indicator&nbsp;program&nbsp;for&nbsp;NAHARP</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:70.8500pt; text-indent:-72.0000pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >2001-2007&nbsp;Leader&nbsp;of&nbsp;AAFC&nbsp;National&nbsp;Study&nbsp;on&nbsp;Environmental&nbsp;Management&nbsp;of&nbsp;Fertilizer&nbsp;products&nbsp;</span><span style="font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:70.8500pt; text-indent:-72.0000pt; line-height:113%; " ><span style="font-family:宋体; mso-ascii-font-family:'Times New Roman'; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >Dr.</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#160;</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >Shabtai&nbsp;Bittman</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >Education:</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >PhD&#9;1985&#9;Crop&nbsp;Physiology&#9;U.&nbsp;Sask.</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >MSc&#9;1975&#9;Agronomy&#9;McGill&nbsp;U.</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >BSc&#9;1972&#9;Plant&nbsp;Ecology&#9;McGill&nbsp;U.</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:-1.1500pt; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Employment:</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Principal&nbsp;Research&nbsp;Scientist,&nbsp;Agassiz&nbsp;Research&nbsp;Centre:&nbsp;2006-present</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Head&nbsp;of&nbsp;Soil&nbsp;and&nbsp;Environmental&nbsp;Protection&nbsp;Section:&nbsp;1993-1999</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Research&nbsp;Scientist,&nbsp;Agassiz&nbsp;Research&nbsp;Centre:&nbsp;1987-2007</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Research&nbsp;Scientist,&nbsp;Melfort&nbsp;Research&nbsp;Centre:&nbsp;1985-1987</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Research&nbsp;Bilogist,&nbsp;Melfort&nbsp;Research&nbsp;Centre:&nbsp;1978-1985</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Research&nbsp;Biologist,&nbsp;Nappan&nbsp;Experimental&nbsp;Farm:&nbsp;1977-1978</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; color:rgb(0,0,0); font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Lecturer,&nbsp;Macdonald&nbsp;College&nbsp;of&nbsp;McGill&nbsp;University:&nbsp;1976</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >Dr.&nbsp;Bruce&nbsp;Coulman</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >Education:</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:left; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >B.S.A.&nbsp;(Honours)&nbsp;University&nbsp;of&nbsp;Saskatchewan&nbsp;&nbsp;&#9;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1971&#9;</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:left; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >M.Sc.&nbsp;University&nbsp;of&nbsp;Saskatchewan&nbsp;(Plant&nbsp;Breeding)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1973&#9;</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:left; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >Ph.D.&nbsp;University&nbsp;of&nbsp;Manitoba&nbsp;(Plant&nbsp;Breeding)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1976</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >Present&nbsp;position:</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >Professor,&nbsp;Forage&nbsp;Crop&nbsp;Breeding&nbsp;and&nbsp;Management&#9;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2005-</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >Plant&nbsp;Sciences&nbsp;Department,&nbsp;University&nbsp;of&nbsp;Saskatchewan</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-weight:bold; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Research</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&nbsp;:</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Forage&nbsp;crop&nbsp;breeding&nbsp;and&nbsp;genetics</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Forage&nbsp;crop&nbsp;management&nbsp;and&nbsp;physiology</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >Forage-&nbsp;and&nbsp;turf-seed&nbsp;production&nbsp;management</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:16.0000pt; mso-font-kerning:0.0000pt; " >Dr.</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:14.0000pt; mso-font-kerning:1.0000pt; " >&nbsp;Philippe&nbsp;Seguin</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-weight:bold; font-size:16.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >Associate&nbsp;Professor&nbsp;and&nbsp;Chair</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><br></span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >Department&nbsp;of&nbsp;Plant&nbsp;Science,&nbsp;McGill&nbsp;University.</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; background:rgb(255,255,252); " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:宋体; letter-spacing:0.1500pt; font-size:12.0000pt; mso-font-kerning:0.0000pt; background:rgb(255,255,252); mso-shading:rgb(255,255,252); " >Dr.&nbsp;Seguin&nbsp;conducts&nbsp;research&nbsp;on&nbsp;the&nbsp;management,&nbsp;physiology,&nbsp;and&nbsp;ecology&nbsp;of&nbsp;field&nbsp;crops.&nbsp;Current&nbsp;research&nbsp;focuses&nbsp;on&nbsp;the&nbsp;evaluation&nbsp;of&nbsp;new&nbsp;crop&nbsp;species&nbsp;and&nbsp;new&nbsp;crop&nbsp;uses&nbsp;(e.g,&nbsp;as&nbsp;source&nbsp;of&nbsp;health-beneficial&nbsp;compounds&nbsp;and&nbsp;biofuels)&nbsp;for&nbsp;eastern&nbsp;Canada.&nbsp;He&nbsp;is&nbsp;also&nbsp;responsible&nbsp;for&nbsp;the&nbsp;cultivar&nbsp;evaluation&nbsp;program&nbsp;of&nbsp;forage&nbsp;crops,&nbsp;sweet&nbsp;corn,&nbsp;peas,&nbsp;and&nbsp;beans&nbsp;in&nbsp;southwestern&nbsp;Qu&#233;bec.</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:宋体; letter-spacing:0.1500pt; font-size:12.0000pt; mso-font-kerning:0.0000pt; background:rgb(255,255,252); mso-shading:rgb(255,255,252); " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:113%; " ><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p>&nbsp;</o:p></span></p></td></tr><tr style="height:29.4500pt; " ><td width=166  valign=top  colspan=2  style="width:124.6500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >选题价值和意义</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=407  valign=top  colspan=5  style="width:305.4500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:28.0000pt; mso-char-indent-count:2.0000; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >长期以来，国外畜牧业发达国家非常重视牧草种质资源保护和利用，不断从世界各国收集、丰富自己的基因库，并应用先进技术开展种质资源的保护和开发利用，利用生物技术对抗逆性草种资源进行改良优化和种质创新，成为目前草业研究领域的热点和新方向。加拿大等畜牧业发达国家的资源考察收集逐步由过去的普遍性收集演变为专业化的目标性重点收集，更多的选择在极端地区收集特殊的抗寒、耐盐碱材料，通过生物技术改良现有牧草的品质、产量、抗逆性和抗病性等。</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:28.0000pt; mso-char-indent-count:2.0000; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >我国牧草种质资源工作起步较晚，青藏高原地区受地理位置的限制发展更为滞后，距草业发展对牧草资源的要求差距较大，牧草资源评价鉴定研究滞后，运用现代基因技术和分子遗传育种技术在基因挖掘和资源研究方面起步较晚，优异基因挖掘和品种创新创制落后，造成我国育成新品种数量较少，资源利用率较低。</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:28.0000pt; mso-char-indent-count:2.0000; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >加拿大作为世界上重要的饲草生产和出口国之一，其在优质饲草选育，特别是燕麦和披碱草的新品种选育、抗性鉴定、栽培管理及加工利用等方面具有明显的优势。加强同加拿大等牧草育种水平较高的国家的合作交流，不断引进寒冷地区已育成的高抗性牧草品种，同时充分挖掘青藏高原高寒环境条件下适生的抗性种质资源，通过生物技术手段进行种质创新，筛选高寒牧区生态环境治理和草地畜牧业生产急需的牧草品种，是实现高寒地区生态安全和维护草地畜牧业可持续发展的有效途径。</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:28.0000pt; mso-char-indent-count:2.0000; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:宋体; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td></tr><tr style="height:27.8000pt; " ><td width=166  valign=top  colspan=2  style="width:124.6500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >研究基础与实力</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=407  valign=top  colspan=5  style="width:305.4500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:24.0000pt; mso-char-indent-count:2.0000; mso-pagination:widow-orphan; line-height:150%; " ><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-hansi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:24.0000pt; mso-char-indent-count:2.0000; mso-pagination:widow-orphan; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-hansi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >本研究团队</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#8220;</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-hansi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >青藏高原特有草种质创新及生态恢复</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#8221;</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-hansi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >为四川省教育厅创新团队，长期以来开展青藏高原草种质资源的收集、评价及创新工作。先后选育等级品种</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >11</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-hansi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >个，获得省部级科研奖励</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >6</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-hansi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >项，发表论文</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >200</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-hansi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >余篇。</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p>&nbsp;</o:p></span></p></td></tr><tr style="height:59.4500pt; " ><td width=166  valign=top  colspan=2  style="width:124.6500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >论证的科学性与可行性</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=407  valign=top  colspan=5  style="width:305.4500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:24.0000pt; mso-char-indent-count:2.0000; mso-pagination:widow-orphan; line-height:150%; " ><span style="font-family:仿宋_GB2312; mso-hansi-font-family:Calibri; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:24.0000pt; mso-char-indent-count:2.0000; mso-pagination:widow-orphan; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:Calibri; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >本项目针对青藏高原地区优良饲草资源缺乏的问题，通过引智引入新的方法、技术等，并开展牧草抗逆相关方面的合作研究，可以为青藏高原地区优良饲草的生产及加工利用提供指导，同时对该地区草地生态建设及畜牧业发展具有重要意义。</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:Calibri; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:24.0000pt; mso-char-indent-count:2.0000; mso-pagination:widow-orphan; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:Calibri; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >青藏高原研究院是西南民族大学一体两翼发展战略的重要实施单位。单位的拥有完善的科研条件和平台，在红原等地建立有野外综合试验站，同时，申请团队拟建设<font face="Calibri" >&#8220;</font><font face="仿宋_GB2312" >四川省抗逆种质创新及生态修复工程实验室</font><font face="Calibri" >&#8221;</font><font face="仿宋_GB2312" >的申请已获批，为开展牧草抗逆研究提供了便利条件，完全满足项目的开展。</font></span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p>&nbsp;</o:p></span></p></td></tr><tr style="height:34.6500pt; " ><td width=166  valign=top  colspan=2  style="width:124.6500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid windowtext; mso-border-bottom-alt:0.5000pt solid windowtext; " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >课题组成员构成</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=407  valign=top  colspan=5  style="width:305.4500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid windowtext; mso-border-bottom-alt:0.5000pt solid windowtext; " ><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:center; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >（仅限职称、研究方向、课题任务）</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >项目负责人</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >，教授，牧草育种栽培及人工草地，负责人</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >田莉华</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >，助理研究员，牧草育种栽培</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >陈有军，助理研究员，牧草育种栽培</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " >陈仕勇，讲师，牧草遗传育种</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="mso-pagination:widow-orphan; line-height:150%; " ><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:0.0000pt; " ><o:p>&nbsp;</o:p></span></p></td></tr><tr style="height:24.7500pt; " ><td width=166  valign=top  colspan=2  style="width:124.6500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid windowtext; " ><p class=MsoNormal ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >详细方案与预算</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=407  valign=top  colspan=5  style="width:305.4500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid windowtext; border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >（<font face="Times New Roman" >1</font></span><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >）国际旅费</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:30.0000pt; mso-char-indent-count:2.5000; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >国际机票<font face="Times New Roman" >1.5</font></span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >万</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#215;</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >5</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >人次<font face="Times New Roman" >=</font></span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >7.5</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >万</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >（<font face="Times New Roman" >2</font></span><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >）食宿交通</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:30.0000pt; mso-char-indent-count:2.5000; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >专家零用费：<font face="Times New Roman" >300</font></span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >元</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >/</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >天</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#215;10</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >天</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#215;</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >5</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >人次<font face="Times New Roman" >=1.</font></span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >5</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >万</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:30.0000pt; mso-char-indent-count:2.5000; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >专家生活费：</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >3</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >00</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >元</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >/</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >天</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#215;10</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >天</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#215;</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >5</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >人次<font face="Times New Roman" >=</font></span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >1.5</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >万</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >（<font face="Times New Roman" >3</font></span><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >）国内城市间交通</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:30.0000pt; mso-char-indent-count:2.5000; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >城市间交通费：</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >5</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >人次<font face="Times New Roman" >&#215;3000</font></span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >元</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >/</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >人</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >=1.</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >5</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >万</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:0.0000pt; line-height:150%; mso-list:l10 level1 lfo1; " ><![if !supportLists]><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><span style='mso-list:Ignore; ' >（4）</span></span><![endif]><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >津贴补助</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&nbsp;&nbsp;&nbsp;&nbsp;津贴补助：</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >600</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >元</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >/</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >天</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#215;10</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >天</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >&#215;</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >5</span><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >人次<font face="Times New Roman" >=</font></span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >3</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >万</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >（<font face="Times New Roman" >5</font></span><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >）其他（需说明）</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:0.0000pt; text-indent:30.0000pt; mso-char-indent-count:2.5000; line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >外出调研随同人员差旅费用</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >1</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >万</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p><p class=MsoNormal  style="line-height:150%; " ><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="line-height:150%; " ><span style="mso-spacerun:'yes'; font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >总计：<font face="Times New Roman" >1</font></span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; mso-bidi-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >6</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:12.0000pt; mso-font-kerning:1.0000pt; " >万</span><span style="font-family:'Times New Roman'; mso-fareast-font-family:仿宋_GB2312; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td></tr><tr style="height:21.0000pt; " ><td width=573  valign=top  colspan=7  style="width:430.1000pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:0.5000pt solid rgb(0,0,0); mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid windowtext; mso-border-bottom-alt:0.5000pt solid windowtext; " ><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:center; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >以下信息由评审专家填写</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td></tr><tr style="height:48.5500pt; " ><td width=92  valign=top  style="width:69.5500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid windowtext; border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >专家意见</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=480  valign=top  colspan=6  style="width:360.5500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:0.5000pt solid windowtext; mso-border-top-alt:0.5000pt solid windowtext; border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal ><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p>&nbsp;</o:p></span></p></td></tr><tr style="height:28.1500pt; " ><td width=92  valign=top  rowspan=2  style="width:69.5500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:31.8750pt none rgb(255,255,255); mso-border-top-alt:31.8750pt none rgb(255,255,255); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >是否立项</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=132  valign=top  colspan=2  style="width:99.2500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:center; " ><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >是</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=348  valign=top  colspan=4  style="width:261.3000pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:0.5000pt solid rgb(0,0,0); mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:center; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >项目级别</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td></tr><tr style="height:27.4500pt; " ><td width=132  valign=top  colspan=2  style="width:99.2500pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:center; " ><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >否</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=170  valign=top  colspan=2  style="width:127.9000pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:none; ; mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:center; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >一般</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td><td width=177  valign=top  colspan=2  style="width:133.4000pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:31.8750pt none rgb(255,255,255); mso-border-left-alt:31.8750pt none rgb(255,255,255); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:0.5000pt solid rgb(0,0,0); mso-border-top-alt:0.5000pt solid rgb(0,0,0); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; text-align:center; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >重点</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td></tr><tr style="height:42.3500pt; " ><td width=573  valign=center  colspan=7  style="width:430.1000pt; padding:0.0000pt 5.4000pt 0.0000pt 5.4000pt ; border-left:0.5000pt solid rgb(0,0,0); mso-border-left-alt:0.5000pt solid rgb(0,0,0); border-right:0.5000pt solid rgb(0,0,0); mso-border-right-alt:0.5000pt solid rgb(0,0,0); border-top:31.8750pt none rgb(255,255,255); mso-border-top-alt:31.8750pt none rgb(255,255,255); border-bottom:0.5000pt solid rgb(0,0,0); mso-border-bottom-alt:0.5000pt solid rgb(0,0,0); " ><p class=MsoNormal  style="mso-pagination:widow-orphan; " ><span style="mso-spacerun:'yes'; font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " >备注：</span><span style="font-family:仿宋_GB2312; mso-hansi-font-family:'Times New Roman'; font-size:14.0000pt; mso-font-kerning:0.0000pt; " ><o:p></o:p></span></p></td></tr></table><p class=MsoNormal  style="line-height:22.0000pt; mso-line-height-rule:exactly; " ><span style="mso-spacerun:'yes'; font-family:黑体; mso-hansi-font-family:Calibri; font-size:16.0000pt; mso-font-kerning:1.0000pt; " >&nbsp;</span><span style="mso-spacerun:'yes'; font-family:黑体; mso-hansi-font-family:Calibri; font-size:16.0000pt; mso-font-kerning:1.0000pt; " ><o:p></o:p></span></p></div><!--EndFragment--></body></html>

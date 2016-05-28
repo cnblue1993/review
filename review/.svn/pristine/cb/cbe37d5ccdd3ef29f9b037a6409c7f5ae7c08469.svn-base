@@ -1,0 +1,21 @@
+#title{
+	font-family: SimHei;
+	font-size: 22px;
+	text-align: center;
+	vertical-align: center;
+}
+#content{
+	font-family: SimSun;
+	font-size:18px;
+	border-spacing: 18px;
+}
+#main{
+	font-family: SimSun;
+	font-size:18px;
+}
+#pwd{
+	font-family: SimSun;
+	font-size:18px;
+	cell-padding:0;
+	border:1px solid #000;
+}

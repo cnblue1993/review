@@ -1,0 +1,28 @@
+<script language="javascript" src="__PUBLIC__/Js/jquery-1.4.2.min.js"></script> 
+<script> 
+function show(obj,id) { 
+var objDiv = $("#"+id+""); 
+$(objDiv).css("display","block"); 
+$(objDiv).css("left", event.clientX); 
+$(objDiv).css("top", event.clientY + 10); 
+} 
+function hide(obj,id) { 
+var objDiv = $("#"+id+""); 
+$(objDiv).css("display", "none"); 
+} 
+</script> 
+ 
+<!--http://www.ablanxue.com/prone_3421_1.html--> 
+ 
+<div id="mydiv1" style="position:absolute;display:none;border:1px solid silver;background:silver;"> 
+提示1效果 
+</div> 
+<div id="{$p[0]['p_id']}" style="position:absolute;display:none;border:1px solid silver;background:silver;"> 
+{$p[0]['p_principal']}
+</div> 
+ 
+<a id="t1" onMouseOver="javascript:show(this,'mydiv1');" onMouseOut="hide(this,'mydiv1')">鼠标放上去1</a> 
+<br><br><br><br><br> 
+<a id="t2" onMouseOver="javascript:show(this,'{$p[0]['p_id']}');" onMouseOut="hide(this,'{$p[0]['p_id']}')">{$p[0]['p_name']}</a> 
+
+<input type="button" value="提交">

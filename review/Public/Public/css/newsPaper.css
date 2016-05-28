@@ -1,0 +1,25 @@
+.fontred {
+	font-weight: bolder;
+	color: #FF0000;
+	text-decoration: none;
+}
+.font12 {
+	font-size: 14px;
+	color: #333333;
+	text-decoration: none;
+}
+.fontlarge {
+	color: #000000;
+	text-decoration: none;
+	font: bolder 36px "华文行楷";
+}
+.lineTable {
+	border: 1px solid #CCCCCC;
+}
+.fontwhite {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+.padMiddle {
+	padding: 20px;
+}

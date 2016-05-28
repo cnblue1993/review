@@ -1,0 +1,95 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+<script language="JavaScript" type="text/JavaScript">
+    
+    setTimeout('test1(<?php echo ($rid); ?>)',10000);
+
+    function test1(rid){
+        window.location.href="<?php echo U(GROUP_NAME.'/Statistics/prepared');?>?rid="+rid;
+        
+    }
+    
+</script>
+<script language="javascript" type="text/JavaScript">
+function Counter(nMax,nInterval)
+{
+this.maxTime=nMax;
+this.interval=nInterval;
+this.objId="timer";
+this.obj=null;
+this.num=this.maxTime;
+this.timer=null;
+this.start=function()
+{ 
+this.obj=document.getElementById(this.objId);
+if(this.num>0) setTimeout(this.run,this.interval*1000);
+};
+this.run=function()
+{
+if(myCounter.num>0) 
+{
+myCounter.num--;
+myCounter.obj.innerHTML=myCounter.num;
+myCounter.timer=setTimeout(myCounter.run,myCounter.interval*1000);
+}
+else clearTimeout(myCounter.timer);
+};
+this.show=function()
+{
+document.write("<span id="+this.objId+">"+this.num+"</span>");
+this.obj=document.getElementById(this.objId);
+//alert(this.obj.innerHTML);
+}
+}
+</script>   
+<body onload="myCounter.start();">
+<script language="JavaScript" type="text/JavaScript">
+var myCounter=new Counter(10,1);
+</script>
+
+<p>距离刷新还有
+<script language="JavaScript" type="text/JavaScript">
+myCounter.show();
+</script>
+秒钟!</p>
+    
+<body >
+<div id="time"></div>
+<div id="main">
+<form id="form1">
+			<table id="table2" border=1 cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+				<tr>
+					<td colspan='7' align="center">各项目评审情况</td>
+				</tr>
+				<tr>
+					<th width=10%>项目编号</th>
+					<th width=20%>项目名称</th>
+					<th width=10%>不通过票数</th>
+					<th width=10%>一般票数</th>
+					<th width=10%>重点票数</th>
+					<th width=10%>该组投票专家数</th>
+					<th width=10%>当前等级</th>
+				</tr>
+<?php $surveylist=M('survey')->where('r_id='.$rid)->select(); ?>
+		<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
+					<td><?php echo ($v["p_number"]); ?></td>
+					<td><?php echo ($v["p_name"]); ?></td>
+					<td><?php echo ($middle_result[$v['p_id']]['noPass']); ?></td>
+					<td><?php echo ($middle_result[$v['p_id']]['normal']); ?></td>
+					<td><?php echo ($middle_result[$v['p_id']]['important']); ?></td>
+					<td>
+						<?php if(is_array($surveylist)): foreach($surveylist as $key=>$r): if($r['s_id']==$middle_result[$v['p_id']]['sid']): echo ($r['voter_sum']); endif; endforeach; endif; ?>
+					</td>
+					<td>
+						<!-- <input type='text' name='p_result' value="<?php echo ($data[$v['p_id']]); ?>" /> -->
+						<?php echo ($data[$v['p_id']]); ?>
+					</td>
+				</tr><?php endforeach; endif; ?>
+	</table>
+</form>
+</div>
+</body>
+</html>

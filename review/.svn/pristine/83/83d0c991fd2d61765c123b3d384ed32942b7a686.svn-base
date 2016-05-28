@@ -1,0 +1,92 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<script type="text/javascript"> 
+function check_all(obj,cName) 
+{ 
+    var checkboxs = document.getElementsByName(cName); 
+    for(var i=0;i<checkboxs.length;i++){checkboxs[i].checked = obj.checked;} 
+} 
+</script> 
+	</head> 
+<script language="JavaScript" type="text/JavaScript">
+
+function deleteMjor(reviewID)
+{
+	//alert(reviewID);
+	if(!confirm("真的要删除吗？")){
+			return false;	
+	}		
+	window.location.href="<?php echo U(GROUP_NAME.'/Excel/delete');?>?p_id="+reviewID;	
+	return true;
+}
+
+</script>
+    <body>	
+<div id="main">
+<form method="post" action="<?php echo U(GROUP_NAME.'/Excel/show');?>" >
+<table id="select" border=0>
+	<tr align="center">
+		<td align="right">请选择所属学院：</td>	
+		<td>
+    	<select id="1" name="department">
+    	<option value=''>请选择</option>
+    	<?php if(is_array($data)): foreach($data as $key=>$v): ?><option value='<?php echo ($v["d_name"]); ?>'><?php echo ($v["d_name"]); ?></option><?php endforeach; endif; ?>
+		</select>
+		</td>
+		<td align="right">请选择评审活动：</td>
+		<td>
+    	<select id="2" name="r_id">
+    	<option value=''>请选择</option>
+    	<?php if(is_array($review)): foreach($review as $key=>$v): ?><option value='<?php echo ($v["r_id"]); ?>'><?php echo ($v["r_name"]); ?></option><?php endforeach; endif; ?>
+		</select>
+		</td>
+		<td> 
+    		<input type="submit" class="submit" value="查找"/>
+    	</td>
+	</tr>
+</table>
+</form>
+<form action="<?php echo U(GROUP_NAME.'/Excel/addquestion');?>" method="post">
+			<table id="table2" border=1 cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+				<tr>
+					<td colspan="10" align="center">请添加本次评选的项目</td>
+				</tr>
+				<tr>
+					<th>编号</th>
+					<th>名称</th>
+					<th>申报级别</th>
+					<th>所属学院</th>
+					<th>经费</th>
+					<th>负责人</th>
+					<th>编辑</th>
+				</tr>
+
+				<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
+					<!-- <td width=10% >
+						[<input type="checkbox" name="checkbox[]" value="<?php echo ($v["p_id"]); ?>"/>]<?php echo ($v["p_id"]); ?>
+					</td> -->
+					<td width=5%><?php echo ($v["p_id"]); ?></td>
+					<td width=30% align="left"><?php echo ($v["p_name"]); ?></td>
+					<td width=5%><?php echo ($v["p_rank"]); ?></td>
+					<td width=18%><?php echo ($v["p_department"]); ?></td>
+					<td width=10%><?php echo ($v["p_funds"]); ?></td>
+					<td width=10%><?php echo ($v["p_principal"]); ?></td>
+					<td width=18%>
+						<!-- [<a href="<?php echo U(GROUP_NAME.'/Excel/editor',array('p_id'=>$v['p_id']));?>">修改</a>] -->
+						<!-- [<a href="<?php echo U(GROUP_NAME.'/Excel/delete',array('p_id'=>$v['p_id'],'r_id'=>$v['r_id']));?>">删除</a>] -->
+						[<a href="#" onClick="javascript:return deleteMjor(<?php echo ($v['p_id']); ?>);">删除</a>]
+					</td>
+				</tr><?php endforeach; endif; ?>
+			<tr>
+				<td colspan="10" align="center">
+				<!-- <input type="checkbox" name="all" onclick="check_all(this,'checkbox[]')" />全部选择 -->
+				<?php echo ($page); ?>
+			</td>
+			</tr>
+			</table>
+	</form>	
+	</div>
+	</body>
+</html>

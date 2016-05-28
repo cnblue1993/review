@@ -1,0 +1,257 @@
+@charset "utf-8";
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #fff;
+	
+}
+.mya{
+	font-size: large;
+}
+.mycolor{
+	color:#fff;
+}
+
+.mydiv{
+
+	background:#57CFED;
+	height:200px;
+	width:900px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:xx-large;
+	color: #F00;
+
+	
+}
+.mytable{
+	color:#0A0A0A;
+}
+
+a {
+	font-size: 9pt;
+	color: #999999;
+}
+a:link {
+	text-decoration: none;
+	color: #333333;
+}
+a:visited {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: underline;
+	color: #666666;
+}
+a:active {
+	text-decoration: none;
+	color: #666666;
+}.wxq {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 150%;
+}
+ol,ul{
+	list-style:none;
+}
+a{
+	color:#51504f;
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+.fl
+{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.top-list{
+	width:980px;
+	height:35px;
+	line-height:35px;
+	margin:0 auto;
+}
+.top-list .l-list
+{
+	float:none;
+}
+.top-list ul li{
+	float:left;
+	padding-right:20px;
+}.top-list ul li a{
+	color:#CCCCCC;
+}
+.top-list ul li a:hover{
+	color:#FFFFFF;
+	text-decoration:
+	underline;
+}
+.top-list .r-list{
+	float:right;
+}
+.top-list .r-list li{
+	padding:0 0 0 20px;
+}
+.top-search-wrap{
+	width:100%;
+	height:80px;
+	background:#330099;
+	background-color: #0066;
+}
+.top-search-wrap .top-search{
+	width:980px;
+	height:80px;
+	margin:0 auto;
+}
+.top-search-wrap .top-search .logo
+{
+	display:block;
+	width:217px;
+	height:60px;
+	float:left;
+	margin-top:10px;
+	}
+.top-search-wrap .top-search .search-wrap{
+	width:170px;
+	height:20px;
+	padding:2px 0 2px 30px;
+	float:right;
+	
+	margin-top:30px;
+}
+.top-search-wrap .top-search .search-wrap .search-content{
+	width:110px;
+	height:14px;
+}
+.top-nav-wrap{
+	
+	height:41px;
+	background:url(../Images/nav-bg.gif) repeat-x; 
+	border-bottom:1px solid #b4b4b4;
+	alignment-adjust: middle;
+}
+.top-nav-wrap .nav-lv1{
+	width:980px;
+	height:41px;
+	margin:0 auto;
+}
+.top-nav-wrap .nav-lv1 .nav-lv1-li{
+	height:41px;
+	padding:5px 30px 0 5px;
+	float:left;
+	position:inherit;
+}
+.top-nav-wrap .nav-lv1 .nav-lv1-li a{
+	display:block;
+	height:36px;
+	line-height:36px;
+    text-align:center;
+	padding:0 20px;
+	font-size:16px;
+}
+.top-nav-wrap .nav-lv1 .nav-lv1-li .cur{
+	background:#57CFED;
+	color:#fff;
+	border-radius:6px 6px 0 0;}
+.top-nav-wrap .nav-lv1 .nav-lv1-li ul{
+	position:absolute;
+	background:#57CFED;
+	width:100px;
+	display:none;
+}
+.top-nav-wrap .nav-lv1 .nav-lv1-li ul li a{
+	color:#ffffff;
+	font-size:14px;
+	text-align:center;
+}
+.top-nav-wrap .nav-lv1 .nav-lv1-li ul li a:hover{
+	background:#57CFED;
+	background-color: #9DBAD8;
+}
+
+.div_foot_info{
+	width:90%;
+	height:35px;
+	line-height:
+	35px;margin-left:auto ;
+	margin-right:auto;
+}
+.div_foot_info a
+{
+	color:#333333;
+	font-size: 14px;
+	
+	text-align: center;
+}
+.div_foot_info a:hover{
+	color:#ff0000;
+	font-size: 14px;
+	
+	text-align: center;
+}
+body {
+        font-size:12px;
+}
+#nav {
+  line-height: 24px;  list-style-type: none; background:#666;   width:80px;
+}
+
+#nav a {
+ display: block; width: 80px; text-align:center;
+}
+
+#nav a:link  {
+ color:#666; text-decoration:none;
+}
+#nav a:visited  {
+ color:#666;text-decoration:none;
+}
+#nav a:hover  {
+ color:#FFF;text-decoration:none;font-weight:bold;
+}
+
+#nav li {
+ /*float: left*/; width: 80px; background:#CCC;
+}
+#nav li a:hover{
+ background:#999;
+}
+#nav li ul {
+ line-height: 27px;  list-style-type: none;text-align:left;
+ left: -999em; width: 80px; position: absolute; 
+}
+#nav li ul li{
+ float: left; width: 80px;
+ background: #F6F6F6; 
+}
+
+
+#nav li ul a{
+ display: block; width: 80px;w\idth:56px;text-align:left;padding-left:24px;
+}
+
+#nav li ul a:link  {
+ color:#666; text-decoration:none;
+}
+#nav li ul a:visited  {
+ color:#666;text-decoration:none;
+}
+#nav li ul a:hover  {
+ color:#F3F3F3;text-decoration:none;font-weight:normal;
+ background:#C00;
+}
+
+#nav li:hover ul {
+ left: auto;
+}
+#nav li.sfhover ul {
+ left: auto;position:static;
+}
+#mrc {
+ clear: left; 
+}

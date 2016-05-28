@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="__PUBLIC__/Css/test.css" />
+<link rel="stylesheet" href="__PUBLIC__/Css/buttons.css" />
+
+<script language="javascript" src="__PUBLIC__/Js/jquery-1.4.2.min.js"></script> 
+<script> 
+function logout()
+{
+	var state=parent.main.e_state.value;
+	if(state!='评审完毕')
+	{
+		alert('您还未提交评审结果！');
+		return false;
+	}
+	else if(!confirm("真的要退出吗？")){
+		return false;	
+	}
+	else{
+		window.top.href="{:U(GROUP_NAME.'/Index/logout')}";
+		return true;
+	}
+
+}
+function gotohome()
+{
+	var answer=parent.main.form1.value;
+	var f=document.getElementById(answer);
+	f.submit();
+	window.main.href="{:U(GROUP_NAME.'/Response/saveResponse')}";
+	window.top.href="{:U(GROUP_NAME.'/Response/welcome')}";
+}
+function gotolastpage()
+{
+	var answer=parent.main.form1.value;
+	var f=document.getElementById(answer);
+	f.submit();
+	window.main.href="{:U(GROUP_NAME.'/Response/saveResponse')}";
+	window.top.href="{:U(GROUP_NAME.'/Response/last_page')}";
+}
+function show_question()
+{
+	var page=parent.main.page_number.value;
+	window.top.href="{:U(GROUP_NAME.'/Response/show_question')}?page="+page;
+}
+function showresult()
+{
+	var page=parent.main.page_number.value;
+	var state=parent.main.s_state.value;
+	if(state!='评审完毕')
+	{
+		alert('还有专家未评审完毕，请耐心等待！');
+		return false;
+	}
+	else{
+		window.top.href="{:U(GROUP_NAME.'/Response/show_result')}?page="+page;
+		return true;
+	}	
+}	
+
+</script> 
+<body >
+<php>$qg_name=M('question_group')->where('s_id='.$_SESSION['s_id'])->order('qg_order')->getField('qg_name',true);</php>
+<div id="top">
+		<table width="100%" id="top" border=0>
+	<tr >
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:100%" value="查看评审情况"  onClick="javascript:return show_question();" target="main">
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:100%" value="查看评审结果"  onClick="javascript:return showresult();" target="main">
+		<td id="big">{$_SESSION['e_name']}</td><td>教授</td>
+		<td id="big">{$qg_name[$_GET['page_number']]}</td>
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:100%" onClick="javascript: gotohome();" value="首页">
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:100%" onClick="javascript: gotolastpage();" value="末页">
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:100%" onClick="javascript:return logout();" value="退出" >
+		</td>
+	</tr>
+	</table>
+</div>
+</body>
+</html>

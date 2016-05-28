@@ -1,0 +1,24 @@
+<?php if (!defined('THINK_PATH')) exit();?><link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+<div id="main">
+<form action="<?php echo U(GROUP_NAME.'/Administrator/modifyAdmin');?>" method="post" >
+<input type="hidden" name='a_id' value="<?php echo ($a_id); ?>">
+	<table id="table3" border=0>
+	<tr><td><br></td></tr>
+	<tr>
+		<td width="30%" align="right">账户：</td><td><input name='name' style="width:200px" placeholder="<?php echo ($name); ?>"></td>
+	</tr>
+	<tr>
+		<td width="30%" align="right">原密码：</td><td><input type="password" name='oldpwd' style="width:200px"></td>
+	</tr>
+	<tr>
+		<td width="30%" align="right">新密码：</td><td><input type="password" name='newpwd' style="width:200px"></td>
+	</tr>
+	<tr>
+		<td width="30%" align="right">确认密码：</td><td><input type="password" name='checkpwd' style="width:200px"></td>
+	</tr>
+	<tr>
+		<td colspan=2><br><input type="submit" class="submit" name='submit' value="修改"></td>
+	</tr>
+	</table>
+</form>
+</div>

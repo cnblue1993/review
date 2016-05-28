@@ -1,0 +1,707 @@
+-- MySQL dump 10.13  Distrib 5.6.17, for Win64 (x86_64)
+--
+-- Host: localhost    Database: db_review
+-- ------------------------------------------------------
+-- Server version	5.6.17
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tb_admin`
+--
+
+DROP TABLE IF EXISTS `tb_admin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_admin` (
+  `a_id` int(11) NOT NULL AUTO_INCREMENT,
+  `a_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `a_pwd` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `logintime` datetime DEFAULT NULL,
+  PRIMARY KEY (`a_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_admin`
+--
+
+LOCK TABLES `tb_admin` WRITE;
+/*!40000 ALTER TABLE `tb_admin` DISABLE KEYS */;
+INSERT INTO `tb_admin` VALUES (1,'admin','21232f297a57a5a743894a0e4a801fc3','0000-00-00 00:00:00');
+/*!40000 ALTER TABLE `tb_admin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_advice`
+--
+
+DROP TABLE IF EXISTS `tb_advice`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_advice` (
+  `a_id` int(11) NOT NULL AUTO_INCREMENT,
+  `e_id` int(11) NOT NULL,
+  `qg_id` int(11) NOT NULL,
+  `advice` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`a_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_advice`
+--
+
+LOCK TABLES `tb_advice` WRITE;
+/*!40000 ALTER TABLE `tb_advice` DISABLE KEYS */;
+INSERT INTO `tb_advice` VALUES (1,1,2,'项目2'),(2,1,5,'项目4***************');
+/*!40000 ALTER TABLE `tb_advice` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_answer`
+--
+
+DROP TABLE IF EXISTS `tb_answer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_answer` (
+  `a_id` int(11) NOT NULL AUTO_INCREMENT,
+  `q_id` int(11) NOT NULL,
+  `a_number` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `a_text` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `a_order` int(11) NOT NULL,
+  `qg_id` int(11) NOT NULL,
+  PRIMARY KEY (`a_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_answer`
+--
+
+LOCK TABLES `tb_answer` WRITE;
+/*!40000 ALTER TABLE `tb_answer` DISABLE KEYS */;
+INSERT INTO `tb_answer` VALUES (1,1,'1','不通过',1,1),(2,1,'2','一般',2,1),(3,1,'3','重点',3,1),(4,2,'1','不通过',1,1),(5,2,'2','一般',2,1),(6,2,'3','重点',3,1),(7,3,'1','不通过',1,1),(8,3,'2','一般',2,1),(9,4,'1','不通过',1,2),(10,4,'2','一般',2,2),(11,4,'3','重点',3,2),(12,5,'1','不通过',1,2),(13,5,'2','一般',2,2),(14,5,'3','重点',3,2),(15,6,'1','不通过',1,2),(16,6,'2','一般',2,2),(17,7,'1','不通过',1,2),(18,7,'2','一般',2,2),(19,8,'1','不通过',1,3),(20,8,'2','一般',2,3),(21,8,'3','重点',3,3),(22,9,'1','不通过',1,3),(23,9,'2','一般',2,3),(24,10,'1','不通过',1,3),(25,10,'2','一般',2,3),(26,11,'1','不通过',1,3),(27,11,'2','一般',2,3),(28,11,'3','重点',3,3),(29,12,'1','不通过',1,4),(30,12,'2','一般',2,4),(31,13,'1','不通过',1,4),(32,13,'2','一般',2,4),(33,14,'1','不通过',1,4),(34,14,'2','一般',2,4),(35,14,'3','重点',3,4),(36,15,'1','不通过',1,5),(37,15,'2','一般',2,5),(38,16,'1','不通过',1,5),(39,16,'2','一般',2,5),(40,17,'1','不通过',1,5),(41,17,'2','一般',2,5),(42,17,'3','重点',3,5),(43,18,'1','不通过',1,5),(44,18,'2','一般',2,5),(45,18,'3','重点',3,5),(46,19,'1','不通过',1,6),(47,19,'2','一般',2,6),(48,19,'3','重点',3,6),(49,20,'1','不通过',1,6),(50,20,'2','一般',2,6),(51,21,'1','不通过',1,6),(52,21,'2','一般',2,6),(53,21,'3','重点',3,6),(54,22,'1','不通过',1,7),(55,22,'2','一般',2,7),(56,23,'1','不通过',1,7),(57,23,'2','一般',2,7),(58,23,'3','重点',3,7),(59,24,'1','不通过',1,7),(60,24,'2','一般',2,7),(61,25,'1','不通过',1,8),(62,25,'2','一般',2,8),(63,26,'1','不通过',1,8),(64,26,'2','一般',2,8),(65,26,'3','重点',3,8),(66,27,'1','不通过',1,9),(67,27,'2','一般',2,9),(68,28,'1','不通过',1,9),(69,28,'2','一般',2,9),(70,28,'3','重点',3,9),(71,29,'1','不通过',1,9),(72,29,'2','一般',2,9),(73,30,'1','不通过',1,9),(74,30,'2','一般',2,9),(75,30,'3','重点',3,9),(76,31,'1','不通过',1,10),(77,31,'2','一般',2,10),(78,32,'1','不通过',1,10),(79,32,'2','一般',2,10),(80,32,'3','重点',3,10),(81,33,'1','不通过',1,10),(82,33,'2','一般',2,10),(83,34,'1','不通过',1,11),(84,34,'2','一般',2,11),(85,34,'3','重点',3,11),(86,35,'1','不通过',1,11),(87,35,'2','一般',2,11),(88,36,'1','不通过',1,12),(89,36,'2','一般',2,12),(90,37,'1','不通过',1,12),(91,37,'2','一般',2,12),(92,37,'3','重点',3,12),(93,38,'1','不通过',1,13),(94,38,'2','一般',2,13),(95,38,'3','重点',3,13),(96,39,'1','不通过',1,13),(97,39,'2','一般',2,13),(98,40,'1','不通过',1,13),(99,40,'2','一般',2,13);
+/*!40000 ALTER TABLE `tb_answer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_department`
+--
+
+DROP TABLE IF EXISTS `tb_department`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_department` (
+  `d_id` int(11) NOT NULL AUTO_INCREMENT,
+  `d_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `mg_id` int(11) NOT NULL,
+  PRIMARY KEY (`d_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_department`
+--
+
+LOCK TABLES `tb_department` WRITE;
+/*!40000 ALTER TABLE `tb_department` DISABLE KEYS */;
+INSERT INTO `tb_department` VALUES (1,'生命科学与技术学院',2),(2,'政治学院',1),(3,'社会学与心理学学院',1),(4,'青藏高原研究院',2),(5,'艺术学院',1),(6,'经济学院',1),(7,'管理学院',1),(8,'电气信息工程学院',2),(9,'计算机科学与技术学院',2),(10,'化学与环境保护学院',2),(11,'城市规划与建筑学院',2),(12,'旅游与历史文化学院',1),(13,'文学与新闻传播学院',1),(14,'法学院',1),(15,'藏学院',1),(16,'彝学院',1),(17,'外国语学院',1);
+/*!40000 ALTER TABLE `tb_department` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_expert`
+--
+
+DROP TABLE IF EXISTS `tb_expert`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_expert` (
+  `e_id` int(11) NOT NULL AUTO_INCREMENT,
+  `e_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `e_position` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `e_type` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `e_entry_time` int(11) NOT NULL,
+  `e_research` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `e_state` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT '无状态' COMMENT '专家状态',
+  `e_pwd` int(11) DEFAULT NULL,
+  `e_department` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '工作单位',
+  `e_ip` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `login_time` datetime NOT NULL,
+  `logout_time` datetime NOT NULL,
+  `s_id` int(11) DEFAULT NULL,
+  `e_tel` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `r_id` int(11) DEFAULT NULL,
+  `e_del` int(11) DEFAULT '0' COMMENT '为1 代表已删除',
+  PRIMARY KEY (`e_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_expert`
+--
+
+LOCK TABLES `tb_expert` WRITE;
+/*!40000 ALTER TABLE `tb_expert` DISABLE KEYS */;
+INSERT INTO `tb_expert` VALUES (1,'专家1 ','教授','文科',2015,'计算机科学发展与世界','评审完毕',1,'成都市西南民族大学','127.0.0.1','2015-06-10 21:59:38','2015-06-10 22:00:10',2,'18080438527',1,0),(2,'专家2','研究员','文科',2015,'计算机软件与世界','评审完毕',2,'成都市西南民族大学','127.0.0.1','2015-06-11 08:38:41','2015-06-11 08:39:08',2,'18080438527',1,0),(3,'专家3','教授','文科',2015,'计算机科学发展与世界','未登录',3,'成都市西南民族大学','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'18080438527',1,0),(4,'专家4','研究员','文科',2015,'计算机软件与世界','未登录',4,'成都市西南民族大学','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'136780121054',1,0),(5,'专家5','研究员','文科',2015,'计算机软件与世界','未登录',5,'成都市','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'136780121067',1,0),(6,'专家6','教授','文科',2015,'计算机硬件','未登录',6,'成都市','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'136780121054',1,0),(7,'专家7','教授','理科',2015,'计算机科学发展与世界','未登录',7,'成都市','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'136780121054',1,0),(8,'专家8','教授','理科',2015,'计算机软件与世界','未登录',8,'成都市','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'136780121067',1,0),(9,'专家9','教授','理科',2015,'计算机科学发展与世界','未登录',9,'成都市','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'18080438527',1,0),(10,'专家10','研究员','理科',2015,'计算机软件与世界','未登录',10,'成都市西南民族大学','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'136780121054',1,0),(11,'专家11','','文科',0,'','未登录',11,'','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'',1,0),(12,'专家12','','文科',0,'','未登录',12,'','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'',1,0),(13,'专家13','','文科',0,'','未登录',13,'','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'',1,0),(14,'专家14','','文科',0,'','未登录',14,'','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'',1,0),(15,'专家15','','理科',0,'','未登录',15,'','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'',1,0),(16,'专家16','','理科',0,'','未登录',16,'','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'',1,0),(17,'专家17','','理科',0,'','未登录',17,'','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'',1,0),(18,'专家18','','理科',0,'','未登录',18,'','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'',1,0),(19,'专家19','','理科',0,'','未登录',19,'','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'',1,0),(20,'专家20','','理科',0,'','未登录',20,'','','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL,'',1,0);
+/*!40000 ALTER TABLE `tb_expert` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_foreign_expert`
+--
+
+DROP TABLE IF EXISTS `tb_foreign_expert`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_foreign_expert` (
+  `fe_id` int(11) NOT NULL AUTO_INCREMENT,
+  `p_number` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `fe_passport` varchar(100) COLLATE utf8_unicode_ci NOT NULL COMMENT '护照',
+  `fe_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `fe_workday` int(11) NOT NULL COMMENT '在华天数',
+  `fe_nation` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fe_education` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '学历',
+  PRIMARY KEY (`fe_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_foreign_expert`
+--
+
+LOCK TABLES `tb_foreign_expert` WRITE;
+/*!40000 ALTER TABLE `tb_foreign_expert` DISABLE KEYS */;
+INSERT INTO `tb_foreign_expert` VALUES (1,'0001','abc001','anne',11,'加拿大','博士'),(2,'0001','abc002','alice',12,'加拿大','博士'),(3,'0001','abc003','tom',11,'加拿大','博士'),(4,'0001','abc004','william',11,'加拿大','博士'),(5,'0001','abc005','leon',13,'加拿大','博士'),(6,'0002','abc006','lukas',11,'美国','博士'),(7,'0003','abc007','tim',32,'美国','博士'),(8,'0004','abc008','finn',6,'美国','博士'),(9,'0005','abc009','jonas',19,'美国','博士'),(10,'0006','abc010','felix',10,'美国','博士'),(11,'0007','abc011','luis',9,'美国','博士'),(12,'0008','abc012','paul',21,'美国','博士'),(13,'0009','abc013','julian',20,'美国','博士'),(14,'0010','abc014','niclas',11,'美国','博士'),(15,'0011','abc015','max',30,'德国','博士后'),(16,'0011','abc016','ben',30,'德国','博士后'),(17,'0012','abc017','elias',14,'法国','博士'),(18,'0013','abc018','jan',11,'法国','博士'),(19,'0014','abc019','philpp',5,'法国','博士'),(20,'0015','abc020','noah',7,'法国','博士'),(21,'0016','abc021','jannick',15,'瑞士','博士'),(22,'0017','abc022','david',17,'瑞士','博士'),(23,'0018','abc023','leonie',11,'英国','博士'),(24,'0019','abc024','hanna',34,'英国','博士'),(25,'0020','abc025','mia',23,'英国','博士'),(26,'0021','abc026','lena',12,'英国','博士'),(27,'0021','abc027','lea',30,'加拿大','博士'),(28,'0021','abc028','emilie',30,'加拿大','博士'),(29,'0022','abc029','lara',30,'加拿大','博士'),(30,'0023','abc030','emma',12,'美国','博士'),(31,'0024','abc031','sara',9,'美国','博士'),(32,'0025','abc032','laura',15,'美国','博士'),(33,'0026','abc033','lili',8,'美国','博士'),(34,'0027','abc034','lina',6,'美国','博士'),(35,'0027','abc035','marie',21,'俄罗斯','博士'),(36,'0027','abc036','sophie',20,'俄罗斯','博士'),(37,'0027','abc037','nele',21,'俄罗斯','博士'),(38,'0028','abc038','johanna',19,'俄罗斯','博士'),(39,'0029','abc039','lisa',12,'意大利','博士'),(40,'0030','abc040','sofia',9,'意大利','博士'),(41,'0031','abc041','maja',10,'澳大利亚','博士'),(42,'0032','abc042','bella',11,'澳大利亚','博士'),(43,'0033','abc043','betty',14,'澳大利亚','博士'),(44,'0034','abc044','carol',8,'澳大利亚','博士'),(45,'0035','abc045','cathy',6,'澳大利亚','博士'),(46,'0036','abc046','daisy',11,'荷兰','博士'),(47,'0037','abc047','eden',17,'荷兰','博士'),(48,'0038','abc048','fanny',15,'韩国','博士'),(49,'0039','abc049','flora',20,'日本','博士'),(50,'0040','abc050','grace',24,'美国','博士');
+/*!40000 ALTER TABLE `tb_foreign_expert` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_major_group`
+--
+
+DROP TABLE IF EXISTS `tb_major_group`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_major_group` (
+  `mg_id` int(11) NOT NULL AUTO_INCREMENT,
+  `mg_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`mg_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_major_group`
+--
+
+LOCK TABLES `tb_major_group` WRITE;
+/*!40000 ALTER TABLE `tb_major_group` DISABLE KEYS */;
+INSERT INTO `tb_major_group` VALUES (1,'文科'),(2,'理科');
+/*!40000 ALTER TABLE `tb_major_group` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_project`
+--
+
+DROP TABLE IF EXISTS `tb_project`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_project` (
+  `p_id` int(11) NOT NULL AUTO_INCREMENT,
+  `p_number` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `p_name` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `p_rank` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `p_department` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
+  `p_funds` decimal(10,2) NOT NULL,
+  `p_principal` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `p_state` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  `p_result` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `r_id` int(11) NOT NULL,
+  `is_insert` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`p_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_project`
+--
+
+LOCK TABLES `tb_project` WRITE;
+/*!40000 ALTER TABLE `tb_project` DISABLE KEYS */;
+INSERT INTO `tb_project` VALUES (1,'0001','自感温调试恒温杯','重点','计算机科学与技术学院',10000.00,'刘白','0','',1,1),(2,'0002','射流空化方法制备石墨烯用于材料防腐蚀的研究','重点','计算机科学与技术学院',9000.00,'王文利','0','',1,1),(3,'0003','基于图像识别和三维重建的智能导盲系统','一般','计算机科学与技术学院',9600.00,'贺敬凯','0','',1,1),(4,'0004','基于NFC的签到机','重点','外国语学院',9000.00,'雷国琼','0','',1,1),(5,'0005','基于四轴飞行器的三维场景重建系统','重点','外国语学院',12000.00,'高潮','0','',1,1),(6,'0006','全向水下仿生机器鳐鱼','一般','外国语学院',14000.00,'程建伟','0','',1,1),(7,'0007','基于量子粒子群控制的欠驱动残疾人智能假肢系统','一般','外国语学院',12000.00,'张  建','0','',1,1),(8,'0008','自动调节尾气稀释参数的稀释采样系统','重点','电气信息工程学院',10000.00,'但唐仁','0','',1,1),(9,'0009','行波管型热声发动机','一般','电气信息工程学院',8000.00,'彭开慧','0','',1,1),(10,'0010','温差发电系统在热机废热回收利用上的设计与研究','一般','电气信息工程学院',8000.00,'孙  洁','0','',1,1),(11,'0011','可收缩桨式先进布局S\\VTOL战斗机验证机 ','重点','电气信息工程学院',10000.00,'房丽娜','0','',1,1),(12,'0012','新型固定翼直升机复合式飞行器','一般','艺术学院',15000.00,'李  伟','0','',1,1),(13,'0013','基于光流场的视频搜索','一般','艺术学院',8000.00,'刘晓东','0','',1,1),(14,'0014','基于即时计算与动态追踪的视觉体验增强','重点','艺术学院',8000.00,'刘云霞','0','',1,1),(15,'0015','超大容量可加密二维彩码','一般','法学院',4000.00,'黄国伟','0','',1,1),(16,'0016','自适应像素填充应用技术','一般','法学院',8000.00,'曲绪刚','0','',1,1),(17,'0017','地理围栏概念下的LBS系统','重点','法学院',6000.00,'张跃宗','0','',1,1),(18,'0018','个性化聊天表情生成软件','重点','法学院',6700.00,'彭迎春','0','',1,1),(19,'0019','应用机器视觉的SLAM小车设计','重点','经济学院',10000.00,'王瑞春','0','',1,1),(20,'0020','全局视觉导航的特种飞行机器人','一般','经济学院',15000.00,'谢  华','0','',1,1),(21,'0021','北京高校校园手机充电机布局的最优规划与仿真模拟','重点','经济学院',8000.00,'刘  俊','0','',1,1),(22,'0022','振动耦合被动运动对抗模拟失重尾吊大鼠骨丢失效果的研究','一般','管理学院',10000.00,'管明祥','0','',1,1),(23,'0023','纳米羟基磷灰石/丝素蛋白复合纳米纤维的制备及其性能研究','重点','管理学院',10000.00,'刘小延','0','',1,1),(24,'0024','旧城改造中的公民参与模式研究—“参与式改造”初探','一般','管理学院',5000.00,'张竞丹','0','',1,1),(25,'0025','便携上下楼梯的行李箱','一般','生命科学与技术学院',10000.00,'劳文薇','0','',1,1),(26,'0026','多自由度全地形探测装置','重点','生命科学与技术学院',15000.00,'潘晓宁','0','',1,1),(27,'0027','深井救援器','一般','化学与环境保护学院',10000.00,'张劲松','0','',1,1),(28,'0028','可变压缩比发动机','重点','化学与环境保护学院',12000.00,'耿  壮','0','',1,1),(29,'0029','海胆型全方位滚动机器人','一般','化学与环境保护学院',10000.00,'刘远东','0','',1,1),(30,'0030','基于红外双目立体视觉的精准3D绘图系统','重点','化学与环境保护学院',11000.00,'徐秋枫','0','',1,1),(31,'0031','全固态电致变色器件的制备及性能研究','一般','旅游与历史文化学院',7500.00,'冯艳玲','0','',1,1),(32,'0032','法学专业实践教育现状研究','重点','旅游与历史文化学院',8000.00,'刘含波','0','',1,1),(33,'0033','涉罪未成年人社会调查制度研究——以“北京模式”为例','一般','旅游与历史文化学院',8000.00,'陈宝文','0','',1,1),(34,'0034','城市建设规划中空间权制度的构建','重点','政治学院',8000.00,'谭  旭','0','',1,1),(35,'0035','基于实地调研的业主维权困境分析','一般','政治学院',8000.00,'何瑞映','0','',1,1),(36,'0036','合成高指数面纳米金及其表面增强拉曼效应在监测癌症标记蛋白上的应用','一般','文学与新闻传播学院',16000.00,'谭幽燕','0','',1,1),(37,'0037','利用生物电化学方法对垃圾渗滤液同步除碳脱氮','重点','文学与新闻传播学院',15000.00,'劳政玲','0','',1,1),(38,'0038','新型量子点敏化太阳能电池的研究','重点','城市规划与建筑学院',15000.00,'姜家吉','0','',1,1),(39,'0039','自行车娱乐平台（BikeTraveller）','一般','城市规划与建筑学院',10000.00,'李健艺','0','',1,1),(40,'0040','远程监控机器人','一般','城市规划与建筑学院',10000.00,'周泳全','0','',1,1);
+/*!40000 ALTER TABLE `tb_project` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_question`
+--
+
+DROP TABLE IF EXISTS `tb_question`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_question` (
+  `q_id` int(11) NOT NULL AUTO_INCREMENT,
+  `s_id` int(11) NOT NULL,
+  `qg_id` int(11) NOT NULL,
+  `q_type` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT '单选',
+  `q_text` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `source_id` int(11) NOT NULL,
+  `q_order` int(11) NOT NULL,
+  `answer_rule` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT '3',
+  PRIMARY KEY (`q_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_question`
+--
+
+LOCK TABLES `tb_question` WRITE;
+/*!40000 ALTER TABLE `tb_question` DISABLE KEYS */;
+INSERT INTO `tb_question` VALUES (1,1,1,'单选','自感温调试恒温杯',1,0,'3'),(2,1,1,'单选','射流空化方法制备石墨烯用于材料防腐蚀的研',2,0,'3'),(3,1,1,'单选','基于图像识别和三维重建的智能导盲系统',3,1,'3'),(4,2,2,'单选','基于NFC的签到机',4,0,'3'),(5,2,2,'单选','基于四轴飞行器的三维场景重建系统',5,0,'3'),(6,2,2,'单选','全向水下仿生机器鳐鱼',6,1,'3'),(7,2,2,'单选','基于量子粒子群控制的欠驱动残疾人智能假肢',7,1,'3'),(8,1,3,'单选','自动调节尾气稀释参数的稀释采样系统',8,0,'3'),(9,1,3,'单选','行波管型热声发动机',9,1,'3'),(10,1,3,'单选','温差发电系统在热机废热回收利用上的设计与',10,1,'3'),(11,1,3,'单选','可收缩桨式先进布局S\\VTOL战斗机验证',11,0,'3'),(12,2,4,'单选','新型固定翼直升机复合式飞行器',12,1,'3'),(13,2,4,'单选','基于光流场的视频搜索',13,1,'3'),(14,2,4,'单选','基于即时计算与动态追踪的视觉体验增强',14,0,'3'),(15,2,5,'单选','超大容量可加密二维彩码',15,1,'3'),(16,2,5,'单选','自适应像素填充应用技术',16,1,'3'),(17,2,5,'单选','地理围栏概念下的LBS系统',17,0,'3'),(18,2,5,'单选','个性化聊天表情生成软件',18,0,'3'),(19,2,6,'单选','应用机器视觉的SLAM小车设计',19,0,'3'),(20,2,6,'单选','全局视觉导航的特种飞行机器人',20,1,'3'),(21,2,6,'单选','北京高校校园手机充电机布局的最优规划与仿',21,0,'3'),(22,2,7,'单选','振动耦合被动运动对抗模拟失重尾吊大鼠骨丢',22,1,'3'),(23,2,7,'单选','纳米羟基磷灰石/丝素蛋白复合纳米纤维的制',23,0,'3'),(24,2,7,'单选','旧城改造中的公民参与模式研究—“参与式改',24,1,'3'),(25,1,8,'单选','便携上下楼梯的行李箱',25,1,'3'),(26,1,8,'单选','多自由度全地形探测装置',26,0,'3'),(27,1,9,'单选','深井救援器',27,1,'3'),(28,1,9,'单选','可变压缩比发动机',28,0,'3'),(29,1,9,'单选','海胆型全方位滚动机器人',29,1,'3'),(30,1,9,'单选','基于红外双目立体视觉的精准3D绘图系统',30,0,'3'),(31,2,10,'单选','全固态电致变色器件的制备及性能研究',31,1,'3'),(32,2,10,'单选','法学专业实践教育现状研究',32,0,'3'),(33,2,10,'单选','涉罪未成年人社会调查制度研究——以“北京',33,1,'3'),(34,2,11,'单选','城市建设规划中空间权制度的构建',34,0,'3'),(35,2,11,'单选','基于实地调研的业主维权困境分析',35,1,'3'),(36,2,12,'单选','合成高指数面纳米金及其表面增强拉曼效应在',36,1,'3'),(37,2,12,'单选','利用生物电化学方法对垃圾渗滤液同步除碳脱',37,0,'3'),(38,1,13,'单选','新型量子点敏化太阳能电池的研究',38,0,'3'),(39,1,13,'单选','自行车娱乐平台（BikeTravelle',39,1,'3'),(40,1,13,'单选','远程监控机器人',40,1,'3');
+/*!40000 ALTER TABLE `tb_question` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_question_group`
+--
+
+DROP TABLE IF EXISTS `tb_question_group`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_question_group` (
+  `qg_id` int(11) NOT NULL AUTO_INCREMENT,
+  `qg_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `s_id` int(11) NOT NULL,
+  `qg_order` int(11) NOT NULL COMMENT '分组排序列',
+  PRIMARY KEY (`qg_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_question_group`
+--
+
+LOCK TABLES `tb_question_group` WRITE;
+/*!40000 ALTER TABLE `tb_question_group` DISABLE KEYS */;
+INSERT INTO `tb_question_group` VALUES (1,'计算机科学与技术学院',1,0),(2,'外国语学院',2,0),(3,'电气信息工程学院',1,0),(4,'艺术学院',2,0),(5,'法学院',2,0),(6,'经济学院',2,0),(7,'管理学院',2,0),(8,'生命科学与技术学院',1,0),(9,'化学与环境保护学院',1,0),(10,'旅游与历史文化学院',2,0),(11,'政治学院',2,0),(12,'文学与新闻传播学院',2,0),(13,'城市规划与建筑学院',1,0);
+/*!40000 ALTER TABLE `tb_question_group` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_response`
+--
+
+DROP TABLE IF EXISTS `tb_response`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_response` (
+  `response_id` int(11) NOT NULL AUTO_INCREMENT,
+  `s_id` int(11) NOT NULL,
+  `qg_id` int(11) NOT NULL COMMENT '问题分组',
+  `q_id` int(11) NOT NULL,
+  `answer` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `voter_id` int(11) NOT NULL COMMENT '投票人id',
+  `r_state` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`response_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_response`
+--
+
+LOCK TABLES `tb_response` WRITE;
+/*!40000 ALTER TABLE `tb_response` DISABLE KEYS */;
+INSERT INTO `tb_response` VALUES (1,2,2,4,'重点',1,'1'),(2,2,2,5,'重点',1,'1'),(3,2,2,6,'一般',1,'1'),(4,2,2,7,'一般',1,'1'),(5,2,4,14,'重点',1,'1'),(6,2,4,12,'一般',1,'1'),(7,2,4,13,'一般',1,'1'),(8,2,5,17,'重点',1,'1'),(9,2,5,18,'重点',1,'1'),(10,2,5,15,'一般',1,'1'),(11,2,5,16,'一般',1,'1'),(12,2,6,19,'重点',1,'1'),(13,2,6,21,'重点',1,'1'),(14,2,6,20,'一般',1,'1'),(15,2,7,23,'重点',1,'1'),(16,2,7,22,'一般',1,'1'),(17,2,7,24,'一般',1,'1'),(18,2,10,32,'重点',1,'1'),(19,2,10,31,'一般',1,'1'),(20,2,10,33,'一般',1,'1'),(21,2,11,34,'重点',1,'1'),(22,2,11,35,'一般',1,'1'),(23,2,12,37,'重点',1,'1'),(24,2,12,36,'一般',1,'1'),(25,2,2,4,'重点',2,'1'),(26,2,2,5,'重点',2,'1'),(27,2,2,6,'一般',2,'1'),(28,2,2,7,'一般',2,'1'),(29,2,4,14,'重点',2,'1'),(30,2,4,12,'一般',2,'1'),(31,2,4,13,'一般',2,'1'),(32,2,5,17,'一般',2,'1'),(33,2,5,18,'一般',2,'1'),(34,2,5,15,'一般',2,'1'),(35,2,5,16,'一般',2,'1'),(36,2,6,19,'重点',2,'1'),(37,2,6,21,'重点',2,'1'),(38,2,6,20,'不通过',2,'1'),(39,2,7,23,'重点',2,'1'),(40,2,7,22,'一般',2,'1'),(41,2,7,24,'一般',2,'1'),(42,2,10,32,'重点',2,'1'),(43,2,10,31,'一般',2,'1'),(44,2,10,33,'一般',2,'1'),(45,2,11,34,'重点',2,'1'),(46,2,11,35,'一般',2,'1'),(47,2,12,37,'重点',2,'1'),(48,2,12,36,'一般',2,'1');
+/*!40000 ALTER TABLE `tb_response` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_review`
+--
+
+DROP TABLE IF EXISTS `tb_review`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_review` (
+  `r_id` int(11) NOT NULL AUTO_INCREMENT,
+  `r_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `r_start` datetime NOT NULL,
+  `r_end` datetime NOT NULL,
+  `r_year` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `r_state` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  PRIMARY KEY (`r_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_review`
+--
+
+LOCK TABLES `tb_review` WRITE;
+/*!40000 ALTER TABLE `tb_review` DISABLE KEYS */;
+INSERT INTO `tb_review` VALUES (1,'2015年外专项目评审活动','2015-06-10 00:00:00','2015-06-20 00:00:00','2015年','评审中');
+/*!40000 ALTER TABLE `tb_review` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_rule`
+--
+
+DROP TABLE IF EXISTS `tb_rule`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_rule` (
+  `rule_id` int(11) NOT NULL AUTO_INCREMENT,
+  `r_type` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `r_content` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `r_id` int(11) NOT NULL COMMENT '评审活动id',
+  PRIMARY KEY (`rule_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_rule`
+--
+
+LOCK TABLES `tb_rule` WRITE;
+/*!40000 ALTER TABLE `tb_rule` DISABLE KEYS */;
+INSERT INTO `tb_rule` VALUES (1,'评选规则','2/3原则',0);
+/*!40000 ALTER TABLE `tb_rule` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_site_info`
+--
+
+DROP TABLE IF EXISTS `tb_site_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_site_info` (
+  `id` int(11) NOT NULL,
+  `info_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `info_content` text COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_site_info`
+--
+
+LOCK TABLES `tb_site_info` WRITE;
+/*!40000 ALTER TABLE `tb_site_info` DISABLE KEYS */;
+INSERT INTO `tb_site_info` VALUES (0,'前台title','西南民族大学 外专项目评审系统'),(1,'前台使用说明','单击“开始评审”按钮后，正式进入评审阶段。\r\n\r\n重点项目有“未通过”、“一般”、“重点”三个级别，一般项目有“未通过”、“一般”、二个级别。单击选择圈或文字选中相应级别。\r\n\r\n对每一学院的所有项目完成评审后，单击“下一页”，保存评审结果，进入下一个学院的评审，也可单击“上一页”查看之前的评审结果。\r\n\r\n单击“提交评审结果”按钮后，只能查询评审结果，不能进行修改。\r\n\r\n通过每个页面的下拉框，选择跳转的学院，跳转到指定的学院。'),(2,'后台title','西南民族大学 外专项目后台管理系统');
+/*!40000 ALTER TABLE `tb_site_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_survey`
+--
+
+DROP TABLE IF EXISTS `tb_survey`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_survey` (
+  `s_id` int(11) NOT NULL AUTO_INCREMENT,
+  `s_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '调查名',
+  `s_start` datetime NOT NULL,
+  `s_end` datetime NOT NULL,
+  `r_id` int(11) NOT NULL,
+  `s_state` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `s_remark` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT '调查说明',
+  `voter_sum` int(11) NOT NULL,
+  PRIMARY KEY (`s_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_survey`
+--
+
+LOCK TABLES `tb_survey` WRITE;
+/*!40000 ALTER TABLE `tb_survey` DISABLE KEYS */;
+INSERT INTO `tb_survey` VALUES (1,'理科2015-06-07 16:56:52','2015-06-10 00:00:00','2015-06-20 00:00:00',1,'评审开始',NULL,10),(2,'文科2015-06-07 16:56:52','2015-06-01 00:00:00','2015-06-20 00:00:00',1,'评审中',NULL,10);
+/*!40000 ALTER TABLE `tb_survey` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_survey_attribute`
+--
+
+DROP TABLE IF EXISTS `tb_survey_attribute`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_survey_attribute` (
+  `a_id` int(11) NOT NULL AUTO_INCREMENT,
+  `a_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `a_value` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `s_id` int(11) NOT NULL,
+  PRIMARY KEY (`a_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_survey_attribute`
+--
+
+LOCK TABLES `tb_survey_attribute` WRITE;
+/*!40000 ALTER TABLE `tb_survey_attribute` DISABLE KEYS */;
+INSERT INTO `tb_survey_attribute` VALUES (1,'学科','理科',1),(2,'学科','文科',2);
+/*!40000 ALTER TABLE `tb_survey_attribute` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Temporary table structure for view `tb_v_expert_advice`
+--
+
+DROP TABLE IF EXISTS `tb_v_expert_advice`;
+/*!50001 DROP VIEW IF EXISTS `tb_v_expert_advice`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `tb_v_expert_advice` (
+  `e_id` tinyint NOT NULL,
+  `e_name` tinyint NOT NULL,
+  `advice` tinyint NOT NULL,
+  `qg_name` tinyint NOT NULL,
+  `s_id` tinyint NOT NULL,
+  `e_type` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary table structure for view `tb_v_expert_response`
+--
+
+DROP TABLE IF EXISTS `tb_v_expert_response`;
+/*!50001 DROP VIEW IF EXISTS `tb_v_expert_response`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `tb_v_expert_response` (
+  `response_id` tinyint NOT NULL,
+  `e_id` tinyint NOT NULL,
+  `s_id` tinyint NOT NULL,
+  `q_id` tinyint NOT NULL,
+  `answer` tinyint NOT NULL,
+  `r_state` tinyint NOT NULL,
+  `qg_id` tinyint NOT NULL,
+  `r_id` tinyint NOT NULL,
+  `qg_name` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary table structure for view `tb_v_project_major_group`
+--
+
+DROP TABLE IF EXISTS `tb_v_project_major_group`;
+/*!50001 DROP VIEW IF EXISTS `tb_v_project_major_group`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `tb_v_project_major_group` (
+  `p_id` tinyint NOT NULL,
+  `p_name` tinyint NOT NULL,
+  `p_department` tinyint NOT NULL,
+  `r_id` tinyint NOT NULL,
+  `mg_id` tinyint NOT NULL,
+  `mg_name` tinyint NOT NULL,
+  `p_rank` tinyint NOT NULL,
+  `p_result` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary table structure for view `tb_v_project_question_response`
+--
+
+DROP TABLE IF EXISTS `tb_v_project_question_response`;
+/*!50001 DROP VIEW IF EXISTS `tb_v_project_question_response`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `tb_v_project_question_response` (
+  `response_id` tinyint NOT NULL,
+  `s_id` tinyint NOT NULL,
+  `e_type` tinyint NOT NULL,
+  `p_department` tinyint NOT NULL,
+  `p_number` tinyint NOT NULL,
+  `p_name` tinyint NOT NULL,
+  `p_principal` tinyint NOT NULL,
+  `e_name` tinyint NOT NULL,
+  `answer` tinyint NOT NULL,
+  `q_order` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary table structure for view `tb_v_question_group_major`
+--
+
+DROP TABLE IF EXISTS `tb_v_question_group_major`;
+/*!50001 DROP VIEW IF EXISTS `tb_v_question_group_major`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `tb_v_question_group_major` (
+  `qg_id` tinyint NOT NULL,
+  `qg_name` tinyint NOT NULL,
+  `s_id` tinyint NOT NULL,
+  `qg_order` tinyint NOT NULL,
+  `major` tinyint NOT NULL,
+  `r_id` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary table structure for view `tb_v_survey_major`
+--
+
+DROP TABLE IF EXISTS `tb_v_survey_major`;
+/*!50001 DROP VIEW IF EXISTS `tb_v_survey_major`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `tb_v_survey_major` (
+  `s_id` tinyint NOT NULL,
+  `s_name` tinyint NOT NULL,
+  `s_start` tinyint NOT NULL,
+  `s_end` tinyint NOT NULL,
+  `a_value` tinyint NOT NULL,
+  `r_id` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Final view structure for view `tb_v_expert_advice`
+--
+
+/*!50001 DROP TABLE IF EXISTS `tb_v_expert_advice`*/;
+/*!50001 DROP VIEW IF EXISTS `tb_v_expert_advice`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `tb_v_expert_advice` AS select `s`.`e_id` AS `e_id`,`s`.`e_name` AS `e_name`,`a`.`advice` AS `advice`,`m`.`qg_name` AS `qg_name`,`m`.`s_id` AS `s_id`,`s`.`e_type` AS `e_type` from ((`tb_expert` `s` join `tb_advice` `a`) join `tb_question_group` `m`) where ((`a`.`e_id` = `s`.`e_id`) and (`a`.`qg_id` = `m`.`qg_id`)) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `tb_v_expert_response`
+--
+
+/*!50001 DROP TABLE IF EXISTS `tb_v_expert_response`*/;
+/*!50001 DROP VIEW IF EXISTS `tb_v_expert_response`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `tb_v_expert_response` AS select `tb_response`.`response_id` AS `response_id`,`tb_response`.`voter_id` AS `e_id`,`tb_response`.`s_id` AS `s_id`,`tb_response`.`q_id` AS `q_id`,`tb_response`.`answer` AS `answer`,`tb_response`.`r_state` AS `r_state`,`tb_response`.`qg_id` AS `qg_id`,`s`.`r_id` AS `r_id`,`g`.`qg_name` AS `qg_name` from ((`tb_response` join `tb_question_group` `g` on((`tb_response`.`qg_id` = `g`.`qg_id`))) join `tb_survey` `s` on((`tb_response`.`s_id` = `s`.`s_id`))) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `tb_v_project_major_group`
+--
+
+/*!50001 DROP TABLE IF EXISTS `tb_v_project_major_group`*/;
+/*!50001 DROP VIEW IF EXISTS `tb_v_project_major_group`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `tb_v_project_major_group` AS select `s`.`p_id` AS `p_id`,`s`.`p_name` AS `p_name`,`s`.`p_department` AS `p_department`,`s`.`r_id` AS `r_id`,`a`.`mg_id` AS `mg_id`,`m`.`mg_name` AS `mg_name`,`s`.`p_rank` AS `p_rank`,`s`.`p_result` AS `p_result` from ((`tb_project` `s` join `tb_department` `a`) join `tb_major_group` `m`) where ((`a`.`d_name` = `s`.`p_department`) and (`a`.`mg_id` = `m`.`mg_id`)) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `tb_v_project_question_response`
+--
+
+/*!50001 DROP TABLE IF EXISTS `tb_v_project_question_response`*/;
+/*!50001 DROP VIEW IF EXISTS `tb_v_project_question_response`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `tb_v_project_question_response` AS select `r`.`response_id` AS `response_id`,`r`.`s_id` AS `s_id`,`e`.`e_type` AS `e_type`,`a`.`p_department` AS `p_department`,`a`.`p_number` AS `p_number`,`a`.`p_name` AS `p_name`,`a`.`p_principal` AS `p_principal`,`e`.`e_name` AS `e_name`,`r`.`answer` AS `answer`,`s`.`q_order` AS `q_order` from (((`tb_response` `r` join `tb_expert` `e`) join `tb_question` `s`) join `tb_project` `a`) where ((`s`.`q_id` = `r`.`q_id`) and (`e`.`e_id` = `r`.`voter_id`) and (`a`.`p_id` = `s`.`source_id`)) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `tb_v_question_group_major`
+--
+
+/*!50001 DROP TABLE IF EXISTS `tb_v_question_group_major`*/;
+/*!50001 DROP VIEW IF EXISTS `tb_v_question_group_major`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `tb_v_question_group_major` AS select `tb_question_group`.`qg_id` AS `qg_id`,`tb_question_group`.`qg_name` AS `qg_name`,`tb_question_group`.`s_id` AS `s_id`,`tb_question_group`.`qg_order` AS `qg_order`,`m`.`a_value` AS `major`,`m`.`r_id` AS `r_id` from (`tb_question_group` join `tb_v_survey_major` `m` on((`tb_question_group`.`s_id` = `m`.`s_id`))) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `tb_v_survey_major`
+--
+
+/*!50001 DROP TABLE IF EXISTS `tb_v_survey_major`*/;
+/*!50001 DROP VIEW IF EXISTS `tb_v_survey_major`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `tb_v_survey_major` AS select `s`.`s_id` AS `s_id`,`s`.`s_name` AS `s_name`,`s`.`s_start` AS `s_start`,`s`.`s_end` AS `s_end`,`a`.`a_value` AS `a_value`,`s`.`r_id` AS `r_id` from (`tb_survey` `s` join `tb_survey_attribute` `a`) where ((`a`.`a_name` = '学科') and (`s`.`s_id` = `a`.`s_id`)) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2015-06-11  9:10:58

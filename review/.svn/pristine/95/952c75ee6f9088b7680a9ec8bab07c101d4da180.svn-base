@@ -1,0 +1,45 @@
+BODY { 			
+			SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+ 			SCROLLBAR-SHADOW-COLOR: buttonface;
+ 			SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+ 			SCROLLBAR-TRACK-COLOR: #eeeeee;
+ 			SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+.Xsmall {
+	font-size: 12px;
+; font-weight: normal; font-variant: normal; text-decoration: none
+; font-family: "ËÎÌå"
+}
+.Sborder {
+	BORDER-TOP-WIDTH: 1px; PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 9pt; BORDER-LEFT-COLOR: #cccccc; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #cccccc; PADDING-BOTTOM: 1px; BORDER-TOP-COLOR: #cccccc; PADDING-TOP: 1px; HEIGHT: 18px; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #cccccc
+}
+textarea, select {BORDER-TOP-WIDTH: 1px; PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 9pt; BORDER-LEFT-COLOR: #cccccc; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #cccccc; PADDING-BOTTOM: 1px; BORDER-TOP-COLOR: #cccccc; PADDING-TOP: 1px; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #cccccc}
+a:link {
+	color: #333333;
+	text-decoration: none;
+}
+a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+a:hover {
+	color: #105bac;
+	text-decoration: none;
+}
+.handc {
+	cursor: hand;
+}
+.Xbig {
+	font-family: "ËÎÌå";
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+}
+.XhSmall {
+	font-family: "ËÎÌå";
+	font-size: 12px;
+	line-height: 20px;
+}

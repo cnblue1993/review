@@ -1,0 +1,68 @@
+#main{
+	margin:auto;
+	min-height: 450px;
+	margin-left:10px;
+	margin-top:10px;
+	border:3 solid #00a2e9;
+	width: 98%;
+	text-align: center;
+	vertical-align: center;
+	font-size:40px;
+}
+
+#table{
+	margin:auto;
+	margin-top:10px;
+	width:60%;
+	font-size: 20px;
+	padding: 10px;
+	border-spacing: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#table2{
+	margin:auto;
+	margin-top:10px;
+	width:98%;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+	border:1 solid #b0e0e6;
+}
+
+#table3{
+	margin:auto;
+	margin-top:10px;
+	width:30%;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+	border:1 solid #b0e0e6;
+}
+
+#select{
+	margin:auto;
+	margin-top:10px;
+	width:70%;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+}
+input{width: 300px;height:30px}
+
+.submit{width:50px;text-align: center;}
+
+a{ text-decoration: none;color:#3361AD;}
+
+#pwd{
+	width:300px;  
+   height:200px;  
+   position:absolute;  
+   left:50%;  
+   top:50%;  
+   margin:-150px 0 0 -150px;
+   border:1 solid #b0e0e6;
+   text-align: center;
+}
+

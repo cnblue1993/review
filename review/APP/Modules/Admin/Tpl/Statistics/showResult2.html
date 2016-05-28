@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--这是用表格方式做的统计-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/public.css" />
+<script language="javascript" src="_PUBLIC_/Js/LodopFuncs.js">
+</script>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+    <body>
+<form id="form1">	
+			<table class="table">
+				<tr>
+					<td colspan='7' align="center">评审结果统计</td>
+				</tr>
+				<tr>
+					<th width=20%>学院名称</th>
+					<th width=5%>原申报</th>
+					<th width=10%>原申报一般项目数</th>
+					<th width=10%>原申报重点项目数</th>
+					<th width=5%>评审后</th>
+					<th width=10%>评审后一般项目数</th>
+					<th width=10%>一般项目总票数</th>
+					<th width=10%>评审后重点项目数</th>
+					<th width=10%>重点项目总票数</th>
+				</tr>
+		<foreach name='list' item='v'>
+				<tr>
+					<td>{$v.department}</td>
+					<td>评审前</td>
+					<td>{$v.ranknormal}</td>
+					<td>{$v.rankimport}</td>
+					<td>评审后</td>
+					<td>{$v.normal}</td>
+					<td>{$v.normalcount}</td>
+					<td>{$v.important}</td>
+					<td>{$v.importcount}</td>	
+				</tr>
+		</foreach>
+	</table>
+</form>
+<a href="javascript:prn1_preview()">打印预览</a><br/>
+<a href="javascript:prn1_print()">直接打印</a>
+<script language="javascript" type="text/javascript">   
+        var LODOP; //声明为全局变量 
+    function prn1_preview() {    
+        CreateOneFormPage();    
+        LODOP.PREVIEW();    
+    };
+    function prn1_print() {        
+        CreateOneFormPage();
+        LODOP.PRINT();    
+    };
+    // function CreateOneFormPage(){
+    //     LODOP=getLodop();  
+    //     LODOP.PRINT_INIT("打印控件功能演示_Lodop功能_表单一");
+    //     LODOP.SET_PRINT_STYLE("FontSize",10);
+    //     LODOP.SET_PRINT_STYLE("Bold",1);
+    //     LODOP.ADD_PRINT_TEXT(50,231,260,39,"");
+    //     LODOP.ADD_PRINT_HTM(88,200,350,600,document.getElementById("form1").innerHTML);
+    // };
+     function CreateOneFormPage(){
+        LODOP=getLodop(); 
+        var strStyleCSS="<link href='_PUBLIC_/Css/PrintSample10.css' type='text/css' rel='stylesheet'>";
+        var strFormHtml=strStyleCSS+"<body>"+document.getElementById("form1").innerHTML+"</body>";
+        LODOP.PRINT_INIT("打印la");
+        LODOP.ADD_PRINT_HTM(0,0,"100%","100%",strFormHtml);
+    };
+</script>
+
+</body>
+</html>

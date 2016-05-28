@@ -1,0 +1,158 @@
+<link rel="stylesheet" href="__PUBLIC__/Css/test.css" />
+<link rel="stylesheet" href="__PUBLIC__/Css/buttons.css" />
+
+<script language="javascript" src="__PUBLIC__/Js/jquery-1.4.2.min.js"></script> 
+<script> 
+function show(obj,id) { 
+var objDiv = $("#"+id+""); 
+$(objDiv).css("display","block"); 
+$(objDiv).css("left", event.clientX); 
+$(objDiv).css("top", event.clientY + 10); 
+} 
+function hide(obj,id) { 
+var objDiv = $("#"+id+""); 
+$(objDiv).css("display", "none"); 
+} 
+
+function logout(state)
+{
+	if(state!='评审完毕')
+	{
+		alert('您还未提交评审结果！');
+		return false;
+	}
+	else if(!confirm("真的要退出吗？")){
+		return false;	
+	}
+	else{
+		window.location.href="{:U(GROUP_NAME.'/Index/logout')}";
+		return true;
+	}
+
+}
+function gotohome()
+{
+	window.location.href="{:U(GROUP_NAME.'/Response/welcome')}";
+}
+</script> 
+<table width="100%" margin:auto>
+	<table width="100%" id="top" border=0>
+	<tr >
+		<td align='right'>欢迎</td><td id="big">{$_SESSION['e_name']}</td><td align='left'>专家参与此次评审活动！</td>
+		<td align='right'>当前参评单位为</td><td id="big">{$qg_name}</td>
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:60%" onClick="javascript: gotohome();" value="首页">
+		<td align="center" id="white" width="40px"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:60%" onClick="javascript:return logout('{$e_state}');" value="退出">
+		</td>
+	</tr>
+	</table>
+
+	<form method="post" action="{:U(GROUP_NAME.'/Response/saveResponse')}">
+	<table id="main" align='center' border=3>
+	<tr id="title">
+		<td align='center'>序号</td>
+		<td align='center'>项目名称</td>
+		<td align='center'>申报级别</td>
+		<td align='center'>外籍专家</td>
+		<td align='center'>经费(万)</td>
+		<td align='center'>级别</td>
+	</tr>
+
+	<php>$i=1;$count=0;</php>
+
+	<foreach name='questionlist' item='vo'>
+
+	<php>$count++;$funds=$vo['p_funds']/10000.00</php>
+
+		<tr >
+			<td align='center'>{$i}</td>
+			<td align='left'>{$vo.p_name}</td>
+			<td align='center'>{$vo.p_rank}</td>
+
+			<td align='center' width="100px"><a onMouseOver="javascript:show(this,'{$vo['p_number']}');" onMouseOut="hide(this,'{$vo['p_number']}')">……</a> </td>
+
+			<td align='center'>{$funds}</td>
+			<td align='left' width="380px">
+			<foreach name='ans' item='a'>
+				<if condition="$vo['q_id'] == $a['q_id']">
+			    	<php>
+			    		$condition=array('q_id'=>$vo['q_id'],'voter_id'=>$_SESSION['e_id']);
+			    		$res=M('response')->where($condition)->select();
+			    	</php>
+				    	<if condition="$res&&$res[0]['answer']==$a['a_text']">
+					    	<label><input type="radio" name="{$a.q_id}" value="{$a.a_text}" checked="true" style="zoom:200%" {$disable}>{$a.a_text}</label>
+					    <elseif condition="!$res&&$vo['p_rank']=='一般'&&$a['a_text']=='一般'"/>
+					    	<label><input type="radio" name="{$a.q_id}" value="{$a.a_text}" checked="true" style="zoom:200%" {$disable}>{$a.a_text}</label>
+					    <else/>
+					    	<label><input type="radio" name="{$a.q_id}" value="{$a.a_text}" style="zoom:200%" {$disable}>{$a.a_text}</label>
+				    	</if>
+			    	</if>    	
+			</foreach>	
+			</td>
+		</tr>
+	<php>$i++;
+	</php>
+
+	</foreach>
+	</table>
+	<br>
+
+
+	<!--显示外籍专家信息-->
+	<foreach name='questionlist' item='vo'>
+	<div id="{$vo['p_number']}" style="position:absolute;display:none;border:1px solid silver;background:white;"> 
+	<table border=1 id="foreign">
+	<tr id="title">
+		<td>姓名</td>
+		<td>国籍</td>
+		<td>学历</td>
+		<td>在华天数</td>
+	</tr>
+	<foreach name='foreign' item='f'>
+	<if condition="$vo['p_number'] == $f['p_number']">
+	<tr>
+			<td>{$f.fe_name}</td>
+			<td>{$f.fe_nation}</td>
+			<td>{$f.fe_education}</td>
+			<td>{$f.fe_workday}</td>
+	</tr>
+	</if>
+	</foreach>
+	</table>
+	</div>
+	</foreach>
+
+	<!--意见-->
+	<table id="advice" >
+	<tr><td>备注：</td></tr>
+	<tr><td>
+	<textarea type="text" class="text" name="advice" {$disable}/>{$idea}</textarea>
+	</td></tr>
+	</table>
+
+
+	<table width="100%" border=0>
+	<tr><td><br></td></tr>
+	<tr>
+		<td align="center">当前为第{$page_number+1}页，共计{$qg_count}页。</td>
+		<td align='center' width="190px"><input type="submit" name="sub" value="上一页" style="zoom:150%;width:70px;align:center"></td><td align='left' width="190px"><input type="submit" name="add" value="下一页" style="zoom:150%;width:70px;align:center" ></td>
+	</tr>
+	</table>
+
+	<input  type="hidden" name="count" value="{$count}">
+	<input type="hidden" name="page_No" Value="{$page_number}">
+	</form>
+
+	<table width="100%">
+	<tr><td ><br></td>
+	<td align="center" width="380px">
+	<select name='qg' onchange="window.location=this.value;" style="160px;zoom:120%">
+	<option selected value=null>-----选择学院-----</option>	
+	<foreach name="department" item="name" key="page_number">
+	<option value="{:U(GROUP_NAME.'/Response/show?page_number='.$page_number)}">
+	{$name}
+	</option>
+	</foreach>	
+	</select></td>
+	</tr>
+	</table>
+</table>

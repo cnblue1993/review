@@ -1,0 +1,43 @@
+<?php
+	Class SystemAction extends CommonAction
+	{
+		public function verify(){
+			$this->display(verify);
+		}
+		public function updateverify(){
+			if(F('verify',$_POST,CONF_PATH)){
+				$this->success('修改成功',U(GROUP_NAME.'/System/verify'));
+			}else{
+				$this->error('修改失败，请再次修改'.CONF_PATH.'verify.php');
+			}
+		}
+//***********************************************************************
+		//修改管理员密码
+		public function showmodify(){
+			$this->display();
+		}
+
+		public function modifyPWD(){
+			// $admin=$_POST['a_name'];
+			// $password=$_POST['a_pwd'];
+			$newpassword=$_POST['newPWD'];
+			$confirmPWD=$_POST['confirm_newPWD'];
+			// dump($_POST);die;
+       		$db=M('admin');
+       		$admin=$db->where(array('a_name'=>I('a_name')))->find();
+       	  	// if(!$admin||$admin['a_pwd']!=I('a_pwd','','md5'))
+          	// {            
+       	   //  	$this->error('账号或密码错误');
+          	// }
+          	// else{
+          		if($newpassword==$confirmPWD&&$newpassword!=''){
+          			$data=array('a_id'=>$admin['a_id'],
+          				'a_pwd'=>I('newpwd','','md5'));
+          			M('admin')->setfield($data);
+          		}else{
+          			$this->error('2次输入的密码不一致，请重新输入！');
+          		}
+          	// }
+		}
+	}
+?>

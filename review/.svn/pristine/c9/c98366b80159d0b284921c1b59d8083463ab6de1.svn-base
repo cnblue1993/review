@@ -1,0 +1,36 @@
+
+body{}
+#table{
+	text-align: center;
+	color: #f08519;
+	border-spacing: 5px;
+	margin: auto;
+	width:80%;
+	font-size: 16px;
+}
+th{width:80px; font-size: 16px;}
+
+div.login{
+	background:url(../Image/admin.png);
+	background-repeat: no-repeat;
+	width:500px;
+	height:293px;
+	border:0;
+	padding:0;
+	border-spacing:0;
+	border-spacing: 5px;
+	font-size: 20px;
+	margin: auto;
+	margin-top: 200px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.submit{background:#000;height:30px;padding:0px 30px;line-height:1.8em;color:#fdd100;font-size:16px;font-weight: bold; cursor: pointer;}
+
+#bottom{
+	color:#000;
+}
+.input{
+	width:150px;
+}

@@ -1,0 +1,117 @@
+STYLE typetextcss BODY {
+	COLOR: #000;
+	FONT-FAMILY: "MS Gothic";
+	FONT-SIZE: 12px;
+}
+TD {
+	COLOR: #000; FONT-FAMILY: "MS Gothic"; FONT-SIZE: 12px
+}
+A:link {
+	COLOR: #003399;
+	TEXT-DECORATION: none;
+
+}
+A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline}
+.GR {
+	COLOR: #666
+}
+.GR:link {
+	COLOR: #666
+}
+.GR:visited {
+	COLOR: #666
+}
+.M {
+	font-family: "MS Gothic";
+	font-size: 14px;
+	font-weight: bold;
+}
+.red {
+	color: #FF0000;
+}
+.Pro {
+	font-size: 14px;
+	color: #FF0000;
+}
+.line_table {
+	border-collapse: collapse;
+	border: 1px solid #B0AAA5;
+}
+.line_table td {
+	border: 1px solid #FFFFFF;
+}
+.piece {
+	border: 1px solid #999999;
+	font-size: 9pt;
+	background-color: #FFFFFF;
+	padding: 1px;
+}
+.no12 {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.shadow {
+	display: block;
+	position: relative;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 5px;
+	border: 1px solid #000000;
+  }
+
+.h150 {
+	line-height: 150%;
+	text-decoration: none;
+}
+.padMiddle {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.nopad {
+	margin: 0px;
+	padding: 0px;
+}
+.gray {
+	background-color: #5b8bea;
+	color: #FFFFFF;
+}
+.pieceButton {
+	BORDER-TOP-WIDTH: 1px; PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 9pt; BORDER-LEFT-COLOR: #cccccc; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #cccccc; PADDING-BOTTOM: 1px; BORDER-TOP-COLOR: #cccccc; PADDING-TOP: 1px; HEIGHT: 18px; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #cccccc
+}
+.LeftTop {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D2D2D2;
+}
+
+body {
+	margin: 5px 0px 0px 5px;
+	padding: 0px;
+}
+.white {
+	color: #FFFFFF;
+}
+.bgE4EAFB {
+	background-color: #E4EAFB;
+}
+.div_title {
+	border: 1px solid #000000;
+	height: 20px;
+	margin: 5px 2px 2px;
+	padding: 2px;
+	font-size: 9pt;
+	clear: both;
+	float: none;
+}
+.L_T {
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #000000;
+}

@@ -1,0 +1,280 @@
+STYLE typetextcss BODY {
+	COLOR: #000;
+	FONT-SIZE: 12px;
+}
+TD {
+	COLOR: #000; FONT-SIZE: 12px
+}
+A:link {
+	COLOR: #003399;
+	TEXT-DECORATION: none;
+
+}
+A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline}
+.GR {
+	COLOR: #666
+}
+.GR:link {
+	COLOR: #666
+}
+.GR:visited {
+	COLOR: #666
+}
+.M {
+	FONT: bold 14px
+}
+.red {
+	color: #FF0000;
+}
+.Pro {
+	font-size: 14px;
+	color: #FF0000;
+}
+.line_table {
+	border-collapse: collapse;
+	border: 1px solid #B0AAA5;
+}
+#ProductForder {
+	font-size: 14px;
+	color: #2D2D8D;
+	text-decoration: none;
+	background: #D5D5E8;
+	padding: 10px;
+	height: 30px;
+	width: 200px;
+	border: 1px solid #9191C4;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+}
+#TopText {
+	padding-top: 55px;
+	padding-left: 50px;
+	font: bold 20px "黑体";
+	color: #000000;
+	text-decoration: none;
+}
+
+#ProductForder a:link {
+	color: #7973C2;
+	text-decoration: none;
+}
+#ProductForder a:visited {
+	color: #7973C2;
+	text-decoration: none;
+}
+#ProductForder a:hover {
+	color: #7973C2;
+	text-decoration: underline;
+}
+#ProductForder a:active {
+	color: #7973C2;
+	text-decoration: none;
+}
+#nList {
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+#nList a:link {
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+#nList a:visited {
+	color: #333333;
+	text-decoration: none;
+	font-size: 12px;
+}
+#nList a:hover {
+	color: #333333;
+	text-decoration: underline;
+}
+#nList a:active {
+	font-size: 12px;
+	color: #333333;
+}
+
+
+
+.line_table td {
+	border: 1px solid #FFFFFF;
+}
+.piece {
+	border: 1px solid #999999;
+	font-size: 9pt;
+	background-color: #FFFFFF;
+	padding: 1px;
+}
+.no12 {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.shadow {
+	display: block;
+	position: relative;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 5px;
+	border: 1px solid #000000;
+  }
+
+.h150 {
+	line-height: 150%;
+	text-decoration: none;
+}
+.padMiddle {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.nopad {
+	margin: 0px;
+	padding: 0px;
+}
+.gray {
+	background-color: #5b8bea;
+	color: #FFFFFF;
+}
+.pieceButton {
+	BORDER-TOP-WIDTH: 1px; PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 9pt; BORDER-LEFT-COLOR: #cccccc; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #cccccc; PADDING-BOTTOM: 1px; BORDER-TOP-COLOR: #cccccc; PADDING-TOP: 1px; HEIGHT: 18px; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #cccccc
+}
+.LeftTop {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #D2D2D2;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.white {
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.bgE4EAFB {
+	background-color: #E4EAFB;
+}
+.div_title {
+	border: 1px solid #000000;
+	height: 20px;
+	margin: 5px 2px 2px;
+	padding: 2px;
+	font-size: 9pt;
+	clear: both;
+	float: none;
+}
+.L_T {
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+.fontgray {
+	color: #999999;
+	font-size: 12px;
+}
+
+#job {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#job a:link {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#job a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 12px;
+}
+#job a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+#job a:active {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.fontBlue {
+	color: #39468C;
+}
+.No14 {
+	font-size: 16px;
+	color: #000000;
+	font-family: "黑体";
+	font-weight: bold;
+}
+#downText {
+	border: 1px solid #CCCCCC;
+	color: #999999;
+}
+#downText td {
+	color: #999999;
+}
+li {
+	list-style: square;
+}
+#no18 {
+	font-size: 18px;
+	color: #000099;
+	letter-spacing: 10px;
+	padding-right: 20px;
+	font-weight: bolder;
+}
+#no18 a:link {
+	font-size: 18px;
+	color: #000099;
+	font-weight: bolder;
+}
+#no18 a:visited {
+	font-size: 18px;
+	color: #000099;
+	text-decoration: none;
+	font-weight: bolder;
+}
+#no18 a:hover {
+	color: #000099;
+	text-decoration: underline;
+	font-weight: bolder;
+	font-size: 18px;
+}
+#no18 a:active {
+	color: #000099;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bolder;
+}
+.FontEnglish {
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+#leftmenu {
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	text-align: left;
+	height: 25px;
+	padding-top: 5px;
+	letter-spacing: 4px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	padding-left: 15px;
+	font-weight: bold;
+}
+.wxq {
+	font-size: 14px;
+	color: #333333;
+	border-bottom-width: thin;
+	border-bottom-style: dashed;
+	border-bottom-color: #D9F3FD;
+	font-weight: normal;
+}

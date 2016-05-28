@@ -1,0 +1,35 @@
+<html >
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+    <body>
+    <div id="main">
+		<form action="{:U(GROUP_NAME.'/Cate/modify')}" method="post" >
+			<table id="table">
+				<tr>
+					<th colspan='2'>修改学院信息</th>
+				</tr>
+				<tr>
+					<td align='right'>学院名称</td>
+					<td align='left'>
+						<input type="text" name="d_name" value='{$d_name}'/>
+					</td>
+				</tr>
+				<tr>
+					<td align='right'>学院分组</td>
+					<td align='left'>
+					<input type="text" name="mg_name" value='{$mg_name}'/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"> 
+						<input type="submit" class="submit" value="提交"/>
+					</td>
+				</tr>
+			</table>
+			<input type="hidden" name="d_id" value="{$d_id}">
+		</form>
+	</div>
+	</body>
+</html>

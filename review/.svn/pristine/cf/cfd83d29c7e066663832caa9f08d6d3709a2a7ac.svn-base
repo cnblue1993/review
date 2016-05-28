@@ -1,0 +1,52 @@
+<html >
+<head>
+<link rel="stylesheet" href="_PUBLIC_/Css/print.css" />
+<object id="WebBrowser" classid="ClSID:8856F961-340A-11D0-A96B-00C04Fd705A2" width="0" height="0">
+
+</object>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>2015年外专项目评审结果</title>
+</head>
+<body>
+<form id="form1">
+<p id="title">{$review_year}年外专项目评审结果</p>
+<table id="content">
+<foreach>
+<tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;{$review_year}年外专项目专家评审会评审结果公布如下:</td>
+</tr>
+<tr>
+    <td >本次评审活动共计申报项目：（{$totalCount}）项，包括一般项目（{$normal_totalCount}）项，重点项目（{$import_totalCount}）项；经专家评审后：评出一般项目（{$normalFinal_totalCount}）项，重点项目（{$importFinal_totalCount}）项。
+    各个评审分组的信息如下:</td>
+</tr>
+    <foreach name='data' item='v'>
+    <tr><td >{$v.value}组:原申报项目（{$v.count}）项，包括重点项目（{$v.import}）项，一般项目（{$v.normal}）项；
+	经评审后，评出重点项目（{$v.importFinal}）项,一般项目（{$v.normalFinal}）项。
+    </td></tr>
+    </foreach>
+</table>
+<br>
+<table width="95%" id="content">
+<tr><td >国交处领导意见:</td></tr>   
+    <tr><td><br></td></tr>
+    <tr><td><br></td></tr>
+    <tr><td align="right" >签名:&nbsp;___________________<br></td></tr> 
+    <tr><td align="right" colspan=2>年&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;日</td></tr>  
+ <tr><td >分管校领导意见:</td></tr>   
+    <tr><td><br></td></tr>
+    <tr><td><br></td></tr>
+    <tr><td align="right" >签名:&nbsp;___________________<br></td></tr> 
+    <tr><td align="right" colspan=2>年&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;日</td></tr>  
+</table>
+</form>
+</body>
+<style media=print> 
+.Noprint{display:none;}<!--用本样式在打印时隐藏非打印项目--> 
+.PageNext{page-break-after: always;}<!--控制分页--> 
+</style> 
+<center class="Noprint" >
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(6,6)">直接打印&nbsp;</a>
+
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(8,1)">页面设置</a>
+</center>
+</html>

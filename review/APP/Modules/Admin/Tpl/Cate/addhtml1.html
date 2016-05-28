@@ -1,0 +1,39 @@
+<html >
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+    <body>	
+    <div id="main">
+		<form action="{:U(GROUP_NAME.'/Cate/add')}" method="post" >
+			<table id="table">
+				<tr>
+					<th colspan='2'>添加学院信息</th>
+				</tr>
+				<tr>
+					<td align='right'>学院名称</td>
+					<td align='left'>
+						<input type="text" name="d_name"/>
+					</td >
+				</tr>
+				<tr>
+					<td align='right'>学院分组</td>
+					<td align='left'>
+    				<select id="mg_id" name="mg_id">
+   					<foreach name='list' item='v'>
+   					<option value='{$v.mg_id}'>{$v.mg_name}</option>
+					</foreach>
+					</select>
+					</td>
+				</tr>
+	
+				<tr>
+					<td colspan="2" align="center"> 
+						<input type="submit" class="submit" style="zoom:120%" value="提交"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</body>
+</html>

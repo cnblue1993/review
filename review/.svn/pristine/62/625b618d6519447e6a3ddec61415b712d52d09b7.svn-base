@@ -1,0 +1,23 @@
+<html>
+<head>
+	<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+</head>
+<body>
+<div id="main">
+<form method="post" action="{:U(GROUP_NAME.'/Excel/runexcel')}" enctype="multipart/form-data">
+<table id="table" style="width:95%" border=0>
+<tr>
+<td align="left">当前正在为编号为：“{$list['r_id']}” </td>
+<td width="75%" colspan=2 align="left">活动名称为：“{$list['r_name']}” 的评审活动导入待评审项目</td>
+</tr>
+<tr>
+<td align="left" >导入Excel表：</td>
+<td align="left" width="40%"><input  type="file" name="file_stu" style="zoom:120%"/></td>
+<input  type="hidden" name="r_id" value='{$list['r_id']}'>
+<td align="left"><input  type="submit" class="submit" style="zoom:120%" value="导入" /></td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

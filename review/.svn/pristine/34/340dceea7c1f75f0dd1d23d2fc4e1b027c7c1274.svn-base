@@ -1,0 +1,60 @@
+<include file='Common:header'/>
+    <link rel="stylesheet" href="_PUBLIC_/Css/print.css" />
+	<script type="text/javascript" src="__PUBLIC__/Js/jquery-1.7.2.min.js"></script>
+ 
+	<object id="WebBrowser" classid="ClSID:8856F961-340A-11D0-A96B-00C04Fd705A2" width="0" height="0">
+</object>
+</head>
+<script language="JavaScript" type="text/JavaScript">
+    
+    setTimeout('test({$i},{$rid},{$j})',3000);
+    function test(i,rid,j){
+        document.all.WebBrowser.Execwb(6,2);
+        if(i<j-1){
+            i=i+1;
+            window.location.href="{:U(GROUP_NAME.'/Expert/showpwd')}?i="+i+"&rid="+rid;
+        }  
+    }
+    
+</script>
+<body >
+<table align="center">
+	<table align="center" border=0>
+		<tr><td align="center" colspan=3><p id="title">{$review['r_name']}</p><br></td></tr>
+		<tr><td align="right" style="font-size:20px">专家：</td><td align="center" style="font-size:30px">{$expert[$i]['e_name']}</td><td align="left" style="font-size:20px">教授</td></tr>
+	</table>
+	<br>
+	<br>
+	<table id="main" border=1 align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+	<tr><td align="center" style="font-weight: bold">评审系统使用说明</td></tr>
+	<tr><td align="left"><pre id="p">{$instruction}</pre></td></tr>
+	</table>
+	
+	<br>
+	<br>
+	<br>
+	<table id="expert">
+		
+		<php>$type=M('expert')->where('e_pwd='.$expert[$i]['e_pwd'])->getField('e_type');$wifi=$type=='文科'?$arts_wifi:$science_wifi;</php>
+		<tr><td>本次WIFI热点：{$wifi}</td></tr>
+		<tr>
+	      <td align="left">本次访问网址：{$url}</td>
+		</tr>
+		<tr>
+	      <td align="left">您的评审口令：{$expert[$i]['e_pwd']}</td>
+		</tr>
+	</table>
+</table>
+
+</body>
+<style media=print> 
+.Noprint{display:none;}<!--用本样式在打印时隐藏非打印项目--> 
+.PageNext{page-break-after: always;}<!--控制分页--> 
+</style> 
+
+<center class="Noprint" >
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(6,6)">直接打印&nbsp;</a>
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(8,1)">页面设置</a>
+
+</center>
+</html>

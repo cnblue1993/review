@@ -1,0 +1,11 @@
+<?php
+	Class TestAction extends Action{
+
+		public function index()
+    	{
+    		$p=M('project')->select();
+    		$this->assign('p',$p);
+    		$this->display();
+        }
+	}	
+?>

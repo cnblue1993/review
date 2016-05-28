@@ -1,0 +1,30 @@
+<html>
+<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+<body>
+<div id="main" align="center">
+	<form action="{:U(GROUP_NAME.'/Statistics/rule')}" method="post">
+		<table align="center" style="margin-top:100px">
+			<tr>
+				<td>
+					<select id="rule" name="rule"  style="200px;zoom:150%">
+   					<foreach name='rule' item='v'>
+   						<if condition="$v['r_content']=='以原定专家数为基数'">
+   							<option value='{$v['r_content']}' selected='true'>{$v['r_type']}{$v['r_content']}</option>
+   						<else/>
+   							<option value='{$v['r_content']}'>{$v['r_type']}{$v['r_content']}</option>
+   					</if>
+					</foreach>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="hidden" name="r_id" value='{$rid}'>
+				<input type="submit" class="submit" value="确定">
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>

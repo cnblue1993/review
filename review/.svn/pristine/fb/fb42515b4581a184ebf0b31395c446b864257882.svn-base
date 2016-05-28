@@ -1,0 +1,224 @@
+<?php
+	class ReviewAction extends CommonAction{
+		public function index(){
+			$this->display();
+		}
+		//添加评审活动到数据库
+		public function add(){
+			$review_list=M('review')->select();
+			foreach($review_list as $v){
+				if($v['r_name']==$_POST['r_name']){
+					echo '错误类型：评审活动命名重复';
+					return;
+				}
+			}
+			$data=array(
+				r_name=>$_POST['r_name'],
+				r_year=>$_POST['r_year'],
+				review_year=>$_POST['review_year'],
+				r_start=>$_POST['r_start'],
+				r_end=>$_POST['r_end'],
+				r_state=>$_POST['r_state'],
+				);
+			if(M('review')->add($data))
+				{
+					$this->success('评审工作已创建！',U(GROUP_NAME.'/Review/showNow'));
+				}else{
+					$this->error('error');
+				}
+
+		}
+		//显示当前正在评审的评审活动列表
+		public function showNow(){
+			$map['r_state|r_state|r_state|r_state'] =array('新建','评审开始','评审中','评审完毕','_multi'=>true);
+			// $condition=array();
+			$data=M('review')->where($map)->select();
+			// dump($data);
+			$this->data=$data;
+			$this->display();
+		}
+		// 显示已经结束的评审活动
+		public function showOld(){
+			// $where=array('r_state'=>'评审完毕');
+			$data=M('review')->select();
+			$this->data=$data;
+			$this->display('showNow');
+		}
+		//显示修改编辑页面
+		public function showe(){
+			$where=array('r_id'=>$_GET['id']);
+			$infor=M('review')->where($where)->find();
+			if($infor['r_state']=='新建'){
+				$this->assign('infor',$infor)->display();
+			}
+			else{$this->error('对不起，不可修改当前状态下的评审活动！');}
+		}
+		//修改评审活动实现
+		public function editor(){
+			// dump($_POST['r_id']);
+			
+			$data=array(
+				'r_id'=>$_POST['r_id'],
+				'r_name'=>$_POST['r_name'],
+				'r_year'=>$_POST['r_year'],
+				'r_start'=>$_POST['r_start'],
+				'r_end'=>$_POST['r_end']);
+
+			if(M('review')->save($data))
+			{
+				$this->success('评审活动修改成功！',U(GROUP_NAME.'/Review/showNow'));
+			}
+			else{$this->error('修改失败，请重试！');}
+		}
+		//开启评审系统前台，专家可以登陆评审。
+		public function startReview(){
+			$condition=array('r_id'=>$_GET['rid']);
+			$project=M('project')->where($condition)->select();
+			$expert=M('expert')->where($condition)->select();
+			if(!empty($project)&&!empty($expert))
+			{
+				$result=M('review')->where($condition)->find();
+				if($result['r_state']=='新建')
+				{	
+					$data=array('r_id'=>$_GET['rid'],'r_state'=>'评审开始');
+					M('review')->setfield($data);
+					//统计本次评审各个小组的专家数目，并且保存到对应的分组表中
+					$survey=m(v_survey_major)->where($condition)->select();
+					foreach($survey as $k){
+						$where=array('r_id'=>$_GET['rid'],
+									'e_state'=>'未登录',
+									'e_type'=>$k['a_value']);
+						$voter_major=M('expert')->where($where)->select();
+						$voter_sum=count($voter_major);
+						$data=array('s_id'=>$k['s_id'],'voter_sum'=>$voter_sum,'s_state'=>'评审开始');
+						M('survey')->setfield($data);
+					}
+					$this->success('评审已开始，专家可以登录进行评审！');
+				}else{
+					$this->error('该评审已开始或已结束！',U(GROUP_NAME.'/Review/showNow'));
+				}
+			}else{
+				$this->error('请确认评审专家和评审项目已经选择！');
+			}
+		}
+		//结束评审
+		public function endReview(){
+			$where=array('r_id'=>$_GET['rid']);
+			$survey_state=M('survey')->where($where)->select();
+			$reviewstate=M('review')->where($where)->find();
+			$count=count($survey_state);
+			foreach($survey_state as $k){
+				if($k['s_state']=='评审完毕')
+				{
+					$count--;
+				}
+			}
+			if($reviewstate['r_state']=='评审完毕')
+			{
+				$where=array('r_id'=>$_GET['rid']);
+				$expert=M('expert')->where($where)->select();
+				$reviewdata=array('r_id'=>$_GET['rid'],'r_end'=>date("Y-m-d H:i:s"),'r_state'=>'已封存');
+				M('review')->setfield($reviewdata);
+				$survey=M('survey')->where($where)->select();
+				foreach($survey as $k){
+					$surveydata=array('s_id'=>$k['s_id'],'s_end'=>date("Y-m-d H:i:s"));
+					M('survey')->setfield($surveydata);
+				}
+				foreach($expert as $k){
+					$data=array('e_id'=>$k['e_id'],'r_id'=>$_GET['rid'],
+						'e_state'=>'休眠','e_ip'=>null,
+						'login_time'=>null,'logout_time'=>null,
+						's_id'=>null,'r_id'=>null);
+					M('expert')->setfield($data);
+				}
+				$this->success('评审活动已经封存,评审活动信息已保存，针对此次评审您仅有查看功能！');
+			}else{
+				$this->error('评审还未完成！');
+			}
+		}
+
+		public function set_survey()
+		{
+			$condition=array('r_id'=>$_GET['rid']);
+			$survey=M('survey')->where($condition)->select();
+			$this->list=$survey;
+			$this->display();
+		}
+		//修改评审分组工作时间模板显示
+		public function modify_survey(){
+			$survey=M('survey')->where('s_id='.$_GET['sid'])->find();
+			$this->assign('survey',$survey);
+			$this->display();
+
+		}
+
+		//实现修改分组评审工作代码实现
+		public function deal_modify(){
+			// dump($_POST);die;
+			$where=array('s_id'=>$_POST['s_id']);
+			$survey=M('survey')->where($where)->find();
+			if($survey['s_state']=='新建'){
+				$data=array(
+						's_name'=>$_POST['s_name'],
+						's_start'=>$_POST['s_start'],
+						's_end'=>$_POST['s_end']);
+				$result1=M('survey')->where($where)->setfield($data);
+
+				$r_id=M('survey')->where('s_id='.$_POST['s_id'])->getField('r_id');
+				$review=M('review')->where('r_id='.$r_id)->find();
+				$r_start=$_POST['s_start']<$review['r_start']?$_POST['s_start']:$review['r_start'];
+				$r_end=$_POST['s_end']>$review['r_end']?$_POST['s_end']:$review['r_end'];
+				$data2=array(
+					'r_start'=>$r_start,
+					'r_end'=>$r_end
+				);
+				$result2=M('review')->where('r_id='.$r_id)->setfield($data2);
+				if($result1){
+					$this->success('修改成功！',U(GROUP_NAME.'/Review/showNow'));		
+				}
+				else
+					$this->error('修改失败，请重试！');
+			}else{
+				$this->error('对不起，当前状态下不可修改！');
+			}
+		}
+
+		//推迟评审任务
+		public function delay_survey()
+		{
+			$s_state=M('survey')->where('s_id='.$_GET['sid'])->getField('s_state');
+			if($s_state!='评审完毕'){
+				$survey=M('survey')->where('s_id='.$_GET['sid'])->find();
+				$this->assign('survey',$survey);
+				$this->display();
+			}
+			else{
+				$this->error('评审任务已结束！');
+			}
+		}
+		//保存推迟时间
+		public function deal_delay(){
+			$data1=array(
+					's_name'=>$_POST['s_name'],
+					's_start'=>$_POST['s_start'],
+					's_end'=>$_POST['s_end']
+			);
+			$result1=M('survey')->where('s_id='.$_POST['s_id'])->setfield($data1);
+
+			$r_id=M('survey')->where('s_id='.$_POST['s_id'])->getField('r_id');
+			$review=M('review')->where('r_id='.$r_id)->find();
+			$r_start=$_POST['s_start']<$review['r_start']?$_POST['s_start']:$review['r_start'];
+			$r_end=$_POST['s_end']>$review['r_end']?$_POST['s_end']:$review['r_end'];
+			$data2=array(
+					'r_start'=>$r_start,
+					'r_end'=>$r_end
+			);
+			$result2=M('review')->where('r_id='.$r_id)->setfield($data2);
+			if($result1)	
+			{
+				$this->success('修改成功！',U(GROUP_NAME.'/Review/showNow'));
+			}
+				
+		}
+	}
+?>

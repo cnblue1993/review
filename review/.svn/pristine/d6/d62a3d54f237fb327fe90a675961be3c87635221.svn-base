@@ -1,0 +1,13 @@
+<?php
+	Class TestAction extends Action{
+		public function index()
+		{
+			$foreign_expert=M('foreign_expert')->getField('p_name',true);
+			$questionlist=M('project')->getField('p_name',true);
+			foreach ($questionlist as $key => $value) {
+				$project[$key]=str_replace(' ','',$value);
+			}
+			dump($project);
+		}
+	}
+?>

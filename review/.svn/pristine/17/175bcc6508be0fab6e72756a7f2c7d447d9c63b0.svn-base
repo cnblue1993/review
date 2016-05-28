@@ -1,0 +1,329 @@
+<?php
+	class StatisticsAction extends CommonAction{
+
+		public function index(){
+			$r_id=$_GET['rid'];
+			// dump($r_id);dump($_GET['major_group']);
+			$where=array('r_id'=>$r_id,
+						  's_id'=>$_GET['sid']);
+			$survey_state=M('survey')->where($where)->select();
+			// dump($survey_state[0]['s_state']); die();
+			if($survey_state[0]['s_state']=='评审完毕'){
+				$project=M('project')->where($where)->select();
+				foreach($project as $k){
+					$data=$this->prjRank($k['p_id']);
+					// dump($k['p_id']);
+					// dump($data);
+					$m=$k['p_id'];
+					$result=array(
+						'p_id'=>$m,
+						'p_result'=>$data);
+					M('project')->setField($result);
+				}
+				$this->showResult($_GET['major_group'],$_GET['rid']);
+            }else{
+            	$this->error('评审还未结束，请耐心等待',U(GROUP_NAME.'/Review/showNow'));
+            }
+		}
+		//选择评审规则
+		public function select_rule(){
+
+		}
+		public function surveyshow(){
+			$where=array('r_id'=>$_GET['rid']);
+			$major_group=m('v_survey_major')->where($where)->select();
+			if(empty($major_group)){ $this->error('请先确认各个评审任务'); }
+			$this->list=$major_group;
+			$this->display();
+		}
+		// //显示宣读结果页面
+		// public function result(){
+		// 	$this->display();
+		// }
+
+		//显示统计结果
+		public function showResult($major_group,$rid){
+			$review_year=M('review')->where('r_id='.$rid)->getField('r_year');
+			$this->assign('review_year',$review_year);
+			$where=array('major'=>$major_group,'r_id'=>$rid);
+			$department=m('v_question_group_major')->where($where)->select();
+			$i=0;
+			foreach($department as $k){
+				$departmentResult=$this->departmentResult($k['qg_name'],$rid);
+				$array[$i]=$departmentResult;
+				$i++;
+			}
+			$this->assign(major_group,$major_group);
+			$this->list=$array;
+
+			$condition=array('r_id'=>$rid,'a_value'=>$major_group);
+			$s_id=M('v_survey_major')->where($condition)->getField('s_id');
+			$advice=M('v_expert_advice')->where('s_id='.$s_id)->order('qg_name')->select();
+			$qg_name=M('v_expert_advice')->where('s_id='.$s_id)->distinct(true)->field('qg_name')->select();
+			//dump($qg_name);
+			$this->assign('qg_name',$qg_name);
+			$this->assign('advice',$advice);
+			//dump($advice);
+			$this->display('showResult');
+		}
+		
+		//统计各个学院各项目情况，返回值为申报项目数，通过总数等！
+		public function departmentResult($department,$rid){
+			$condition=array(
+				'r_id'=>$rid,
+				'p_department'=>$department);
+			$project=M('project')->where($condition)->select();
+			$count=count($project);
+			$nopass=0;$nomal=0;$important=0;$importcount=0;$normalcount=0;
+			$ranknormal=0;$rankimport=0;
+			foreach($project as $k){
+				if($k['p_rank']=='一般')
+					$ranknormal++;//原申报一般类型项目数
+				if($k['p_rank']=='重点')
+					$rankimport++;//原申报重点类型项目数
+				if($k['p_result']=='一般')
+					$nomal++;     //评审后一般类型的项目数
+				if($k['p_result']=='重点')
+					$important++; //评审后重点类型的项目数
+			}
+			$where=array('r_id'=>$rid,
+					'qg_name'=>$department);
+			$result=m('v_expert_response')->where($where)->select();
+			foreach($result as $k){
+				if($k['answer']=='重点'){
+					$importcount++; //这个学院获得的重点票总票数
+				}
+				if($k['answer']=='一般'){
+					$normalcount++; //这个学院获得的一般票总票数
+				}
+			}
+							
+		return array('importcount'=>$importcount, 
+				'normalcount'=>$normalcount, 
+				'normal'=>$nomal,
+				'important'=>$important,
+				'count'=>$count,
+				'department'=>$department,
+				'ranknormal'=>$ranknormal,
+				'rankimport'=>$rankimport
+				);
+		
+
+		}
+		//每组到场专家数目
+		public function expertorCount($sid){
+			$expertorList=M('survey')->where('s_id='.$sid)->find();
+			$expertorCount=$expertorList['voter_sum'];
+			// dump($expertorCount);die();
+			return $expertorCount;
+		}
+
+		//计算反馈票数,$qid:问题id
+		private function questionResponseCount($qid){
+
+			$response=M('response');
+			$condition=array('q_id'=>$qid);
+			$responseData=$response->where($condition)->select();
+			$sid=$responseData[0]['s_id'];
+			$noPass=0;$normal=0;$important=0;
+			foreach ($responseData as $row) {
+				if($row['answer']=="不通过"){
+					$noPass+=1;
+				}
+				if($row['answer']=="一般"){
+					$normal+=1;
+				}
+				if($row['answer']=="重点"){
+					$important+=1;
+				}
+			}
+
+			return array('noPass' => $noPass, 'normal'=>$normal,'important'=>$important,'sid'=>$sid);
+		}
+			
+		//项目评审结果级别，$pid：项目ID
+		private function prjRank($pid){
+
+			$question =M('question')->where('source_id='.$pid)->find();
+			$qid = $question['q_id'];
+			$sid = $question['s_id'];
+			$surveyMajor=m('v_survey_major')->where('s_id='.$sid)->find();
+
+			$qCount= $this->questionResponseCount($qid);
+
+			$expCount=$this->expertorCount($sid);
+
+			$gateVaue=floor($expCount*2/3)+1;
+
+			if ($qCount['important'] >= $gateVaue)	
+				return '重点';
+			if ( $qCount['important']+ $qCount['normal'] >= $gateVaue)
+				return '一般';
+			else			
+				return '未通过';
+		}
+
+// *****************************************************应急预案，中途专家离场。
+
+		public function prepared(){
+			$r_id=$_GET['rid'];
+				// dump($r_id);dump($_GET['major_group']);
+			$where=array('r_id'=>$r_id);
+				// $survey_state=M('survey')->where($where)->select();
+				// dump($survey_state[0]['s_state']); die();
+			$project=M('project')->where($where)->select();
+			foreach($project as $k){
+				$middle_result[$k['p_id']]=$this->questionResponseCount($k['p_id']);
+				$data[$k['p_id']]=$this->prj_Re_Rank($k['p_id']);
+					// dump($data);dump($middle_result);
+				$result=array(
+					'p_id'=>$k['p_id'],
+					'p_result'=>$data);
+				M('project')->setField($result);
+			}
+			$this->middle_result=$middle_result;
+			$this->data=$data;
+			$this->rid=$r_id;
+			$this->list=$project;
+			$this->display();
+		}
+
+		private function prj_Re_Rank($pid){
+			$question =M('question')->where('source_id='.$pid)->find();
+			$qid = $question['q_id'];
+			$sid = $question['s_id'];
+			$surveyMajor=m('v_survey_major')->where('s_id='.$sid)->find();
+
+			$qCount= $this->questionResponseCount($qid);
+
+			// $expCount=$this->expertorCount($sid);
+
+			$voterCount=$this->this_Vote_Count($qid);
+
+			$gateVaue=floor($voterCount*2/3)+1;
+
+			if ($qCount['important'] >= $gateVaue)	
+				return '重点';
+			if ( $qCount['important']+ $qCount['normal'] >= $gateVaue)
+				return '一般';
+			else			
+				return '未通过';
+		}
+
+		//针对对这道题做出选择的Voter进行评判 
+		public function this_Vote_Count($qid){
+			$sum=M('response')->where('q_id='.$qid)->select();
+			$voter_infact=count($sum);
+			return $voter_infact;
+		}
+		//即使有人未完成也关掉评审
+		public function modify_state(){
+			$where=array('r_id'=>$_GET['rid'],'r_state'=>'评审完毕');
+			M('review')->setfield($where);
+			$survey=M('survey')->where('r_id='.$_GET['rid'])->select();
+			foreach($survey as $k){
+				$data=array('s_id'=>$k['s_id'],'s_state'=>'评审完毕');
+				M('survey')->setfield($data);
+			}
+			$major_group=m('v_survey_major')->where('r_id='.$_GET['rid'])->select();
+			$this->list=$major_group;
+			$this->display();	
+		}
+
+//*******************************************************************************
+		//统计每个专家对每个项目所做出的评判
+		//每个专家结果打印审核签字
+		public function expert_response(){
+			$survey=M('survey')->where('s_id='.$_GET['sid'])->find();
+			$rid=M('survey')->where('s_id='.$_GET['sid'])->getField('r_id');
+			if($survey['s_state']=='评审完毕'){
+				$expert=M('expert')->where('s_id='.$_GET['sid'])->select();
+				$count=count($expert);
+				$j=0;
+				foreach($expert as $k){
+					$where=array('e_name'=>$k['e_name']);
+					$response=M('v_project_question_response')->where($where)->order('p_department','q_order')->select();
+					$condition=array('s_id='.$_GET['sid'],'e_name'=>$k['e_name']);
+					// dump($condition);
+					$advice[$j]=M('v_expert_advice')->where($condition)->select();
+					$array[$j]=$response;
+					$j++;
+				}
+				$i=I('i',0);
+				if($i<$count){
+					$this->rid = $_GET['rid'];
+					$this->sid = $_GET['sid'];
+					$this->i= $i;
+					$this->assign('advice',$advice);
+					$this->assign('response',$array);
+					$review_year=M('review')->where('r_id='.$rid)->getField('r_year');
+					$this->assign('review_year',$review_year);
+					$this->display();					
+				}
+				else{
+					echo '显示统计结果完毕';
+				}
+
+			}else{
+				$this->error('非专家签字确认环节！');
+			}		
+		} 
+
+		//显示统计总计项目
+		public function showTotal(){
+			$review=M('review')->where('r_id='.$_GET['rid'])->find();
+			$review_year=M('review')->where('r_id='.$_GET['rid'])->getField('r_year');
+			$this->assign('review_year',$review_year);
+			if($review['r_state']=='评审完毕'){
+				$survey=M('v_survey_major')->where('r_id='.$_GET['rid'])->select();
+				$survey_count=count($survey);
+				$j=0;
+				foreach($survey as $k){
+					$array[$j]=$this->total($_GET['rid'],$k['a_value']);
+					$j++;
+				}
+				for($i=0;$i<$survey_count;$i++){
+					$totalCount=$totalCount+$array[$i]['count'];
+					$normal_totalCount=$normal_totalCount+$array[$i]['normal'];
+					$import_totalCount=$import_totalCount+$array[$i]['import'];
+					$normalFinal_totalCount=$normalFinal_totalCount+$array[$i]['normalFinal'];
+					$importFinal_totalCount=$importFinal_totalCount+$array[$i]['importFinal'];
+				}
+				$this->totalCount=$totalCount;
+				$this->normal_totalCount=$normal_totalCount;
+				$this->import_totalCount=$import_totalCount;
+				$this->normalFinal_totalCount=$normalFinal_totalCount;
+				$this->importFinal_totalCount=$importFinal_totalCount;
+				$this->data=$array;
+				$this->display();
+			}else{
+				$this->error('分组评审任务，还有未完成的！请等待！');
+			}
+		}
+
+
+		//统计各分组总项目
+		public function total($rid,$value){
+			$where=array('r_id'=>$rid,'mg_name'=>$value);
+			$project=M('v_project_major_group')->where($where)->select();
+			$count=count($project);
+			foreach($project as $v){
+				if($v['p_rank']=='一般')
+					$normal++;
+				if($v['p_rank']=='重点')
+					$import++;
+				if($v['p_result']=='一般')
+					$normalFinal++;
+				if($v['p_result']=='重点')
+					$importFinal++;
+			}
+			return array(
+				'value'=>$value,
+				'normal'=>$normal , 
+				'import'=>$import ,
+				'importFinal'=>$importFinal , 
+				'normalFinal'=>$normalFinal , 
+				'count'=>$count);
+		}
+	}
+?>

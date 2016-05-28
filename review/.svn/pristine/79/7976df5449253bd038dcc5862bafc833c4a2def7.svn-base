@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="__PUBLIC__/Css/welcome.css" />
+<link rel="stylesheet" href="__PUBLIC__/Css/buttons.css" />
+<script language="JavaScript" type="text/JavaScript">
+
+function submitReview(response,question)
+{
+	if(response!=question)
+	{
+		alert('您还有未评审的项目，请仔细检查！');
+		return false;
+	}
+	else if(!confirm("真的要提交评审结果吗？")){
+		return false;	
+	}
+	else{
+		window.location.href="{:U(GROUP_NAME.'/Response/finish')}";
+		return true;
+	}
+}
+
+function logout(state)
+{
+	if(state!='评审完毕')
+	{
+		alert('您还未提交评审结果！');
+		return false;
+	}
+	else if(!confirm("真的要退出吗？")){
+		return false;	
+	}
+	else{
+		window.location.href="{:U(GROUP_NAME.'/Index/logout')}";
+		return true;
+	}	
+}
+
+function gotohome()
+{
+	window.location.href="{:U(GROUP_NAME.'/Response/welcome')}";
+}
+function reback(page)
+{
+	window.location.href="{:U(GROUP_NAME.'/Response/show')}?page_number="+page;
+}
+</script>
+
+<table width="100%" margin="auto">
+	<table width="100%" id="t">
+	<tr>
+		<td id="title2" width="85%" align="center">{$title}</td>
+		<td align="center"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:60%" onClick="javascript: gotohome();" value="首页">
+		<td align="center"><input type="button" class="button button-glow button-border button-rounded button-primary" style="zoom:60%" onClick="javascript:return logout('{$e_state}');" value="退出">
+		</td>
+	</tr>
+	</table>
+
+	<br>
+	<p id="end" align="center">已到最后一页，感谢您的参与！若想查看评审结果，请单击
+	<input type="button" onClick="javascript: reback({$page_number});" class="button button-glow button-border button-rounded button-primary" style="zoom:50%" value="返回">
+	</p>
+	<if condition="$e_state neq '评审完毕'">
+	<p id="warn" align="center">请确认无误后，单击“提交评审结果”，保存评审结果。</p>
+	<p id="warn" align="center">提交评审结果后，将不能修改！！！</p>
+	<br><br><br>
+	<table border=0 width="100%">
+	<tr>
+	<td align="center" ><input type="button"  class="button button-glow button-rounded button-raised button-primary" name="close" value="提交评审结果"  onClick="javascript:return submitReview({$response_count},{$question_count});"></td>
+	</tr>
+	</if>
+	</table>
+</table>

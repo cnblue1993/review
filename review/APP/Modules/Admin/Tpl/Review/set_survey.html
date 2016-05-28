@@ -1,0 +1,31 @@
+<html >
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+<body>
+<div id="main">
+	<table id='table2' border=1>
+		<tr>
+			<th>评审任务名称</th>
+			<th>开始时间</th>
+			<th>结束时间</th>
+			<th>现在所处状态</th>
+			<th>编辑操作</th>
+		</tr>
+		<foreach name='list' item='infor'>
+		<tr>
+			<td>{$infor['s_name']}</td>
+			<td>{$infor['s_start']}</td>
+			<td>{$infor['s_end']}</td>
+			<td>{$infor['s_state']}</td>
+			<td>
+				<a href="{:U(GROUP_NAME.'/Review/modify_survey',array('sid'=>$infor['s_id']))}"/>[修改]</a>
+				<a href="{:U(GROUP_NAME.'/Review/delay_survey',array('sid'=>$infor['s_id']))}"/>[推迟]</a>
+			</td>
+		</tr>
+		</foreach>
+	</table>
+</div>
+
+</body>

@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+<script language="JavaScript" type="text/JavaScript">
+    
+    setTimeout('test1({$s_id})',10000);
+
+    function test1(s_id){
+        window.location.href="{:U(GROUP_NAME.'/Statistics/prepared')}?s_id="+s_id;
+        
+    }
+    
+</script>
+<script language="javascript" type="text/JavaScript">
+function Counter(nMax,nInterval)
+{
+this.maxTime=nMax;
+this.interval=nInterval;
+this.objId="timer";
+this.obj=null;
+this.num=this.maxTime;
+this.timer=null;
+this.start=function()
+{ 
+this.obj=document.getElementById(this.objId);
+if(this.num>0) setTimeout(this.run,this.interval*1000);
+};
+this.run=function()
+{
+if(myCounter.num>0) 
+{
+myCounter.num--;
+myCounter.obj.innerHTML=myCounter.num;
+myCounter.timer=setTimeout(myCounter.run,myCounter.interval*1000);
+}
+else clearTimeout(myCounter.timer);
+};
+this.show=function()
+{
+document.write("<span id="+this.objId+">"+this.num+"</span>");
+this.obj=document.getElementById(this.objId);
+//alert(this.obj.innerHTML);
+}
+}
+</script>   
+<body onload="myCounter.start();">
+<script language="JavaScript" type="text/JavaScript">
+var myCounter=new Counter(10,1);
+</script>
+
+<p>距离刷新还有
+<script language="JavaScript" type="text/JavaScript">
+myCounter.show();
+</script>
+秒钟!</p>
+
+<body >
+<div id="time"></div>
+<div id="main">
+<form id="form1">
+			<table id="table2" border=1 cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+				<tr>
+					<td colspan='7' align="center">各项目评审情况</td>
+				</tr>
+				<tr>
+					<th width=5%>序号</th>
+					<th width=35%>项目名称</th>
+					<th width=10%>不通过票数</th>
+					<th width=10%>一般票数</th>
+					<th width=10%>重点票数</th>
+					<th width=10%>实得总票数</th>
+					<th width=10%>原定总票数</th>
+					<th width=10%>当前等级</th>
+				</tr>
+		<php>$i=1</php>
+		<foreach name='list' item='v'>
+				<tr>
+					<td>{$i++}</td>
+					<td align="left">{$v.q_text}</td>
+					<td>{$middle_result[$v['source_id']]['noPass']}</td>
+					<td>{$middle_result[$v['source_id']]['normal']}</td>
+					<td>{$middle_result[$v['source_id']]['important']}</td>
+					<td>{$middle_result[$v['source_id']]['noPass']+$middle_result[$v['source_id']]['normal']+$middle_result[$v['source_id']]['important']}</td>
+					<td>{$voter_sum}</td>
+					<td>
+						<!-- <input type='text' name='p_result' value="{$data[$v['source_id']]}" /> -->
+						{$data[$v['source_id']]}
+					</td>
+				</tr>
+		</foreach>
+	</table>
+</form>
+</div>
+</body>
+</html>

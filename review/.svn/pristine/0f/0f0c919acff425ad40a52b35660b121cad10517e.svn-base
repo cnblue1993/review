@@ -1,0 +1,43 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>外专项目评审系统</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="__PUBLIC__/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="__PUBLIC__/bootstrap/css/signin.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container" style="background-image:url('__PUBLIC__/Images/login.png'); ">
+      <form class="form-signin" action="<?php echo U(GROUP_NAME.'/Index/checkpwd');?>" method="post">
+        <br><br><br><br><br><br><br><br>
+        <table border=0>
+        <tr>
+        <td >口令:&nbsp;</td><td><input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="password"></td>
+        </tr>
+        <tr>
+        <td></td><td>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+        </td></tr>
+       </table>
+      </form>
+
+    </div> <!-- /container -->
+ <table  border=0 width="100%">
+       <tr><td  align="center">版权所有：西南民大国交处&nbsp;技术支持：西南民大计科学院天码团队</td></tr>
+       </table>
+  </body>
+</html>

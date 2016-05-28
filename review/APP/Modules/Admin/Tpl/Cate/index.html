@@ -1,0 +1,49 @@
+<html >
+	<head>
+		<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+<script language="JavaScript" type="text/JavaScript">
+
+function deleteMjor(reviewID)
+{
+	//alert(reviewID);
+	if(!confirm("真的要删除吗？")){
+			return false;	
+	}		
+	window.location.href="{:U(GROUP_NAME.'/Cate/delete')}?d_id="+reviewID;	
+	return true;
+}
+
+</script>
+    <body>
+    <div id="main">
+			<table id="table2" border=1 cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+				<tr>
+					<th>学院编号</th>
+					<th>学院名称</th>
+					<th>编辑操作</th>
+				</tr>
+
+				<foreach name='data' item='v'>
+				<tr>
+					<td>{$v.d_id}</td>
+					<td>{$v.d_name}</td>
+					<td>
+						<!-- [<a href="{:U(GROUP_NAME.'/Expert/delete',array('d_id'=>$v['d_id']))}">删除</a>] -->
+						<a href="{:U(GROUP_NAME.'/Cate/modifyShow',array('d_id'=>$v['d_id']))}" >[修改]</a>
+
+						<a href="#" onClick="javascript:return deleteMjor({$v['d_id']});">[删除]</a>
+					</td>
+				</tr>
+				</foreach>
+
+				<tr>
+					<td colspan="4" align="center">
+						[<a href="{:U(GROUP_NAME.'/Cate/addhtml1')}">添加学院</a>]
+					</td>
+				</tr>
+			</table>
+	</div>
+	</body>
+</html>

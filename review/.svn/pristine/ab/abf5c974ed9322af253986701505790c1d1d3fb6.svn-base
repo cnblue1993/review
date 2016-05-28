@@ -1,0 +1,26 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+<link rel="stylesheet" href="_PUBLIC_/Css/review.css" />
+<body>
+<div id="main" align="center">
+	<form action="<?php echo U(GROUP_NAME.'/Statistics/rule');?>" method="post">
+		<table align="center" style="margin-top:100px">
+			<tr>
+				<td>
+					<select id="rule" name="rule"  style="200px;zoom:150%">
+   					<?php if(is_array($rule)): foreach($rule as $key=>$v): if($v['r_content']=='以原定专家数为基数'): ?><option value='<?php echo ($v['r_content']); ?>' selected='true'><?php echo ($v['r_type']); echo ($v['r_content']); ?></option>
+   						<?php else: ?>
+   							<option value='<?php echo ($v['r_content']); ?>'><?php echo ($v['r_type']); echo ($v['r_content']); ?></option><?php endif; endforeach; endif; ?>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="hidden" name="r_id" value='<?php echo ($rid); ?>'>
+				<input type="submit" class="submit" value="确定">
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>

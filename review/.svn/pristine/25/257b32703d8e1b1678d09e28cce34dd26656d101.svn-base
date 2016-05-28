@@ -1,0 +1,57 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+<head>
+<link rel="stylesheet" href="_PUBLIC_/Css/print.css" />
+<object id="WebBrowser" classid="ClSID:8856F961-340A-11D0-A96B-00C04Fd705A2" width="0" height="0">
+</object>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>2015年外专项目评审结果</title>
+</head>
+<body>
+<form id="form1">
+<p id="title"><?php echo ($review_year); ?>年外专项目评审结果（<?php echo ($major_group); ?>组）</p>
+<table id="content" border=0>
+<?php $i=1; ?>
+<foreach>
+<tr>
+    <td >&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($review_year); ?>年外专项目专家评审会<?php echo ($major_group); ?>组评审结果公布如下:</td>
+</tr>
+    <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr><td >
+    <?php echo ($i); ?>.<?php echo ($v["department"]); ?>:原申报项目(<?php echo ($v["count"]); ?>)项，其中重点项目(<?php echo ($v["rankimport"]); ?>)项，一般项目(<?php echo ($v["ranknormal"]); ?>)项；
+    经评审后，重点项目(<?php echo ($v["important"]); ?>)项，总票数(<?php echo ($v["importcount"]); ?>)票，一般项目(<?php echo ($v["normal"]); ?>)项，总票数(<?php echo ($v["normalcount"]); ?>)票。
+    <?php $i++; ?> 
+    </td></tr><?php endforeach; endif; ?>
+<tr><td>专家意见汇总：</td></tr>
+<?php if(is_array($qg_name)): foreach($qg_name as $key=>$qg): $j=1; ?>
+    <tr><td ><?php echo ($qg["qg_name"]); ?><br></td></tr>
+    <tr><td>
+     <?php if(is_array($advice)): foreach($advice as $key=>$a): if($qg['qg_name'] == $a['qg_name']): ?>意见<?php echo ($j++); ?>：<?php echo ($a['advice']); ?><br><?php endif; endforeach; endif; ?>
+    </td></tr><?php endforeach; endif; ?>
+<?php if($advice==null): ?><tr><td >&nbsp;&nbsp;&nbsp;&nbsp;无<br></td></tr><?php endif; ?>
+</table>
+<br>
+<table id="content" width="98%">
+    <tr>
+        <td align="left" >
+            专家组长意见：
+        </td>
+    </tr>
+    <tr><td ><br></td></tr>
+    <tr><td ><br></td></tr>
+<tr><td align="right" >签名:&nbsp;___________________<br></td></tr> 
+<tr><td align="right" colspan=2>年&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;日</td></tr>  
+<table>
+</form>
+<!-- <a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(7,1)">打印预览&nbsp;</a>
+
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(6,1)">打印&nbsp;</a> -->
+
+</body>
+<style media=print> 
+.Noprint{display:none;}<!--用本样式在打印时隐藏非打印项目--> 
+.PageNext{page-break-after: always;}<!--控制分页--> 
+</style> 
+<center class="Noprint" >
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(6,6)">直接打印&nbsp;</a>
+<a href="#" style="Noprint" onClick="document.all.WebBrowser.Execwb(8,1)">页面设置</a>
+</center>
+</html>

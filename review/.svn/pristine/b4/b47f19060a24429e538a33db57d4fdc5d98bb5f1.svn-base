@@ -1,0 +1,44 @@
+<html >
+<script type="text/javascript" src="_PUBLIC_/Js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="_PUBLIC_/Js/index.js"></script>
+<link rel="stylesheet" href="_PUBLIC_/Css/public.css" />
+<link rel="stylesheet" href="_PUBLIC_/Css/index.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+</head>
+<body >
+	
+<div id="left">
+		<dl>
+			<dt>评审活动管理</dt>
+			<dd><a href="{:U(GROUP_NAME.'/Review/showOld')}" target="main">评审活动列表</a></dd>
+			<dd><a href="{:U(GROUP_NAME.'/Review/showNow')}" target="main">管理当前评审</a></dd>
+			<dd><a href="{:U(GROUP_NAME.'/Review/index')}" target="main">添加评审活动</a></dd>
+					
+        </dl>
+		<dl>
+			<dt>项目管理</dt>
+			<dd><a href="{:U(GROUP_NAME.'/Excel/show')}" target="main">外专项目列表</a></dd>
+
+        </dl>
+		<dl>
+			<dt>评审专家管理</dt>
+			<dd><a href="{:U(GROUP_NAME.'/Expert/show')}" target="main">专家信息列表</a></dd>
+			<dd><a href="{:U(GROUP_NAME.'/Expert/index')}" target="main">添加专家信息</a></dd>
+			<dd><a href="{:U(GROUP_NAME.'/Expert/prepareProductPWD')}" target="main">生成动态口令</a></dd> 
+			<dd><a href="{:U(GROUP_NAME.'/Expert/show_unlock')}" target="main">参评专家管理</a></dd>	
+		</dl>
+		<dl>
+			<dt>学科及学院管理</dt>
+			<dd><a href="{:U(GROUP_NAME.'/Cate/index2')}" target="main">学科信息管理</a></dd>
+			<dd><a href="{:U(GROUP_NAME.'/Cate/index')}" target="main">学院信息管理</a></dd>
+		</dl>
+		<dl>
+			<dt>系统设置</dt>
+			<dd><a href="{:U(GROUP_NAME.'/Administrator/index')}" target="main">管理员设置</a></dd>
+			<dd><a href="{:U(GROUP_NAME.'/System/verify')}" target="main">验证码设置</a></dd>
+			<dd><a href="{:U(GROUP_NAME.'/DataBase/index')}" target="main">数据库管理</a></dd>	
+		</dl>
+	</div>
+</body>
+</html>

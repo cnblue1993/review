@@ -1,0 +1,223 @@
+<?php
+	class ExpertAction extends CommonAction{
+		public function index(){
+			$mglist=M('major_group')->select();
+			$this->list=$mglist;
+			$this->display();
+		}
+		//添加专家
+		public function add(){
+			$data=array(
+				'e_name'=>$_POST['e_name'],
+				'e_position'=>$_POST['e_position'],
+				'e_type'=>$_POST['e_type'],
+				'e_entry_time'=>$_POST['e_entry_time'],
+				'e_tel'=>$_POST['e_tel'],
+				'e_department'=>$_POST['e_work_unit'],
+				'e_state'=>$_POST['e_state'],
+				'e_research'=>$_POST['e_research']
+				);
+			if(M('expert')->add($data))
+				{
+					$this->success('添加专家成功！',U(GROUP_NAME.'/Expert/show'));
+				}else{
+					$this->error('添加专家失败！');
+				}
+
+		}
+		//准备生成密码
+		public function prepareProductPWD(){
+			$this->display();
+		}
+		//生成随机密码
+		public function productPWD(){
+			$pw_length=5;
+			$expert=M('expert')->select();
+			$count=count($expert);
+			for($i=0;$i<$count;$i++){
+					 $array[$i]=$i.$this->create_password($pw_length);
+					// dump($array[$i]);
+			}
+			$i=0;
+			foreach($expert as $k){
+				$where=array('e_id'=>$k['e_id'],
+							'e_pwd'=>$array[$i]);
+				$check=M('expert')->setfield($where);
+				$i++;
+			}
+			if(!empty($check)){$this->success('生成随机口令成功！',U(GROUP_NAME.'/Review/showNow'));}
+		}
+		//显示专家本次评审的随机密码
+		public function showpwd(){
+			$review=M('review')->where('r_id='.$_GET['rid'])->find();
+			$expertPWD=M('expert')->where('r_id='.$_GET['rid'])->select();
+			// dump($expertPWD);
+			$count=count($expertPWD);
+			$i=I('i',0);
+			$this->expert=$expertPWD;
+			$this->review=$review;
+			$this->rid=$_GET['rid'];
+			$this->i=$i;
+			$this->j=$count;
+			$condition1=array('info_type'=>'前台使用说明');
+			$instruction=M('site_info')->where($condition1)->getField('info_content');
+			$this->assign('instruction',$instruction);
+			$condition2=array('info_type'=>'评审原则（按2/3以上通过原则）');
+			$instruction2=M('site_info')->where($condition2)->getField('info_content');
+			$this->assign('instruction2',$instruction2);
+			$condition3=array('info_type'=>'front_url');
+			$url=M('site_info')->where($condition3)->getField('info_content');
+			$this->assign('url',$url);
+			$condition4=array('info_type'=>'arts_wifi');
+			$arts_wifi=M('site_info')->where($condition4)->getField('info_content');
+			$condition5=array('info_type'=>'science_wifi');
+			$science_wifi=M('site_info')->where($condition5)->getField('info_content');
+			$this->assign('arts_wifi',$arts_wifi);
+			$this->assign('science_wifi',$science_wifi);
+			$this->display();
+		}
+
+		//显示专家列表
+		public function show(){
+			$where=array('e_del'=>0);
+			$data=M('expert')->where($where)->select();
+			$this->data=$data;
+			$this->display();
+		}
+		//显示编辑页面
+		public function showe(){
+			$mglist=M('major_group')->select();
+			$where=array('e_id'=>$_GET['id']);
+			$infor=M('expert')->where($where)->find();
+			// dump($infor);
+			$this->list=$mglist;
+			$this->assign('infor',$infor)->display();
+		}
+		//修改专家信息
+		public function editor(){
+			// dump($_POST['r_id']);
+			$data=array(
+				'e_id'=>$_POST['e_id'],
+				'e_name'=>$_POST['e_name'],
+				'e_position'=>$_POST['e_position'],
+				'e_type'=>$_POST['e_type'],
+				'e_entry_time'=>$_POST['e_entry_time'],
+				'e_department'=>$_POST['e_department'],
+				'e_tel'=>$_POST['e_tel'],
+				'e_research'=>$_POST['e_research'],
+				'e_state'=>$_POST['e_state'] );
+
+			if(M('expert')->save($data))
+			{
+				$this->success('修改专家成功！',U(GROUP_NAME.'/Expert/show'));
+			}else{$this->error('修改专家失败！');}
+		}
+		//删除档案库内的专家
+		public function delete(){
+			$where=array('e_id'=>$_GET['e_id']);
+			$expert=M('expert')->where($where)->find();
+			if($expert['e_state']=='休眠')
+			{
+				$data=array('e_del'=>1);
+				if(M('expert')->where($where)->setfield($data))
+				{
+					$this->success('删除专家成功！',U(GROUP_NAME.'/Expert/show'));
+				}else{$this->error('删除专家失败！');}
+			}else{$this->error('不可修改此状态下的专家信息！');}
+		}
+		//生成密码
+		function create_password($pw_length)
+		{
+    		$randpwd = '';
+    		for ($i = 0; $i < $pw_length; $i++) 
+    		{
+        		$randpwd .=(mt_rand(0, 9));
+    		}
+    		return $randpwd;
+		}
+		//选择某次活动的评审专家
+		public function selectExpert()
+		{
+			$condition=array('r_id'=>$_GET['rid']);
+			$review=M('review')->where($condition)->find();
+			if($review['r_state']=='新建')
+			{
+				$where=array('e_state'=>'休眠','e_del'=>0);
+				$expert_selected=M('expert')->where($where)->select();
+				//待定中：
+				$this->assign('rid',$_GET['rid']);
+				$this->list=$expert_selected;
+				$this->display();
+			}else{
+				$this->error('当前状态不能再次添加专家！');
+			}
+		}
+		//显示未选定的专家
+		public function dealSelectExpert(){
+			// dump($_POST);
+			$checkbox=$_POST['checkbox'];
+			$count=count($checkbox);
+			for($i=0;$i<$count;$i++){
+				$condition=array('e_id'=>$checkbox[$i],'e_state'=>'未登录','r_id'=>$_POST['rid']);
+				M('expert')->setfield($condition);
+			}
+			if($i==$count){$this->success('专家已选定！',U(GROUP_NAME.'/Review/showNow'));}
+		}
+
+		//解锁
+		public function show_unlock(){
+			$expert=M('expert')->where("e_state!='休眠'")->select();
+			$this->list=$expert;
+			$this->display();
+		}
+		public function unlock(){
+			$expert=M('expert')->where('e_id='.$_GET['e_id'])->find();
+			if($expert['e_state']=='评审完毕'){
+				$data=array('e_id'=>$_GET['e_id'],'e_state'=>'未登录');
+				if(M('expert')->setfield($data)){
+					$this->success('已解锁，可以再次进行评审');
+				}
+			}else{
+				$this->error('解锁功能只针对评审完毕的专家开放！');
+			}
+
+		}
+
+		//删除勾选专家
+		public function cancelPower(){
+			$expert=M('expert')->where('e_id='.$_GET['e_id'])->find();
+			$r_state=M('review')->where('r_id='.$expert['r_id'])->getField('r_state');
+			if($expert['e_state']=='未登录'&&$r_state=='新建'){
+				$data=array('e_id'=>$_GET['e_id'],'e_state'=>'休眠','r_id'=>'');
+				if(M('expert')->setfield($data)){
+					$this->success('该专家已取消活动的评审权！');
+				}
+			}else{
+				$this->error('此状态的专家不能取消评审权！');
+			}
+
+		}
+
+		//单个专家打印
+		public function printing(){
+			$expert=M('expert')->where('e_id='.$_GET['e_id'])->find();
+			if($expert['e_state']=='评审完毕')
+			{
+				$where=array('e_name'=>$expert['e_name'],'s_id'=>$expert['s_id']);
+				$response=M('v_project_question_response')->where($where)->order('p_department,q_order,q_id')->select();
+				$advice=M('v_expert_advice')->where($where)->select();
+				$review_year=M('review')->where('r_id='.$expert['r_id'])->getField('r_year');
+				$this->assign('review_year',$review_year);
+				$this->assign('response',$response);
+				$this->assign('advice',$advice);
+				$this->assign('e_id',$e_id);
+				$this->display();
+			}
+			else
+				$this->error('专家还未结束评审！');
+			//dump($expert);
+		}
+
+	}
+
+?>

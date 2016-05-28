@@ -1,0 +1,56 @@
+.lineborder {
+	border: 1px solid #86AEE9;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+.lineborder td {
+	border-top: 1px none #86AEE9;
+	border-right: 1px none #86AEE9;
+	border-bottom: 1px none #86AEE9;
+	border-left: 1px none #86AEE9;
+}
+.lineborder th {
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	background: #86AEE9;
+}
+.Piece {
+	font-size: 9pt;
+	color: #000000;
+	border: 1px solid #86AEE9;
+	text-decoration: none;
+}
+.PadMain {
+	padding: 10px;
+	font-size: 12px;
+	line-height: 150%;
+	text-decoration: none;
+}
+.font12 {
+	font-size: 12px;
+	line-height: 150%;
+	color: #000000;
+	text-decoration: none;
+}
+.pad10 {
+	padding-left: 10px;
+}
+
+
+
+.pieceButton {
+	BORDER-TOP-WIDTH: 1px; PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 9pt; BORDER-LEFT-COLOR: #cccccc; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #cccccc; PADDING-BOTTOM: 1px; BORDER-TOP-COLOR: #cccccc; PADDING-TOP: 1px; HEIGHT: 18px; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #cccccc
+}
+.fontred {
+	color: #FF0000;
+	text-decoration: none;
+}
+#reply {
+	padding: 5px;
+	border: 1px solid #999999;
+	background: #FFFFCC;
+	width: 80%;
+	line-height: 150%;
+	text-decoration: none;
+}
